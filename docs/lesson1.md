@@ -1,23 +1,22 @@
-Here's a markdown outline/template you can use for the hands-on labs developed for your Developer Productivity training. This structure ensures clarity, consistency, and ease of use for participants.
-
----
 
 # Hands-On Lab: [Installing and Configuring GitHub Copilot]
 
 ## Overview
 
 **Goal:**  
-Provide a brief description of the lab's purpose. Explain what participants will learn or accomplish by the end of the session.
+In this lab, you will learn how to install:
+- GitHub Copilot extension in Visual Studio Code
+- GitHub Copilot CLI
 
 **Estimated Duration:**  
-[Time in minutes/hours]
+[10-15 minutes]
 
 **Audience:**  
-[Target audience, e.g., developers, engineers, etc.]
+[developers]
 
 **Prerequisites:**  
-- List the necessary knowledge, tools, or setup participants should have before starting.  
-  - Example: Basic knowledge of GitHub, installed Visual Studio Code, access to GitHub Copilot, etc.
+- Installed Visual Studio Code, 
+- GitHub Copilot subscription.
 
 ---
 
@@ -25,9 +24,9 @@ Provide a brief description of the lab's purpose. Explain what participants will
 1. [Lab Objectives](#lab-objectives)
 2. [Environment Setup](#environment-setup)
 3. [Walkthrough](#walkthrough)
-    - [Step 1: Task/Feature Name](#step-1-taskfeature-name)
-    - [Step 2: Task/Feature Name](#step-2-taskfeature-name)
-    - [Step 3: Task/Feature Name](#step-3-taskfeature-name)
+    - [Step 1: Install GitHub Copilot in VS Code](#step-1-install-github-copilot-in-vs-code)
+    - [Step 2: Install GitHub CLI](#step-2-install-github-cli)
+    - [Step 3: Install GitHub CLI Copilot Extension](#step-3-install-github-cli-copilot-extension)
 4. [Verification](#verification)
 5. [Troubleshooting](#troubleshooting)
 6. [Conclusion](#conclusion)
@@ -36,10 +35,8 @@ Provide a brief description of the lab's purpose. Explain what participants will
 
 ## Lab Objectives
 
-List the learning objectives for this lab. Example:  
-- Understand how to leverage GitHub Copilot to auto-complete functions.  
-- Explore Copilot’s suggestions in specific scenarios, such as refactoring.  
-- Validate code suggestions using test-driven development.  
+- Install GitHub Copilot in Visual Studio Code.  
+- Install GitHub Copilot CLI.  
 
 ---
 
@@ -47,81 +44,98 @@ List the learning objectives for this lab. Example:
 
 ### Tools and Resources
 - GitHub Copilot enabled on your GitHub account.
-- [List IDEs/Editors], e.g., Visual Studio Code with GitHub Copilot extension installed.
-- Sample code repository: [Link to repository].
-
-### Steps to Prepare
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-repo/sample-code.git
-   cd sample-code
-   ```
-2. Install dependencies:  
-   ```bash
-   npm install
-   ```
-3. Open the project in your IDE:  
-   ```bash
-   code .
-   ```
+- Visual Studio Code installed.
+- Sample code repository: [GitHub Copilot](https://github.com/neudesic/learning-github-copilot).
 
 ---
 
 ## Walkthrough
 
-### Step 1: [Task/Feature Name]
+### Step 1: Install GitHub Copilot in VS Code
 **Description:**  
-Provide a short description of the task or feature being demonstrated.  
+You will install GitHub Copilot and GitHub Copilot Chat Visual Studio Code extensions.  
 
 **Instructions:**  
-1. Perform a specific action (e.g., write the first line of a function and observe Copilot’s suggestions).  
-2. Highlight what participants should notice or do with the suggestions.  
-3. (Optional) Include screenshots or code snippets:  
-
-   ```python
-   def example_function(param):
-       # Copilot should suggest a meaningful code snippet here
-   ```
+1. Open Visual Studio Code.
+2. Open Extensions view by clicking the Extensions icon in the Activity Bar.
+3. Enter 'GitHub Copilot' in the Search Extensions in Marketplace field
+4. Click Install button on the GitHub Copilot extension by GitHub
+4. Press Enter
 
 **Expected Outcome:**  
-Explain what participants should see or achieve.
+Both GitHub Copilot and GitHub Copilot Chat extensions are installed in Visual Studio Code.
 
 ---
 
-### Step 2: [Task/Feature Name]
-[Repeat the format for subsequent steps.]
+### Step 2: Install GitHub CLI
+**Description:**  
+You will install GitHub CLI (*gh*) in Windows using *winget*.  
+For Windows *gh* is available via [WinGet](https://github.com/microsoft/winget-cli), [scoop](https://scoop.sh/), [Chocolatey](https://chocolatey.org/), [Conda](https://github.com/cli/cli?tab=readme-ov-file#conda), [Webi](https://github.com/cli/cli?tab=readme-ov-file#webi), and as downloadable MSI.  
+For other platforms, see the instructions [here](https://github.com/cli/cli?tab=readme-ov-file#installation).
+
+**Instructions:**  
+1. Open Visual Studio Code shell (Ctrl-`).
+2. In the Visual Studio Code terminal window, enter the following command:
+   ```bash
+   winget install --id GitHub.cli
+   ```
+3. Once GitHub CLI installation completes, login to GitHub:
+   ```bash
+   gh auth login
+   ```
+   When prompted, select the following options by using the arrows keys and pressing Enter and follow the instructions:  
+   &emsp;? Where do you use GitHub? **GitHub.com**  
+   &emsp;? What is your preferred protocol for Git operations on this host? **HTTPS**  
+   &emsp;? Authenticate Git with your GitHub credentials? **Yes**  
+   &emsp;? How would you like to authenticate GitHub CLI? **Login with a web browser**  
+   &emsp;! First copy your one-time code: *XXXX-XXXX*  
+   &emsp;Press Enter to open https://github.com/login/device in your browser...  
+   &emsp;(this will navigate the default browser to the GitHub Device Activation page to authenticate and give necessary authorizations) 
+
+**Expected Outcome:**  
+GitHub CLI is installed and connected to your GitHub account.
+
+---
+
+### Step 3: Install GitHub CLI Copilot Extension
+**Description:**  
+You will install GitHub Copilot extension to GitHub CLI (*gh*).  
+
+**Instructions:**  
+1. In the Visual Studio Code terminal window, enter the following command:
+   ```bash
+   gh extension install github/gh-copilot
+
+   ```
+
+**Expected Outcome:**  
+GitHub Copilot extension to GitHub CLI is installed.
 
 ---
 
 ## Verification
 
-Describe how participants can verify that they successfully completed the lab. For example:  
-1. Run tests to validate functionality.  
+1. Test the installed Copilot extension to GitHub CLI.  
    ```bash
-   npm test
+   gh copilot --help
    ```
-2. Confirm output matches expected results.  
+2. Read the response and try suggested examples.  
 
 ---
 
 ## Troubleshooting
 
-- **Issue 1:** Description of the issue.  
-  **Solution:** Steps to resolve the issue.  
-
-- **Issue 2:** Description of another potential problem.  
-  **Solution:** Steps to resolve.  
+- **Issue 1:** Unable to authenticate with GitHub.  
+  **Solution:** Ensure you have GitHub account and you have entered correct credentials.
 
 ---
 
 ## Conclusion
 
 **Summary:**  
-Reiterate the main takeaways from the lab.  
+You have learned how to install GitHub Copilot in Visual Studio Code and GitHub CLI and have it installed on your computer.  
 
 **Next Steps:**  
-Provide follow-up resources or additional labs to explore.  
+- [Lesson 2: Development with GitHub Copilot](docs/lesson2.md)
 
 --- 
-
-This template can be customized for each session, ensuring consistency while maintaining flexibility for specific GitHub Copilot features.
