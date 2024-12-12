@@ -12,7 +12,7 @@ In this lab, you will learn how to install:
 [10-15 minutes]
 
 **Audience:**  
-[developers]
+[developers, ops, testers, etc.]
 
 **Prerequisites:**  
 - Installed Visual Studio Code, 
@@ -45,7 +45,6 @@ In this lab, you will learn how to install:
 ### Tools and Resources
 - GitHub Copilot enabled on your GitHub account.
 - Visual Studio Code installed.
-- Sample code repository: [GitHub Copilot](https://github.com/neudesic/learning-github-copilot).
 
 ---
 
