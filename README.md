@@ -7,7 +7,7 @@ Learn How to Effectively Use the GitHub Copilot Family of Tools.
 ## Getting Started
 
 1. Clone this repo.
-1. Install recommeneded extensions.
+1. Install recommended extensions.
 1. Review the lessons.
 1. Review the sample apps.
 
