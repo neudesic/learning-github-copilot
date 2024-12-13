@@ -20,7 +20,6 @@ Learn How to Effectively Use the GitHub Copilot Family of Tools.
 - [Lesson 5: DevOps with GitHub Copilot](docs/lesson5.md)
 - [Lesson 6: Implementing Code Improvements with GitHub Copilot](docs/lesson6.md)
 - [Lesson 7: Prompting Techniques](docs/lesson7.md)
-- [Lesson 8: Guided Project](docs/lesson8.md)
 
 ## Directory Structure
 
