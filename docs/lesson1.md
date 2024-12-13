@@ -1,5 +1,5 @@
 
-# Hands-On Lab: [Installing and Configuring GitHub Copilot]
+# Hands-On Lab: Installing and Configuring GitHub Copilot
 
 ## Overview
 
