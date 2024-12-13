@@ -30,9 +30,7 @@ In addition, you will learn how to use GitHub Copilot CLI to generate shell comm
     - [Step 2: Inline Chat](#step-2-inline-chat)
     - [Step 3: Chat View](#step-3-chat-view)
     - [Step 4: Using GitHub Copilot CLI](#step-4-using-github-copilot-cli)
-4. [Verification](#verification)
-5. [Troubleshooting](#troubleshooting)
-6. [Conclusion](#conclusion)
+4. [Conclusion](#conclusion)
 
 ---
 
