@@ -1,4 +1,4 @@
-# Hands-On Lab: Installing and Configuring GitHub Copilot
+# Lesson 1: Installing and Configuring GitHub Copilot
 
 ## Overview
 
