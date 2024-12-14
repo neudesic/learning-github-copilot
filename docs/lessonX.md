@@ -1,3 +1,5 @@
+<!-- markdownlint-disable -->
+
 Here's a markdown outline/template you can use for the hands-on labs developed for your Developer Productivity training. This structure ensures clarity, consistency, and ease of use for participants.
 
 ---
@@ -141,3 +143,5 @@ Provide follow-up resources or additional labs to explore.
 ---
 
 This template can be customized for each session, ensuring consistency while maintaining flexibility for specific GitHub Copilot features.
+
+<!-- markdownlint-enable -->
