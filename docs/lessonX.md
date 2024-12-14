@@ -57,15 +57,20 @@ List the learning objectives for this lab. Example:
 ### Steps to Prepare
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-repo/sample-code.git
    cd sample-code
    ```
+
 2. Install dependencies:
+
    ```bash
    npm install
    ```
+
 3. Open the project in your IDE:
+
    ```bash
    code .
    ```
@@ -106,9 +111,11 @@ Explain what participants should see or achieve.
 Describe how participants can verify that they successfully completed the lab. For example:
 
 1. Run tests to validate functionality.
+
    ```bash
    npm test
    ```
+
 2. Confirm output matches expected results.
 
 ---
