@@ -3,6 +3,7 @@
         "github.copilot",
         "github.copilot-chat",
         "visualstudioexptteam.vscodeintellicode",
-        "ms-vscode.vscode-speech"
+        "ms-vscode.vscode-speech",
+        "davidanson.vscode-markdownlint"
     ]
 }
