@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "lint": "markdownlint-cli2 '**/*.md' '#node_modules'"
+    "lint": "markdownlint-cli2 '**/*.md' '#node_modules'",
+    "lint:fix": "markdownlint-cli2 '**/*.md' '#node_modules' --fix"
   },
   "author": "",
   "license": "ISC",
