@@ -4,7 +4,7 @@
 ## Overview
 
 **Goal:**  
-By the end of this session, you will learn basics of how GitHub Copilot can help with generating and executing test cases.
+By the end of this session, you will learn how you can use GitHub Copilot to help with generating and executing test cases.
 
 **Estimated Duration:**  
 [Time in minutes/hours]
@@ -27,7 +27,7 @@ By the end of this session, you will learn basics of how GitHub Copilot can help
 2. [Environment Setup](#environment-setup)
 3. [Walkthrough](#walkthrough)
     - [Step 1: Generating Unit Tests](#step-1-generating-unit-tests)
-    - [Step 2: Generating Integration Tests](#step-2-generating-integration-tests)
+    - [Step 2: Generating Functional Tests with Dependencies](#step-2-generating-functional-tests-with-dependencies)
 4. [Troubleshooting](#troubleshooting)
 5. [Conclusion](#conclusion)
 
@@ -95,8 +95,7 @@ Use your skills and GitHub Copilot to resolve the issue by varying your prompts 
 
 ---
 
-### Step 2: Generating Integration Tests
-
+### Step 2: Generating Functional Tests With Dependencies
 **Description:**  
 In this step, you will use GitHub Copilot to create an new integration tests project for a service and execute it.  
 
@@ -104,7 +103,7 @@ In this step, you will use GitHub Copilot to create an new integration tests pro
 
 1. In VS Code, open file **src/Basket.API/Grpc/BasketService.cs**
 2. Open Chat View by pressing Ctrl-Alt-I.
-3. Ask GitHub Copilot help with creating a new project by entering the prompt "how di I create Basket.FunctionalTests test project for testing this service?". In a few moments, GitHub Copilot will respond with a full set of instructions to create the new project. Observe that mocks for the dependencies are generated as well!
+3. Ask GitHub Copilot help with creating a new project by entering the prompt "how do I create Basket.FunctionalTests test project for testing this service?". In a few moments, GitHub Copilot will respond with a full set of instructions to create the new project. Observe that mocks for the dependencies are generated as well!
 4. Follow the instructions, usually grouped in the 4 steps:  
 &emsp;- Create a new test project (change current directory to **tests/** before executing the commands)  
 &emsp;- Update the project file to include packages without specifying specific versions (remove coverlet.collector if referenced!)  
