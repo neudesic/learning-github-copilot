@@ -1,0 +1,4 @@
+default: true
+extends: null
+# disable MD013/line-length
+MD013: false

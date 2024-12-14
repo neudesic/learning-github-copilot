@@ -13,9 +13,9 @@ Learn How to Effectively Use the GitHub Copilot Family of Tools.
 
 ### Lessons
 
-- [Lesson 1: Installing and Configuring GitHub Copilot](docs/lesson1.md)
-- [Lesson 2: Development with GitHub Copilot](docs/lesson2.md)
-- [Lesson 3: Testing with GitHub Copilot](docs/lesson3.md)
+- [Lesson 1: Installing and Configuring GitHub Copilot](docs/1-installing-copilot.md)
+- [Lesson 2: Development with GitHub Copilot](docs/2-development-with-copilot.md)
+- [Lesson 3: Testing with GitHub Copilot](docs/3-testing-with-copilot.md)
 - [Lesson 4: Creating Documentation with GitHub Copilot](docs/lesson4.md)
 - [Lesson 5: DevOps with GitHub Copilot](docs/lesson5.md)
 - [Lesson 6: Implementing Code Improvements with GitHub Copilot](docs/lesson6.md)
