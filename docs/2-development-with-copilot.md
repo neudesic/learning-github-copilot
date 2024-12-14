@@ -20,6 +20,7 @@ By the end of this lab, you will have enhanced the `OrderAggregate` with a compr
 
 **Prerequisites:**  
 To successfully complete this lab, ensure you have the following:  
+
 - **Access to GitHub Copilot:** You must have an active GitHub Copilot subscription.
 - **Visual Studio Code (VS Code):** Installed and set up for development.
 - **GitHub Copilot Extension for VS Code:** Installed and properly configured in VS Code.
@@ -30,11 +31,12 @@ To successfully complete this lab, ensure you have the following:
 
 ## Copilot Chat
 
-GitHub Copilot Chat provides an interactive way to engage with Copilot, offering more space and deeper ways to interact with your code. With the Chat View, you can ask natural language questions about the current context in your editor, request code suggestions, and optimize your code with Copilot's help.
+GitHub Copilot Chat provides an interactive way to engage with Copilot, offering more space and deeper ways to interact with your code. With the Chat View, you can ask natural language questions about the current context in your editor, request code suggestions, and optimize your code with Copilot's help.  
 
-1. Open the Copilot Chat pane in Visual Studio Code by clicking the Copilot icon in the sidebar or using the command palette (`Ctrl+Alt+I`). In the chat settings, ensure the model is set to GPT 4o. If it’s not already selected, switch the model to GPT 4o in the Copilot settings.   
->**Note**: We will use this model for this lesson. In later lessons we will experiment with utilizing other models for various tasks such as testing and documentation.  
-2. In the Chat View prompt, you can use natural language to ask about current context (files open in the editor)
+1. Open the Copilot Chat pane in Visual Studio Code by clicking the Copilot icon in the sidebar or using the command palette (`Ctrl+Alt+I`). In the chat settings, ensure the model is set to GPT 4o. If it’s not already selected, switch the model to GPT 4o in the Copilot settings.  
+   >**Note**: We will use this model for this lesson. In later lessons we will experiment with utilizing other models for various tasks such as testing and documentation.  
+2. In the Chat View prompt, you can use natural language to ask about current context (files open in the editor)  
+
    - For example, browse to `src/Ordering.API/Apis` folder and open 'OrdersApi.cs' file.
    - Enter "how does this service work?" and press Enter.
    - Observe the GitHub Copilot response.
@@ -43,46 +45,55 @@ GitHub Copilot Chat provides an interactive way to engage with Copilot, offering
       &emsp;For example, enter "how can I optimize logging in this code?" and press Enter.
    - Observe the suggested code changes.
 
-7. (Optional) You can copy parts of or the whole suggested code and paste in the editor manually, or click appropriate icon above the code view to Insert at Cursor, Apply in Editor, or just copy to clipboard.
-8. (Optional) Save the file.
+3. (Optional) You can copy parts of or the whole suggested code and paste in the editor manually, or click appropriate icon above the code view to Insert at Cursor, Apply in Editor, or just copy to clipboard.
+4. (Optional) Save the file.
 
 **Additional Notes**
 For more details on these, see [Getting started with prompts for Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/guides-on-using-github-copilot/getting-started-with-prompts-for-copilot-chat)
 
 ## Inline Chat  
+
 Now, let’s start by enhancing the OrderingService by leveraging inline chat feature. Our task is to add a method for calculating order totals, considering discounts and taxes.  
 
 1. In Visual Studio Code, navigate to the `samples/eshop/src/Ordering.Domain/AggregatesModel/OrderAggregate` folder. Open the `Order` class file for modification.  
 2. Before we add a method named CalculatedTotal that includes taxes, we need to rename existing GetTotal method to GetSubTotal  
-   Use GitHub Copilot to rename the `GetTotal` method to `GetSubTotal`. 
+   Use GitHub Copilot to rename the `GetTotal` method to `GetSubTotal`.
    - Scroll to the bottom of the Order class and select `GetTotal` public member
    - Open inline Co-pilot Prompt with (`Ctrl+I`), and enter the following prompt:  
 
      ```plaintext
      Rename symbol `GetTotal` to `GetSubTotal`
      ```
+
 3. In the inline chat, enter the following prompt:  
+
      ```plaintext
      Add a new public member named GetTotal that is calculated as sum of order items and a new public property of type decimal named taxes and subtracts the sum of items in a public property of type List<decimal> named Discounts 
      ```  
-4. Now lets update the logic for discount to use the Discount property of `OrderItem` class. 
-   - In the inline chat, enter the following prompt:   
+
+4. Now lets update the logic for discount to use the Discount property of `OrderItem` class.
+   - In the inline chat, enter the following prompt:
+
    ```plaintext
      Add an empty public member named GetOrderDiscounts that returns a decimal
      ```
+
    - Click Accept of the inline chat to close the window.  
    - delete the return statement
    - Observe "ghost text" suggested by GitHub Copilot.
    - You can accept by pressing Tab key, or accept part word by word by using Ctrl-Arrow keys. Press Tab to accept the code.  
    - Open Inline chat again (`Ctrl+I`), enter the following prompt
+
    ```plaintext
       Update `GetOrderDiscounts` method to use use `Discount` property in OrderItem
    ```
+
    - This would replace the logic to calculate the order discount by adding up the discounts on each line item
    - Finally, in the `GetTotal` method, if you delete the value assigned to `totalDiscounts` variable, you should see the new `GetOrderDiscounts` method. Enter Tab to accept changes
 
 ## Copilot Edits
-Using inline chat is very helpful in make quick updates on the go as you're working thru a user story or resolving a bug. However, you might've encountered some challenges with context especially when changes involve large code changes.   
+
+Using inline chat is very helpful in make quick updates on the go as you're working thru a user story or resolving a bug. However, you might've encountered some challenges with context especially when changes involve large code changes.
 
 In this section we will repeat the previous steps using Copilot Edits to showcase how we could accomplish the same results more efficiently.  
 
@@ -92,24 +103,31 @@ In this section we will repeat the previous steps using Copilot Edits to showcas
     ![copilot edit](./images/copilot-edits.png)
 4. Click `+Add Files` and select Order.cs to add the `Order` class to the context
 5. Now add the following prompt to refactor the `GetTotal` public member to include taxes and discounts in calculation of order total
+
 ```plaintext
-Refactor the GetTotal method to include taxes and discounts. get the taxes from a new public property named Taxes and the discounts is sum of discount property for each orderitem in the order
+Refactor the GetTotal method to include taxes and discounts. get the taxes from a new public property named Taxes and the discounts is sum of discount property for each `OrderItem` in the order
 ```  
-You will notice that instead of generating code snippets like `Inline Chat`, copilot edits parses the entire Order class and modifies the logic accordingly. 
+
+You will notice that instead of generating code snippets like `Inline Chat`, copilot edits parses the entire Order class and modifies the logic accordingly.
 
 ## Copilot CLI
+
 **Description:**  
 GitHub Copilot CLI offers an efficient way to interact with Copilot directly from the command line. With Copilot CLI, you can generate shell commands and automate tasks with ease, making it a powerful tool for developers who prefer working in a terminal environment.
 
 1. In VS Code, press Ctrl+\` to open a new terminal if necessary.  
 2. In the terminal window enter the following command:  
+
    ```bash
    gh copilot --help
    ```
+
 3. Observe the command usage help and try some of the commands, e.g.:
+
    ```bash
    gh copilot suggest "list commits in the last 3 days"
    ```
+
    When prompted:  
    ? What kind of command can I help you with?  
    &gt; generic shell command  
@@ -118,7 +136,7 @@ GitHub Copilot CLI offers an efficient way to interact with Copilot directly fro
    press Enter to select generic shell command
 
    When prompted:  
-   ? Select an option  [Use arrows to move, type to filter]  
+   ? Select an option  (Use arrows to move, type to filter)
    &gt; Copy command to clipboard  
    &emsp;Explain command  
    &emsp;Execute command  
@@ -133,6 +151,7 @@ GitHub Copilot CLI offers an efficient way to interact with Copilot directly fro
 
 **Summary:**  
 You have learned basics of several major features of GitHub Copilot, including:  
+
 - Autocomplete
 - Inline Chat
 - Copilot Chat
@@ -141,4 +160,4 @@ You have learned basics of several major features of GitHub Copilot, including:
 
 **Next Steps:**
 
-- [Lesson 3: Testing with GitHub Copilot](docs/3-testing-with-copilot.md)
+- [Lesson 3: Testing with GitHub Copilot](3-testing-with-copilot.md)
