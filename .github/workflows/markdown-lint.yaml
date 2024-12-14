@@ -1,0 +1,26 @@
+name: Lint all markdown files
+
+on:
+  push:
+    paths:
+      - "*.md"
+      - "**/*.md"
+    branches: [main] # Trigger on pushes to the main branch
+  pull_request:
+    paths:
+      - "*.md"
+      - "**/*.md"
+    branches: [main] # Also trigger on pull requests to main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 # Checkout the repository
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Markdown lint
+        run: |
+          npm install -g markdownlint-cli  # Install markdownlint-cli
+          markdownlint *.md **/*.md
