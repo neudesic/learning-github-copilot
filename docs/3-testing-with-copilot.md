@@ -99,6 +99,7 @@ Use your skills and GitHub Copilot to resolve the issue by varying your prompts 
 ---
 
 ### Step 2: Generating Unit Tests With Dependencies
+
 **Description:**  
 In this step, you will use GitHub Copilot to create an new integration tests project for a service and execute it.  
 
