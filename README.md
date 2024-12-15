@@ -16,10 +16,10 @@ Learn How to Effectively Use the GitHub Copilot Family of Tools.
 - [Lesson 1: Installing and Configuring GitHub Copilot](docs/1-installing-copilot.md)
 - [Lesson 2: Development with GitHub Copilot](docs/2-development-with-copilot.md)
 - [Lesson 3: Testing with GitHub Copilot](docs/3-testing-with-copilot.md)
-- [Lesson 4: Creating Documentation with GitHub Copilot](docs/lesson4.md)
-- [Lesson 5: DevOps with GitHub Copilot](docs/lesson5.md)
-- [Lesson 6: Implementing Code Improvements with GitHub Copilot](docs/lesson6.md)
-- [Lesson 7: Prompting Techniques](docs/lesson7.md)
+- [Lesson 4: Creating Documentation with GitHub Copilot](docs/4-creating-documentation-with-copilot.md)
+- [Lesson 5: DevOps with GitHub Copilot](docs/5-devops-with-copilot.md)
+- [Lesson 6: Implementing Code Improvements with GitHub Copilot](docs/6-code-improvements-with-copilot.md)
+- [Lesson 7: Prompting Techniques](docs/7-prompting-techniques.md)
 
 ## Directory Structure
 
