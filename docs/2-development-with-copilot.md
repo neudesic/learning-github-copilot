@@ -112,7 +112,6 @@ You will notice that instead of generating code snippets like `Inline Chat`, cop
 
 ## Copilot CLI
 
-**Description:**  
 GitHub Copilot CLI offers an efficient way to interact with Copilot directly from the command line. With Copilot CLI, you can generate shell commands and automate tasks with ease, making it a powerful tool for developers who prefer working in a terminal environment.
 
 1. In VS Code, press Ctrl+\` to open a new terminal if necessary.  
@@ -147,9 +146,8 @@ GitHub Copilot CLI offers an efficient way to interact with Copilot directly fro
    You can select any of the listed options using up-down arrow keys and pressing Enter.
    Try few different options and select Exit to end.
 
-## Conclusion
+## Summary
 
-**Summary:**  
 You have learned basics of several major features of GitHub Copilot, including:  
 
 - Autocomplete
