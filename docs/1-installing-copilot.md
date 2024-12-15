@@ -153,6 +153,6 @@ You have learned how to install GitHub Copilot in Visual Studio Code and GitHub 
 
 **Next Steps:**
 
-- [Lesson 2: Development with GitHub Copilot](docs/lesson2.md)
+- [Lesson 2: Development with GitHub Copilot](2-development-with-copilot.md)
 
 ---

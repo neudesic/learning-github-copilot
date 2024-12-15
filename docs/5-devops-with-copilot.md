@@ -180,4 +180,4 @@ Throughout this lab, you've gained practical experience in using GitHub Copilot 
 
 **Next Steps:**
 
-- [Lesson 6: Testing with GitHub Copilot](6-testing-with-copilot.md)
+- [Lesson 6: Best practices with GitHub Copilot](6-best-practices-with-copilot)

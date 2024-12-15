@@ -19,7 +19,7 @@ Learn How to Effectively Use the GitHub Copilot Family of Tools.
 - [Lesson 4: Creating Documentation with GitHub Copilot](docs/4-creating-documentation-with-copilot.md)
 - [Lesson 5: DevOps with GitHub Copilot](docs/5-devops-with-copilot.md)
 - [Lesson 6: Best practices with GitHub Copilot](docs/6-best-practices-with-copilot.md)
-- [Lesson 7: Hot keys and commands](docs/7-prompting-techniques.md)
+- [Lesson 7: Hot keys and commands](docs/7-hot-keys-and-commands.md)
 
 ## Directory Structure
 
