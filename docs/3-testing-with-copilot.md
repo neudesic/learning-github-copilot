@@ -4,13 +4,16 @@
 ## Overview
 
 **Goal:**  
-By the end of this session, you will learn how you can use GitHub Copilot to help with generating and executing test cases.
+By the end of this session, you will learn how you can use GitHub Copilot  Copilot Edits (preview) and other features to enhance test projects by creating new unit and integration test cases.  
+You will create unit tests for the BasketItem class in the Basket.UnitTests, as well as cover additional scenario in Catalog.FunctionalTests projects.
+
+By the end of this lab, you will have enhanced two test projects in the solution and gained practical experience with Copilot Edits (preview) and other features.
 
 **Estimated Duration:**  
-[Time in minutes/hours]
+30-45 minutes
 
 **Audience:**  
-[developers, ops, testers, etc.]
+Developers, QA testers, DevOps engineers, and Technical Writers.  
 
 **Prerequisites:**  
 
@@ -70,7 +73,7 @@ By the end of this session, you will learn how you can use GitHub Copilot to hel
 ### Step 1: Generating Unit Tests
 
 **Description:**  
-In this step, you will create a new unit tests class with some simple test cases.  
+In this step, you will create a new unit tests class with some simple test cases for BasketItem class.  
 
 **Instructions:**  
 
@@ -104,7 +107,7 @@ Use your skills and GitHub Copilot to resolve the issue by varying your prompts 
 ### Step 2: Working with Integration Tests
 
 **Description:**  
-In this step, you will work with GitHub Copilot to add a test case to the existing .  
+In this step, you will work with GitHub Copilot to add a test case to the existing Catalog.API integration tests suite.  
 
 **Instructions:**  
 
@@ -149,7 +152,7 @@ Use your skills and GitHub Copilot to resolve the issue by varying your prompts 
 ## Conclusion
 
 **Summary:**  
-In this lab you should have learned some basic means you can use GitHub Copilot for unit and integration testing.  
+In this lab you should have learned and gained practical experience with Copilot Edits (preview) and other features you can use with different types of testing cases.  
 
 **Next Steps:**  
 
