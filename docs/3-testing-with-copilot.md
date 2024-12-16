@@ -27,7 +27,7 @@ By the end of this session, you will learn how you can use GitHub Copilot to hel
 2. [Environment Setup](#environment-setup)
 3. [Walkthrough](#walkthrough)
     - [Step 1: Generating Unit Tests](#step-1-generating-unit-tests)
-    - [Step 2: Generating Unit Tests with Dependencies](#step-2-generating-unit-tests-with-dependencies)
+    - [Step 2: Working with Integration Tests](#step-2-working-with-integration-tests)
 4. [Troubleshooting](#troubleshooting)
 5. [Conclusion](#conclusion)
 
