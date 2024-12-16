@@ -56,7 +56,6 @@ In this step, we will use Copilot Chat add comments for all public members in th
 
 ## Project Documentation
 
-**Description:**  
 In this step, we will use Copilot Edits to generate project documentation.
 
 1. In Visual Studio Code, navigate to the `samples/eshop/src/Ordering.API` folder.
@@ -82,7 +81,6 @@ In this step, we will use Copilot Edits to generate project documentation.
 
 ## API Documentation
 
-**Description:**  
 In this step, we will use Copilot Edits to generate API documentation for `api/orders` resource.
 
 1. In Visual Studio Code, navigate to the `samples/eshop/src/Ordering.API` folder.
@@ -112,7 +110,12 @@ Generate a readme markdown file for the project by entering the following prompt
 
 10. Observe the content of the file. You can open the file preview by pressing `Ctrl-Shift-V`.
 
-**Additional Notes** It is important to review and ensure documentation generated is accurate and made according to the responsible AI principles. e.g. [Responsible AI with GitHub Copilot](https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/). Perform due diligence when generating documentation using Copilot and always perform peer review before publishing content.
+### Explore Further
+
+Take your learning to the next level with these optional exercises:
+
+1. Try asking Copilot Edits to generate API documentation in HTML.
+2. Next ask copilot to generate sample code in multiple languages (C#, Java, Go, python, etc.) to consume these APIs. Make sure the code snippets are generated for all methods in the resource.
 
 ## Troubleshooting
 
