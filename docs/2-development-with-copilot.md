@@ -98,7 +98,7 @@ Using inline chat is very helpful in make quick updates on the go as you're work
 In this section we will repeat the previous steps using Copilot Edits to showcase how we could accomplish the same results more efficiently.  
 
 1. Undo all changes made to `Order` class
-2. Open chat by clicking on the Copilot button at the bottom right hand side corner, this will open up a Copilot menu, select Github Copilot chat
+2. Open chat by clicking on the Copilot button at the bottom right hand side corner, this will open up a Copilot menu, select GitHub Copilot chat
 3. Select the Copilot Edits button (see below)  at the top left corner of the chat window:  
     ![copilot edit](./images/copilot-edits.png)
 4. Click `+Add Files` and select Order.cs to add the `Order` class to the context
