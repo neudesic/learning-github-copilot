@@ -62,9 +62,16 @@ You will install GitHub Copilot and GitHub Copilot Chat Visual Studio Code exten
 
 1. Open Visual Studio Code.
 2. Open Extensions view by clicking the Extensions icon in the Activity Bar.
-3. Enter 'GitHub Copilot' in the Search Extensions in Marketplace field
-4. Click Install button on the GitHub Copilot extension by GitHub
-5. Press Enter
+3. Enter 'GitHub Copilot' in the Search Extensions in Marketplace field.
+4. Click Install button on the **GitHub Copilot** extension by GitHub.
+   Wait until GitHub Copilot is installed.  
+   It will also install **GitHub Copilot Chat** by GitHub extension.
+5. While the Extensions view is still open, find **GitHub Copilot for Azure** by Microsoft and click Install.  
+   With this extension installed, you can ask @azure questions about Azure services and get help with tasks related to Azure.  
+6. (Optional) In the Search Extensions in Marketplace field, enter "Vision", find  **Vision for Copilot Preview** by Microsoft and click Install.  
+   This extension enhances chat interactions by enabling users to leverage advanced vision capabilities, such as including images with your prompts to GitHub (a picture is worth a thousand words?).  
+7. (Optional) In the Search Extensions in Marketplace field, enter "Voice", find  **VS Code Speech** by Microsoft and click Install.  
+   This extension adds speech-to-text and text-to-speech capabilities to Visual Studio Code in general, but can also let you interact with GitHub Copilot using natural language speech.  
 
 **Expected Outcome:**  
 Both GitHub Copilot and GitHub Copilot Chat extensions are installed in Visual Studio Code.
