@@ -153,6 +153,6 @@ In this lab you should have learned some basic means you can use GitHub Copilot 
 
 **Next Steps:**  
 
-- [Lesson 4: Creating Documentation with GitHub Copilot](docs/4-creating-documentation-with-copilot.md)
+- [Lesson 4: Creating Documentation with GitHub Copilot](4-creating-documentation-with-copilot.md)
 
 ---
