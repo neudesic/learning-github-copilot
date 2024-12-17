@@ -37,3 +37,22 @@ When you use GitHub Copilot, it's important to provide the right context for the
 ## Using GitHub Copilot Chat and Edits
 
 1. Make heavy use of the chat participants and slash commands to guide Copilot in the right direction.
+
+## Custom Instructions to GitHub Copilot
+
+1. Different models at different times can generate code that does not take every details in your solution, depending on the current context and model capacity.
+
+   For example, open the file **src/Basket.API/Grpc/BasketService.cs** and press Ctrl-Alt-I to open Chat view and ask to `create unit tests for this class` and observe the generated code.  
+   In most cases, for .NET solutions, it will generate code using `Moq` library for mocking dependencies.  
+
+2. You can create a custom instructions file to automatically add information to all questions you ask Copilot.  
+   To this end, create a file **.github/copilot-instructions.md** and add and instruction like `When mocking dependencies in tests, we use NSubstitute.`.  
+   Close the file and retry the question. Observe, two things:  
+   - GitHub Copilot used two references, the file in focus and the custom instructions file.  
+   - Dependencies are mocked using `NSubstitute` library.  
+
+3. Since custom instructions consume model tokens, you should try to write [effective instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot#writing-effective-custom-instructions).  
+
+4. in VS Code, you can temporary switch custom instructions on and off by opening the Setting editor (by using shortcut `Ctrl + ,`, (Linux/Windows) / `Command + ,` (Mac).  
+
+   Type `instruction file` in the search box and select or clear the **Use Instruction Files** checkbox.
