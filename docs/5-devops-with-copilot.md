@@ -39,16 +39,17 @@ To successfully complete this lab, ensure you have the following:
 In this step we will generate a build pipeline for the `OrdersApi` using GitHub Actions.  
 
 1. In Visual Studio Code, navigate to the `samples/eshop/src/Ordering.API` folder.
-2. Open the Copilot Edits pane in Visual Studio Code by clicking the Copilot icon in the sidebar or using the command palette (`Ctrl+Shift+I`). In the chat settings, Lets select `Claude 3.5 Sonnet (Preview)` model for API documentation.
+2. Open the Copilot Edits pane in Visual Studio Code by clicking the Copilot icon in the sidebar or using the command palette (`Ctrl+Shift+I`).  In the chat settings, let's select `Claude 3.5 Sonnet (Preview)` model for API documentation.
 3. Open `Orders.Api.cs` and `Ordering.API.csproj` files.
-4. Next we will develop a GitHub action that will create a YAML file to generates a build for Orders API. Enter the following prompt in the chat:
+4. Next we will develop a GitHub action that will create a YAML file to generate a build for Orders API. Enter the following prompt in the chat:
 
     ```plaintext
     add a github action to generate build for Ordering.API and name it `ordering-api-build.yml` and place it under eshop/.github/workflows folder
     ```
 
-5. Observe the content of the file. You can open the file preview by pressing `Ctrl-Shift-V`.
-6. This looks good but we would like to parameterize some of the elements in this pipeline (for example: the artifact location). Use the following prompt to parameterize the GitHub Action:
+5. Observe the content of the file.  
+6. This looks good but we would like to parameterize some of the elements in this pipeline (for example: the artifact location).  
+Use the following prompt to parameterize the GitHub Action:
 
     ``` plaintext
     parameterize the workflow so it takes inputs such as the branch name to build, the build configuration (e.g., Debug or Release). Use on: workflow_dispatch to accept these inputs and include steps for checking out the code, running the build using a script, and uploading the build artifacts. The workflow should use environment variables derived from the inputs to control the build process
@@ -107,8 +108,8 @@ In the previous steps, we've developed workflows to create a build and deploy th
     Create a dockerfile for Ordering.API.csproj and add docker support for the project. Save the dockerfile in the project folder         
     ```
 
-5. Confirm that co-pilot created a Dockerfile, a .dockerignore file.
-6. Next create a build Image pipeline that creates an image using the Dockerfile and publishes the image to Azure container Registry. Check to make sure the project file and the docker files are still in the Co-pilot edits' working set. Enter the following in Co-pilot edits chat:
+5. Confirm that Copilot created a Dockerfile, a .dockerignore file.
+6. Next create a build Image pipeline that creates an image using the Dockerfile and publishes the image to Azure Container Registry. Check to make sure the project file and the docker files are still in the Copilot Edits' working set. Enter the following in Copilot Edits' chat:
 
     ```plaintext
     generate a github action workflow to build the docker image for Ordering.API using the Dockerfile and publish the image to Azure container registry. Parameterize the workflow file for all azure inputs and build configurations. save it in a file named ordering-api-build-image.yml under eshop/.github/workflows folder
@@ -165,11 +166,11 @@ In the previous steps, we've worked directly with GitHub Copilot to create a bui
 
 1. In Visual Studio Code, navigate to the `samples/eshop` folder.
 2. Open the Copilot Chat using the command shortcut (`Ctrl+Alt+I`). Keep the `Claude 3.5 Sonnet (Preview)` model selected.
-3. In Chat view, type "@azure how can you help with Azure?" or similar prompt and press Enter.  
+3. In Chat view, type `@azure how can you help with Azure?` or similar prompt and press Enter.  
   GitHub will response with a sample list of the services it can help with.
-4. Next, type "@azure which subscriptions I can use?" and press Enter.  
+4. Next, type `@azure which subscriptions I can use?` and press Enter.  
   The assistant will reply with available subscriptions, if any.
-5. Next, type "@azure can you create the files I need to deploy this solution?" and press Enter.  
+5. Next, type `@azure can you create the files I need to deploy this solution?` and press Enter.  
   The Assistant will suggest requested files, such as .bicep file for AKS cluster and manifests for deployments and services, as well as the steps to deploy them.  
 6. Review the files and suggested steps.
 

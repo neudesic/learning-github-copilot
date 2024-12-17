@@ -9,10 +9,10 @@ In this lab, you will learn how to install:
 - GitHub Copilot CLI
 
 **Estimated Duration:**  
-[10-15 minutes]
+10-15 minutes
 
 **Audience:**  
-[developers, ops, testers, etc.]
+ Developers, QA testers, DevOps engineers, and Technical Writers.
 
 **Prerequisites:**
 
