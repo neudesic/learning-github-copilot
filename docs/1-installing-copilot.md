@@ -5,7 +5,7 @@
 **Goal:**  
 In this lab, you will learn how to install:
 
-- GitHub Copilot extension in Visual Studio Code
+- GitHub Copilot extensions in Visual Studio Code
 - GitHub Copilot CLI
 
 **Estimated Duration:**  
@@ -19,59 +19,39 @@ In this lab, you will learn how to install:
 - Installed Visual Studio Code,
 - GitHub Copilot subscription.
 
----
+## Install GitHub Copilot in VS Code
 
-## Table of Contents
-
-1. [Lab Objectives](#lab-objectives)
-2. [Environment Setup](#environment-setup)
-3. [Walkthrough](#walkthrough)
-   - [Step 1: Install GitHub Copilot in VS Code](#step-1-install-github-copilot-in-vs-code)
-   - [Step 2: Install GitHub CLI](#step-2-install-github-cli)
-   - [Step 3: Install GitHub CLI Copilot Extension](#step-3-install-github-cli-copilot-extension)
-4. [Verification](#verification)
-5. [Troubleshooting](#troubleshooting)
-6. [Conclusion](#conclusion)
-
----
-
-## Lab Objectives
-
-- Install GitHub Copilot in Visual Studio Code.
-- Install GitHub Copilot CLI.
-
----
-
-## Environment Setup
-
-### Tools and Resources
-
-- GitHub Copilot enabled on your GitHub account.
-- Visual Studio Code installed.
-
----
-
-## Walkthrough
-
-### Step 1: Install GitHub Copilot in VS Code
-
-**Description:**  
-You will install GitHub Copilot and GitHub Copilot Chat Visual Studio Code extensions.
-
-**Instructions:**
+First, we will install GitHub Copilot and its corresponding Visual Studio Code extensions.
 
 1. Open Visual Studio Code.
-2. Open Extensions view by clicking the Extensions icon in the Activity Bar.
-3. Enter 'GitHub Copilot' in the Search Extensions in Marketplace field.
+2. Open Extensions view by clicking the Extensions icon in the Activity Bar
+3. Enter 'GitHub Copilot' in the Search Extensions in Marketplace.
 4. Click Install button on the **GitHub Copilot** extension by GitHub.
    Wait until GitHub Copilot is installed.  
    It will also install **GitHub Copilot Chat** by GitHub extension.
-5. While the Extensions view is still open, find **GitHub Copilot for Azure** by Microsoft and click Install.  
-   With this extension installed, you can ask @azure questions about Azure services and get help with tasks related to Azure.  
-6. (Optional) In the Search Extensions in Marketplace field, enter "Vision", find  **Vision for Copilot Preview** by Microsoft and click Install.  
-   This extension enhances chat interactions by enabling users to leverage advanced vision capabilities, such as including images with your prompts to GitHub (a picture is worth a thousand words?).  
-7. (Optional) In the Search Extensions in Marketplace field, enter "Voice", find  **VS Code Speech** by Microsoft and click Install.  
-   This extension adds speech-to-text and text-to-speech capabilities to Visual Studio Code in general, but can also let you interact with GitHub Copilot using natural language speech.  
+5. Next, we will install the following Copilot Extensions that are needed for the remainder of the training:
+      - **Install GitHub Copilot for Azure**  
+         - While in the Extensions view, search for **GitHub Copilot for Azure** by Microsoft.  
+         - Click the **Install** button.  
+         - With this extension, you can ask **@azure** questions about Azure services and receive assistance with Azure-specific tasks.  
+      - **Install VS Code Speech (Optional)**  
+         - In the **Search Extensions in Marketplace** field, type **Voice**.  
+         - Locate the **VS Code Speech** extension by Microsoft and click the **Install** button.  
+         - This extension adds speech-to-text and text-to-speech functionality, allowing you to interact with GitHub Copilot using natural language speech.
+      - **Install Vision for Copilot Preview (Optional)**  
+         - In the **Search Extensions in Marketplace** field, type **Vision**.  
+         - Locate the **Vision for Copilot Preview** extension by Microsoft and click the **Install** button.  
+         - This extension enables advanced vision capabilities, allowing you to include images in your prompts for enhanced interactions with GitHub Copilot.
+         - >**Note**: This feature requires an Open AI Service and access credentials.
+         - After installing the extension, update your Visual Studio Code settings:  
+            - Open the Command Palette (`Ctrl+Shift+P`) and type **Preferences: Open Settings (JSON)**.  
+            - Add the following parameters to your `settings.json` file:  
+
+                  ```json
+                  "copilot.vision.azureEndpoint": "<your instructor will provide an endpoint>",  
+                  "copilot.vision.provider": "AzureOpenAI",  
+                  "copilot.vision.model": "gpt-4o"
+                  ```  
 
 **Expected Outcome:**  
 Both GitHub Copilot and GitHub Copilot Chat extensions are installed in Visual Studio Code.
@@ -90,17 +70,13 @@ For other platforms, see the instructions [here](https://github.com/cli/cli?tab=
 1. Open Visual Studio Code shell (Ctrl-`).
 2. In the Visual Studio Code terminal window, enter the following command:
 
-   ```bash
-   winget install --id GitHub.cli
-   ```
+      winget install --id GitHub.cli  
 
 3. Once GitHub CLI installation completes, login to GitHub:
 
-   ```bash
-   gh auth login
-   ```
+      gh auth login
 
-   When prompted, select the following options by using the arrows keys and pressing Enter and follow the instructions:
+4. When prompted, select the following options by using the arrows keys and pressing Enter and follow the instructions:
 
    - Where do you use GitHub? **GitHub.com**
    - What is your preferred protocol for Git operations on this host? **HTTPS**
@@ -124,10 +100,7 @@ You will install GitHub Copilot extension to GitHub CLI (_gh_).
 
 1. In the Visual Studio Code terminal window, enter the following command:
 
-   ```bash
-   gh extension install github/gh-copilot
-
-   ```
+      gh extension install github/gh-copilot
 
 **Expected Outcome:**  
 GitHub Copilot extension to GitHub CLI is installed.
@@ -138,9 +111,7 @@ GitHub Copilot extension to GitHub CLI is installed.
 
 1. Test the installed Copilot extension to GitHub CLI.
 
-   ```bash
-   gh copilot --help
-   ```
+      gh copilot --help
 
 2. Read the response and try suggested examples.
 
