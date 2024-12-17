@@ -159,6 +159,20 @@ In this step we will deploy the `Ordering.API` image to AKS cluster
 - **Continuous Improvement**: Regularly review and update workflows based on feedback and best practices.
 - **Error Handling**: Implement error handling to manage failures gracefully.
 
+## Introduction to GitHub Copilot for Azure  
+
+In the previous steps, we've worked directly with GitHub Copilot to create a build and deploy that build to a Azure App Service. In this part of the lab we will explore how GitHub Copilot for Azure Chat Assistant can help.
+
+1. In Visual Studio Code, navigate to the `samples/eshop` folder.
+2. Open the Copilot Chat using the command shortcut (`Ctrl+Alt+I`). Keep the `Claude 3.5 Sonnet (Preview)` model selected.
+3. In Chat view, type "@azure how can you help with Azure?" or similar prompt and press Enter.  
+  GitHub will response with a sample list of the services it can help with.
+4. Next, type "@azure which subscriptions I can use?" and press Enter.  
+  The assistant will reply with available subscriptions, if any.
+5. Next, type "@azure can you create the files I need to deploy this solution?" and press Enter.  
+  The Assistant will suggest requested files, such as .bicep file for AKS cluster and manifests for deployments and services, as well as the steps to deploy them.  
+6. Review the files and suggested steps.
+
 ## Summary
 
 You have learned how to leverage GitHub Copilot for various DevOps tasks, including:
