@@ -159,7 +159,7 @@ In this step we will deploy the `Ordering.API` image to AKS cluster
 - **Continuous Improvement**: Regularly review and update workflows based on feedback and best practices.
 - **Error Handling**: Implement error handling to manage failures gracefully.
 
-## Introduction to GitHub Copilot for Azure Chat Assistant  
+## Introduction to GitHub Copilot for Azure  
 
 In the previous steps, we've worked directly with GitHub Copilot to create a build and deploy that build to a Azure App Service. In this part of the lab we will explore how GitHub Copilot for Azure Chat Assistant can help.
 
