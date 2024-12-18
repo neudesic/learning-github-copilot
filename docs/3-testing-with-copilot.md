@@ -100,7 +100,7 @@ In a few moments, unit tests code will be generated in a new file **BasketItemTe
 The existing and new unit tests should pass. If some test cases fail, you can use GitHub Copilot to fix the code or the failing unit tests.  
 
 **NOTE**:  Generated code may not be correct as GitHub Copilot context grasp is limited and may use incorrect assumptions.  In general, it will correctly identify the testing framework for the project.  
-Use your skills and GitHub Copilot to resolve the issue by varying your prompts and focus in an iterative manner.  
+Use your skills and GitHub Copilot to resolve the issue by varying your prompts and focus in an iterative manner.  If you need to clear context and reset focus by using `/clear` command.  
 
 ---
 
