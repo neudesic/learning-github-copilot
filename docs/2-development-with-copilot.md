@@ -117,7 +117,7 @@ GitHub Copilot Vision enhances your workflow by enabling image-based prompts and
 1. Open the file `samples/eShop/src/HybricApp/wwwroot/test.html' in Visual Studio Code.  
 2. You will notice a img tag that currently has incorrect `alt` tag value.
 3. Click on the refactor icon ![alt text](image.png) and select `Fix with Copilot`.
-   >*Note*: The first time you select this option, you will be prompted to provide API Key for Azure Open AI Service. You instructure will provide that information.  
+   >*Note*: The first time you select this option, you will be prompted to provide API Key for Azure Open AI Service. Your instructor will provide that information.  
 4. Once you enter the API key, you should see an `alt` text with description of the image.
 5. Review the suggested fixes or enhancements for the image tag and apply them as needed.  
 
