@@ -4,7 +4,7 @@
 ## Overview
 
 **Goal:**  
-By the end of this session, you will learn how you can use GitHub Copilot  Copilot Edits (preview) and other features to enhance test projects by creating new unit and integration test cases.  
+By the end of this session, you will learn how you can use GitHub Copilot Edits (preview) and other features to enhance test projects by creating new unit and integration test cases.  
 You will create unit tests for the BasketItem class in the Basket.UnitTests, as well as cover additional scenario in Catalog.FunctionalTests projects.
 
 By the end of this lab, you will have enhanced two test projects in the solution and gained practical experience with Copilot Edits (preview) and other features.
@@ -81,7 +81,7 @@ In this step, you will create a new unit tests class with some simple test cases
  2. Open Copilot Edits by pressing Ctrl-Shift-I.
  3. Verify **BasketItem.cs** file is included in the Working Set, and click + add **Basket.UnitTests.csproj** file.  
  4. Ensure model **o1-mini (Preview)** is selected (right corner of the Copilot Edits command bar down below).
- 5. Enter following request "Generate unit tests for BasketItem methods and save in the Basket.UnitTests.csproj. Include edge cases." and press Enter.  
+ 5. Enter following request `Generate unit tests for BasketItem methods and save in the Basket.UnitTests.csproj. Include edge cases.` and press Enter.  
 In a few moments, unit tests code will be generated in a new file **BasketItemTests.cs** that will show as unsaved file in the editor..
  6. Observe the generated code.
  7. (Optional) If you find that further improvements can be made, you can ask Copilot Edits and iterate prompting until desired qualities are met.  
@@ -116,7 +116,7 @@ In this step, you will work with GitHub Copilot to add a test case to the existi
 3. Verify **CatalogApiTests.cs** file is included in the Working Set
 4. Ensure model **o1-mini (Preview)** is selected (right corner of the Copilot Edits command bar down below).
 5. In the **CatalogApiTests.cs** file, scroll down and select test case *GetCatalogItemWithId()*.
-6. In Copilot Edits prompt field, enter "Consider selected test case. It expects record with the given id. Can you make a test case where no item is returned with the given id?" and press Enter.  
+6. In Copilot Edits prompt field, enter `Consider selected test case. It expects record with the given id. Can you make a test case where no item is returned with the given id?` and press Enter.  
 In a few moments, the requested tests case will be generated in **CatalogApiTests.cs**.  
 7. Observe the generated code. The changes are highlighted.  
 8. (Optional) You may further ask about reasoning why no items will be returned, which can lead into discussion on where 400 or 404 is more appropriate!  

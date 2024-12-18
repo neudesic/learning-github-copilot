@@ -89,11 +89,11 @@ In this step, we will use Copilot Edits to generate API documentation for `api/o
 Generate a readme markdown file for the project by entering the following prompt:
 
    ```plaintext
-   Generaete API documentation for api/orders resource using OpenAPI Specification in YAML format and save it in Ordering.API.YAML file
+   Generate API documentation for api/orders resource using OpenAPI Specification in YAML format and save it in Ordering.API.YAML file
    ```
 
 4. GitHub Copilot confirms the plan and creates requested documentation to the Ordering.API.md file.
-5. Observe the content of the file. You can open the file preview by pressing `Ctrl-Shift-V`.
+5. Observe the content of the file.
 6. Sometimes copilot generates more methods and other times it might not generate all the methods for the API. Add the following prompt to explicitly specify the number of methods in the API:
 
    ```plaintext
@@ -105,10 +105,10 @@ Generate a readme markdown file for the project by entering the following prompt
 9. Now lets generate the same content in JSON format. We can do so by by specifying the format and the file name as follows:
 
    ```plaintext
-   Generaete API documentation for the 7 methods in api/orders resource using OpenAPI Specification in JSON format and save it in Ordering.API.JSON file
+   Generate API documentation for the 7 methods in api/orders resource using OpenAPI Specification in JSON format and save it in Ordering.API.JSON file
    ```
 
-10. Observe the content of the file. You can open the file preview by pressing `Ctrl-Shift-V`.
+10. Observe the content of the file.  
 
 ### Explore Further
 
