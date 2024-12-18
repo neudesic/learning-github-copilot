@@ -4,6 +4,11 @@ namespace eShop.ClientApp.Helpers;
 
 public static class EasingHelper
 {
+    /// <summary>
+    /// Gets the easing function based on the specified easing type.
+    /// </summary>
+    /// <param name="type">The type of easing function.</param>
+    /// <returns>The corresponding easing function.</returns>
     public static Easing GetEasing(EasingType type)
     {
         return type switch

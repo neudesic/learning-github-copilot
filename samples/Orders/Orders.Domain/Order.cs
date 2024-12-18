@@ -12,6 +12,11 @@ public class Order
         Items.Add(item);
     }
 
+    public void RemoveOrderItem(OrderItem item)
+    {
+        Items.Remove(item);
+    }
+
     public decimal GetTotal()
     {
         return Items.Sum(item => item.Price * item.Quantity);

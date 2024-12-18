@@ -7,6 +7,10 @@ namespace eShop.Basket.API.Extensions;
 
 public static class Extensions
 {
+    /// <summary>
+    /// Adds application-specific services to the host application builder.
+    /// </summary>
+    /// <param name="builder">The host application builder.</param>
     public static void AddApplicationServices(this IHostApplicationBuilder builder)
     {
         builder.AddDefaultAuthentication();
@@ -21,6 +25,9 @@ public static class Extensions
     }
 }
 
+/// <summary>
+/// JSON serialization context for integration events.
+/// </summary>
 [JsonSerializable(typeof(OrderStartedIntegrationEvent))]
 partial class IntegrationEventContext : JsonSerializerContext
 {
