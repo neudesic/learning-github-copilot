@@ -269,8 +269,8 @@ dotnet run
 
 And will explain how to access:
 
-- Swagger UI: https://localhost:[PORT]/swagger/index.html (The agent might show a different path. prompt to fix the path - "The swagger path in the url is incorrect. Give me the correct path to open Swagger")
-- Direct API endpoint: https://localhost:[PORT]/agent/weather
+- Swagger UI: [https://localhost:YOUR_PROJECT_SPECIFIC_PORT/swagger/index.html](https://localhost:YOUR_PROJECT_SPECIFIC_PORT/swagger/index.html) (The agent might show a different path. prompt to fix the path - "The swagger path in the url is incorrect. Give me the correct path to open Swagger")
+- Direct API endpoint: [https://localhost:YOUR_PROJECT_SPECIFIC_PORT/agent/weather](https://localhost:YOUR_PROJECT_SPECIFIC_PORT/agent/weather)
 
 It might also suggest using tools like Postman or curl to test your endpoint.
 
