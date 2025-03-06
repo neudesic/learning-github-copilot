@@ -268,6 +268,7 @@ dotnet run
 ```
 
 And will explain how to access:
+
 - Swagger UI: https://localhost:[PORT]/swagger/index.html (The agent might show a different path. prompt to fix the path - "The swagger path in the url is incorrect. Give me the correct path to open Swagger")
 - Direct API endpoint: https://localhost:[PORT]/agent/weather
 
