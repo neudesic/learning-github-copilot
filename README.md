@@ -22,7 +22,6 @@ Learn How to Effectively Use the GitHub Copilot Family of Tools.
 - [Lesson 7: Hot keys and commands](docs/7-hot-keys-and-commands.md)
 - [Lesson 8: Using GitHub Copilot Agent](docs/8-using-github-copilot-agent.md)
 
-
 ## Directory Structure
 
 1. `docs` - holds lessons and other documentation
