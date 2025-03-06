@@ -115,6 +115,7 @@ I want to implement CQRS with MediatR. Help me create the necessary folders and 
 ```
 
 Copilot will suggest creating the following folder structure:
+
 - Queries
 - Commands
 - Handlers
