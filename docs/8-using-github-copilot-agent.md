@@ -33,25 +33,12 @@ Now you're using Copilot Agent mode, which provides more interactive capabilitie
 Ask the Agent:
 
 ```
-Create a dotnet ASP.Net core webapi project in the Samples 
+Create an ASP.NET Core WebAPI project in the samples/Agent directory. Name the project 'Agent.Api'. Use dotnet 8.0.
 ```
 
 ### Step 2: Follow the agent's instructions to create the project
 
-Copilot will suggest using the .NET CLI to create the project. Execute these commands in your terminal:
-
-```bash
-# Create a new directory for your project
-mkdir Agent
-cd Agent
-
-# Create the ASP.NET Core Web API project
-dotnet new webapi -n Agent.API
-cd Agent.API
-
-# Build the project to ensure everything is set up correctly
-dotnet build
-```
+Copilot will suggest using the .NET CLI to create the project.
 
 ### Step 3: Explore the project structure
 
@@ -62,6 +49,8 @@ Can you explain what files were created and their purposes?
 ```
 
 Copilot will explain the key files in an ASP.NET Core Web API project:
+
+The following are samples. (Your results may vary.)
 
 - **Program.cs**: The entry point for the application
 - **appsettings.json**: Configuration settings
@@ -78,7 +67,7 @@ MediatR is a popular library for implementing the mediator pattern in .NET appli
 Ask Copilot Chat:
 
 ```
-I want to add MediatR to my project. Can you help me install the necessary packages and set it up?
+I want to add MediatR to Agent.Api. Help me install the necessary packages and set it up.
 ```
 
 Copilot Agent will suggest installing the MediatR packages and will offer to run the commands for you. It will typically suggest:
@@ -95,7 +84,7 @@ Allow Copilot to run these commands for you by responding with "Yes, please run 
 After the packages are installed, ask Copilot:
 
 ```
-Can you help me configure MediatR in Program.cs?
+Help me configure MediatR in Program.cs.
 ```
 
 Copilot will analyze your Program.cs file and suggest the necessary code changes to register MediatR services, such as:
@@ -122,7 +111,7 @@ Now let's create a simple query and handler pattern using MediatR with Copilot's
 Ask Copilot:
 
 ```
-I want to implement CQRS with MediatR. Can you help me create the necessary folders and files?
+I want to implement CQRS with MediatR. Help me create the necessary folders and files.
 ```
 
 Copilot will suggest creating the following folder structure:
@@ -138,7 +127,7 @@ It may offer to run the commands to create these folders for you.
 Ask Copilot:
 
 ```
-Can you create a WeatherForecastQuery class that uses MediatR?
+Create a WeatherForecastQuery class that uses MediatR.
 ```
 
 Copilot will help you create a file named `Queries/WeatherForecastQuery.cs` with content similar to:
@@ -278,8 +267,8 @@ dotnet run
 ```
 
 And will explain how to access:
-- Swagger UI: https://localhost:7224/swagger (or the port specified in your launchSettings.json)
-- Direct API endpoint: https://localhost:7224/agent/weather
+- Swagger UI: https://localhost:[PORT]/swagger/index.html (The agent might show a different path. prompt to fix the path - "The swagger path in the url is incorrect. Give me the correct path to open Swagger")
+- Direct API endpoint: https://localhost:[PORT]/agent/weather
 
 It might also suggest using tools like Postman or curl to test your endpoint.
 
