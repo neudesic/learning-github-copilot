@@ -306,21 +306,25 @@ Can you generate XML documentation for my API endpoints?
 Once you have the basic project set up, you can ask Copilot Agent to help you add more features:
 
 1. **Add a Command Pattern**:
+
    ```plaintext
    Can you create a CreateWeatherForecastCommand and handler?
    ```
 
 2. **Implement Validation**:
+
    ```plaintext
    Can you add FluentValidation to validate my commands?
    ```
 
 3. **Add Authentication**:
+
    ```plaintext
    How do I add JWT authentication to my API?
    ```
 
 4. **Implement a Repository Pattern**:
+
    ```plaintext
    Can you help me implement a repository pattern for data access?
    ```
@@ -332,16 +336,19 @@ GitHub Copilot Agent can help you manage source control operations efficiently. 
 ### Branch Management
 
 1. **Create a new branch:**
+
    ```plaintext
    Create a new branch called 'feature/add-weather-validation' from main for implementing request validation in the weather forecast API
    ```
 
 2. **Check your current branch and status:**
+
    ```plaintext
    Show me my current branch and what files are modified
    ```
 
 3. **Switch between branches:**
+
    ```plaintext
    Switch to the main branch and then back to my feature branch
    ```
@@ -349,16 +356,19 @@ GitHub Copilot Agent can help you manage source control operations efficiently. 
 ### Committing Code
 
 1. **Stage and commit specific files:**
+
    ```plaintext
    Stage and commit the changes to the Controllers and Validators folders with the message "Add validation to weather forecast endpoints"
    ```
 
 2. **Generate a meaningful commit message:**
+
    ```plaintext
    Help me write a descriptive commit message for my changes to the MediatR handlers
    ```
 
 3. **Stage and commit all changes:**
+
    ```plaintext
    Stage all my changes and commit them with a message describing what I've accomplished
    ```
@@ -366,16 +376,19 @@ GitHub Copilot Agent can help you manage source control operations efficiently. 
 ### Pushing and Pull Requests
 
 1. **Push your branch:**
+
    ```plaintext
    Push my feature/add-weather-validation branch to the remote repository
    ```
 
 2. **Create a pull request description:**
+
    ```plaintext
    Generate a pull request description for my feature/add-weather-validation branch that explains the validation features I added
    ```
 
 3. **Check the status before pushing:**
+
    ```plaintext
    Run through a pre-push checklist: verify tests pass and check for uncommitted changes
    ```
@@ -383,16 +396,19 @@ GitHub Copilot Agent can help you manage source control operations efficiently. 
 ### Complete Workflow Examples
 
 1. **Full feature development workflow:**
+
    ```plaintext
    I finished implementing the weather validation feature. Help me create a new branch called 'feature/add-weather-validation', commit my changes with a descriptive message, and push to the remote repository
    ```
 
 2. **Issue-based workflow:**
+
    ```plaintext
    I'm working on GitHub issue #42 to add pagination. Create a branch called 'feature/add-pagination', help me commit my changes, and push to GitHub
    ```
 
 3. **Prepare for code review:**
+
    ```plaintext
    I need to submit my code for review. Help me ensure all changes are committed to my 'feature/user-preferences' branch and push it to GitHub
    ```
