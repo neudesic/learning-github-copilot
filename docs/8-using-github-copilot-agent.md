@@ -1,5 +1,7 @@
 # Using GitHub Copilot Agent
 
+> **Availability Note:** GitHub Copilot Agent is currently available in Visual Studio Code Insiders as part of the nightly build. In the future, it may be included as a standard feature in Visual Studio Code. The features and interface described in this document may evolve as GitHub Copilot Agent moves toward general availability.
+
 GitHub Copilot Agent takes AI assistance to the next level by enabling deeper and more interactive collaboration on your development projects. This guide will walk you through using GitHub Copilot Agent to create an ASP.NET Core Web API with MediatR pattern implementation.
 
 ## What is GitHub Copilot Agent?
@@ -23,7 +25,7 @@ To use GitHub Copilot Agent:
 1. Open GitHub Copilot Edits by pressing `Ctrl+Shift+I` (Windows/Linux) or `Cmd+Shift+I` (Mac)
 ![Copilot Edits](images/open-copilot-edits.png)
 2. In the Copilot Edits panel, click the dropdown menu in the prompt box
-![Copilot Agent](images/open-copilot-edits.png)
+![Copilot Agent](images/copilot-edit-agent.png)
 3. Select "Agent" from the dropdown options
 
 
@@ -325,20 +327,75 @@ Once you have the basic project set up, you can ask Copilot Agent to help you ad
 
 ## Source Control with GitHub
 
-Following your organization's practices:
+GitHub Copilot Agent can help you manage source control operations efficiently. Here are some example prompts you can use to ask Copilot Agent to handle common GitHub operations:
 
-1. Create a new feature branch:
-   ```bash
-   git checkout -b feat/add-mediatr-pattern
+### Branch Management
+
+1. **Create a new branch:**
+   ```
+   Create a new branch called 'feature/add-weather-validation' from main for implementing request validation in the weather forecast API
    ```
 
-2. Commit your changes with meaningful messages:
-   ```bash
-   git add .
-   git commit -m "Add MediatR implementation with CQRS pattern"
+2. **Check your current branch and status:**
+   ```
+   Show me my current branch and what files are modified
    ```
 
-3. Push your branch and create a Pull Request for code review.
+3. **Switch between branches:**
+   ```
+   Switch to the main branch and then back to my feature branch
+   ```
+
+### Committing Code
+
+1. **Stage and commit specific files:**
+   ```
+   Stage and commit the changes to the Controllers and Validators folders with the message "Add validation to weather forecast endpoints"
+   ```
+
+2. **Generate a meaningful commit message:**
+   ```
+   Help me write a descriptive commit message for my changes to the MediatR handlers
+   ```
+
+3. **Stage and commit all changes:**
+   ```
+   Stage all my changes and commit them with a message describing what I've accomplished
+   ```
+
+### Pushing and Pull Requests
+
+1. **Push your branch:**
+   ```
+   Push my feature/add-weather-validation branch to the remote repository
+   ```
+
+2. **Create a pull request description:**
+   ```
+   Generate a pull request description for my feature/add-weather-validation branch that explains the validation features I added
+   ```
+
+3. **Check the status before pushing:**
+   ```
+   Run through a pre-push checklist: verify tests pass and check for uncommitted changes
+   ```
+
+### Complete Workflow Examples
+
+1. **Full feature development workflow:**
+   ```
+   I finished implementing the weather validation feature. Help me create a new branch called 'feature/add-weather-validation', commit my changes with a descriptive message, and push to the remote repository
+   ```
+
+2. **Issue-based workflow:**
+   ```
+   I'm working on GitHub issue #42 to add pagination. Create a branch called 'feature/add-pagination', help me commit my changes, and push to GitHub
+   ```
+
+3. **Prepare for code review:**
+   ```
+   I need to submit my code for review. Help me ensure all changes are committed to my 'feature/user-preferences' branch and push it to GitHub
+   ```
 
 ## Conclusion
 
