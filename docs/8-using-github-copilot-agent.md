@@ -28,8 +28,6 @@ To use GitHub Copilot Agent:
 ![Copilot Agent](images/copilot-edit-agent.png)
 3. Select "Agent" from the dropdown options
 
-
-
 Now you're using Copilot Agent mode, which provides more interactive capabilities than the standard Copilot Chat.
 
 Ask the Agent:
