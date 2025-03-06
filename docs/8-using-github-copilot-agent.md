@@ -1,4 +1,4 @@
-# Using GitHub Copilot Agent
+# Lesson 8: Using GitHub Copilot Agent
 
 > **Availability Note:** GitHub Copilot Agent is currently available in Visual Studio Code Insiders as part of the nightly build. In the future, it may be included as a standard feature in Visual Studio Code. The features and interface described in this document may evolve as GitHub Copilot Agent moves toward general availability.
 

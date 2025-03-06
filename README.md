@@ -20,6 +20,8 @@ Learn How to Effectively Use the GitHub Copilot Family of Tools.
 - [Lesson 5: DevOps with GitHub Copilot](docs/5-devops-with-copilot.md)
 - [Lesson 6: Best practices with GitHub Copilot](docs/6-best-practices-with-copilot.md)
 - [Lesson 7: Hot keys and commands](docs/7-hot-keys-and-commands.md)
+- [Lesson 8: Using GitHub Copilot Agent](docs/8-using-github-copilot-agent.md)
+
 
 ## Directory Structure
 
