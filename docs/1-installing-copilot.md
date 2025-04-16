@@ -77,8 +77,7 @@ For other platforms, see the instructions [here](https://github.com/cli/cli?tab=
       `gh extension install github/gh-copilot`
 
 **Expected Outcome:**  
-GitHub CLI and GitHub Copilot extension is installed and connected to your GitHub account.
-
+GitHub CLI and GitHub Copilot extension are installed and connected to your GitHub account.
 ---
 
 ## Verification
