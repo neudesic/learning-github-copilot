@@ -4,7 +4,7 @@
 
 - fork
 - clone
-- add you lab partner as collaborator
+- add your lab partner as collaborator
 - can watch and do later, can drive with me
 
 ## Overview
