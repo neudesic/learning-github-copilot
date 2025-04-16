@@ -30,24 +30,24 @@ First, we will install GitHub Copilot and its corresponding Visual Studio Code e
    Wait until GitHub Copilot is installed.  
    It will also install **GitHub Copilot Chat** by GitHub extension.
 5. Next, we will install the following Copilot Extensions that are needed for the remainder of the training:
-   - **Install GitHub Copilot for Azure**
-     - While in the Extensions view, search for **GitHub Copilot for Azure** by Microsoft.
-     - Click the **Install** button.
-     - With this extension, you can ask **@azure** questions about Azure services and receive assistance with Azure-specific tasks.
-   - **Install VS Code Speech (Optional)**
-     - In the **Search Extensions in Marketplace** field, type **Voice**.
-     - Locate the **VS Code Speech** extension by Microsoft and click the **Install** button.
-     - This extension adds speech-to-text and text-to-speech functionality, allowing you to interact with GitHub Copilot using natural language speech.
+      - **Install GitHub Copilot for Azure**  
+         - While in the Extensions view, search for **GitHub Copilot for Azure** by Microsoft.  
+         - Click the **Install** button.  
+         - With this extension, you can ask **@azure** questions about Azure services and receive assistance with Azure-specific tasks.  
+      - **Install VS Code Speech (Optional)**  
+         - In the **Search Extensions in Marketplace** field, type **Voice**.  
+         - Locate the **VS Code Speech** extension by Microsoft and click the **Install** button.  
+         - This extension adds speech-to-text and text-to-speech functionality, allowing you to interact with GitHub Copilot using natural language speech.  
 
 **Expected Outcome:**  
 Both GitHub Copilot and GitHub Copilot Chat extensions are installed in Visual Studio Code.
 
 ---
 
-### Step 2: Install GitHub CLI
+## Install GitHub Copilot CLI
 
 **Description:**  
-You will install GitHub CLI (_gh_) in Windows using _winget_.  
+You will install GitHub CLI (_gh_) and GitHub Copilot extension in Windows using _winget_.
 For Windows _gh_ is available via [WinGet](https://github.com/microsoft/winget-cli), [scoop](https://scoop.sh/), [Chocolatey](https://chocolatey.org/), [Conda](https://github.com/cli/cli?tab=readme-ov-file#conda), [Webi](https://github.com/cli/cli?tab=readme-ov-file#webi), and as downloadable MSI.  
 For other platforms, see the instructions [here](https://github.com/cli/cli?tab=readme-ov-file#installation).
 
@@ -56,11 +56,11 @@ For other platforms, see the instructions [here](https://github.com/cli/cli?tab=
 1. Open Visual Studio Code shell (Ctrl-`).
 2. In the Visual Studio Code terminal window, enter the following command:
 
-   `winget install --id GitHub.cli`
+      `winget install --id GitHub.cli`
 
 3. Once GitHub CLI installation completes, login to GitHub:
 
-   `gh auth login`
+      `gh auth login`
 
 4. When prompted, select the following options by using the arrows keys and pressing Enter and follow the instructions:
 
@@ -72,32 +72,19 @@ For other platforms, see the instructions [here](https://github.com/cli/cli?tab=
    - Press Enter to open <https://github.com/login/device> in your browser...
    - (this will navigate the default browser to the GitHub Device Activation page to authenticate and give necessary authorizations)
 
-**Expected Outcome:**  
-GitHub CLI is installed and connected to your GitHub account.
+5. In the Visual Studio Code terminal window, enter the following command:
 
----
-
-### Step 3: Install GitHub CLI Copilot Extension
-
-**Description:**  
-You will install GitHub Copilot extension to GitHub CLI (_gh_).
-
-**Instructions:**
-
-1. In the Visual Studio Code terminal window, enter the following command:
-
-   `gh extension install github/gh-copilot`
+      `gh extension install github/gh-copilot`
 
 **Expected Outcome:**  
-GitHub Copilot extension to GitHub CLI is installed.
-
+GitHub CLI and GitHub Copilot extension are installed and connected to your GitHub account.
 ---
 
 ## Verification
 
 1. Test the installed Copilot extension to GitHub CLI.
 
-   `gh copilot --help`
+      `gh copilot --help`
 
 2. Read the response and try suggested examples.
 
