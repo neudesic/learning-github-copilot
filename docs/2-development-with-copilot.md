@@ -41,14 +41,14 @@ To successfully complete this lab, ensure you have the following:
 GitHub Copilot's autocomplete feature provides intelligent code suggestions as you type, helping you write code faster and with fewer errors. In this step, we will explore how to use autocomplete effectively.
 
 1. Open the file `samples/Orders/Orders.Domain/Order.cs` in Visual Studio Code.
-3. Hit enter a few times and see the autocomplete suggestion. It likely suggests a method signature similar to the following:
+2. Hit enter a few times and see the autocomplete suggestion. It likely suggests a method signature similar to the following:
 
    ```csharp
    public void RemoveOrderItem(OrderItem item)
    ```
 
-4. Press the Tab key to accept the suggestion.
-5. Chat completions are nice for rapid prototyping, but they can be a bit of a distraction for most developers. You can disable it by going to status bar, clicking on the GitHub Copilot icon, and unchecking code completions.
+3. Press the Tab key to accept the suggestion.
+4. Chat completions are nice for rapid prototyping, but they can be a bit of a distraction for most developers. You can disable it by going to status bar, clicking on the GitHub Copilot icon, and unchecking code completions.
 
 ## Inline Chat
 
@@ -135,7 +135,7 @@ You will notice that instead of generating code snippets like `Inline Chat`, cop
 
 ## Copilot Chat - Agent
 
-(This section needs to be updated to reflect the latest changes in Copilot Agent) 
+(This section needs to be updated to reflect the latest changes in Copilot Agent)
 
 ## Copilot CLI
 
