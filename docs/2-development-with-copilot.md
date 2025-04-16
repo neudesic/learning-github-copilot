@@ -29,27 +29,20 @@ To successfully complete this lab, ensure you have the following:
 
 > **Note:** If you have not completed any of the above steps, please refer to - [Lesson 1: Installing and Configuring GitHub Copilot](docs/1-installing-copilot.md) for detailed instructions.
 
-## Copilot Chat
+## Autocomplete with Code Completions (Ghost Text mode)
 
-GitHub Copilot Chat provides an interactive way to engage with Copilot, offering more space and deeper ways to interact with your code. With the Chat View, you can ask natural language questions about the current context in your editor, request code suggestions, and optimize your code with Copilot's help.  
+GitHub Copilot's autocomplete feature provides intelligent code suggestions as you type, helping you write code faster and with fewer errors. In this step, we will explore how to use autocomplete effectively.
 
-1. Open the Copilot Chat pane in Visual Studio Code by clicking the Copilot icon in the sidebar or using the command palette (`Ctrl+Alt+I`). In the chat settings, ensure the model is set to GPT 4o. If it’s not already selected, switch the model to GPT 4o in the Copilot settings.  
-   >**Note**: We will use this model for this lesson. In later lessons we will experiment with utilizing other models for various tasks such as testing and documentation.  
-2. In the Chat View prompt, you can use natural language to ask about current context (files open in the editor)  
+1. Open the file `samples/Orders/Ordering.Domain/Order.cs` in Visual Studio Code.
+2. Scroll to the bottom of the Order class and locate the `GetTotal` method.
+3. Hit enter a few times and see the autocomplete suggestion. It likely suggests a method signature similar to the following:
 
-   - For example, browse to `src/Ordering.API/Apis` folder and open 'OrdersApi.cs' file.
-   - Enter "how does this service work?" and press Enter.
-   - Observe the GitHub Copilot response.
-   - Alternatively, you can just enter one of the / commands, like /explain to get similar result.
-   - You can continue dialog within the same context.  
-      &emsp;For example, enter "how can I optimize logging in this code?" and press Enter.
-   - Observe the suggested code changes.
+   ```csharp
+   public void RemoveOrderItem(OrderItem item)
+   ```
 
-3. (Optional) You can copy parts of or the whole suggested code and paste in the editor manually, or click appropriate icon above the code view to Insert at Cursor, Apply in Editor, or just copy to clipboard.
-4. (Optional) Save the file.
-
-**Additional Notes**
-For more details on these, see [Getting started with prompts for Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/guides-on-using-github-copilot/getting-started-with-prompts-for-copilot-chat)
+4. Press the Tab key to accept the suggestion.
+5. Chat completions are nice for rapid prototyping, but they can be a bit of a distraction for most developers. You can disable it by going to status bar, clicking on the GitHub Copilot icon, and unchecking code completions.
 
 ## Inline Chat  
 
@@ -91,7 +84,29 @@ Now, let’s start by enhancing the OrderingService by leveraging inline chat fe
    - This would replace the logic to calculate the order discount by adding up the discounts on each line item
    - Finally, in the `GetTotal` method, if you delete the value assigned to `totalDiscounts` variable, you should see the new `GetOrderDiscounts` method. Enter Tab to accept changes
 
-## Copilot Edits
+## Copilot Chat - Ask
+
+GitHub Copilot Chat provides an interactive way to engage with Copilot, offering more space and deeper ways to interact with your code. With the Chat View, you can ask natural language questions about the current context in your editor, request code suggestions, and optimize your code with Copilot's help.  
+
+1. Open the Copilot Chat pane in Visual Studio Code by clicking the Copilot icon in the menu bar or using the keyboard shortcut (`Ctrl+Alt+I`). In the chat settings, ensure the model is set to GPT 4o. If it’s not already selected, switch the model to GPT 4o in the Copilot settings.  
+   >**Note**: We will use this model for this lesson. In later lessons we will experiment with utilizing other models for various tasks such as testing and documentation.  
+2. In the Chat View prompt, you can use natural language to ask about current context (files open in the editor)  
+
+   - For example, browse to `src/Ordering.API/Apis` folder and open 'OrdersApi.cs' file.
+   - Enter "how does this service work?" and press Enter.
+   - Observe the GitHub Copilot response.
+   - Alternatively, you can just enter one of the / commands, like /explain to get similar result.
+   - You can continue dialog within the same context.  
+      &emsp;For example, enter "how can I optimize logging in this code?" and press Enter.
+   - Observe the suggested code changes.
+
+3. (Optional) You can copy parts of or the whole suggested code and paste in the editor manually, or click appropriate icon above the code view to Insert at Cursor, Apply in Editor, or just copy to clipboard.
+4. (Optional) Save the file.
+
+**Additional Notes**
+For more details on these, see [Getting started with prompts for Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/guides-on-using-github-copilot/getting-started-with-prompts-for-copilot-chat)
+
+## Copilot Chat - Edit
 
 Using inline chat is very helpful in make quick updates on the go as you're working thru a user story or resolving a bug. However, you might've encountered some challenges with context especially when changes involve large code changes.
 
@@ -110,16 +125,9 @@ Refactor the GetTotal method to include taxes and discounts. get the taxes from 
 
 You will notice that instead of generating code snippets like `Inline Chat`, copilot edits parses the entire Order class and modifies the logic accordingly.
 
-## Copilot Vision (Preview)
+## Copilot Chat - Agent
 
-GitHub Copilot Vision enhances your workflow by enabling image-based prompts and visual context for smarter code suggestions. In this step, we will enhance code tied to visual components like HTML `<img>` tags.
-
-1. Open the file `samples/eShop/src/HybricApp/wwwroot/test.html' in Visual Studio Code.  
-2. You will notice a img tag that currently has incorrect `alt` tag value.
-3. Click on the refactor icon ![alt text](image.png) and select `Fix with Copilot`.
-   >*Note*: The first time you select this option, you will be prompted to provide API Key for Azure Open AI Service. Your instructor will provide that information.  
-4. Once you enter the API key, you should see an `alt` text with description of the image.
-5. Review the suggested fixes or enhancements for the image tag and apply them as needed.  
+(This section needs to be updated to reflect the latest changes in Copilot Agent) 
 
 ## Copilot CLI
 

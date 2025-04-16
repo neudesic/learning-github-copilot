@@ -16,6 +16,13 @@ public class Order
     {
         return Items.Sum(item => item.Price * item.Quantity);
     }
+
+    public void RemoveOrderItem(OrderItem item)
+    {
+        Items.Remove(item);
+    }
+
+
 }
 
 public class OrderItem
