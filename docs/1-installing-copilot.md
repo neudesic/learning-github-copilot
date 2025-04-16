@@ -17,9 +17,9 @@ In this lab, you will learn how to install:
 **Prerequisites:**
 
 - Installed Visual Studio Code,
-- GitHub Copilot subscription.
+- GitHub Copilot license.
 
-## Install GitHub Copilot in VS Code
+### Step 1: Install GitHub Copilot in VS Code
 
 First, we will install GitHub Copilot and its corresponding Visual Studio Code extensions.
 
