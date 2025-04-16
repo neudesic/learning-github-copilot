@@ -40,8 +40,7 @@ To successfully complete this lab, ensure you have the following:
 
 GitHub Copilot's autocomplete feature provides intelligent code suggestions as you type, helping you write code faster and with fewer errors. In this step, we will explore how to use autocomplete effectively.
 
-1. Open the file `samples/Orders/Ordering.Domain/Order.cs` in Visual Studio Code.
-2. Scroll to the bottom of the Order class and locate the `GetTotal` method.
+1. Open the file `samples/Orders/Orders.Domain/Order.cs` in Visual Studio Code.
 3. Hit enter a few times and see the autocomplete suggestion. It likely suggests a method signature similar to the following:
 
    ```csharp
