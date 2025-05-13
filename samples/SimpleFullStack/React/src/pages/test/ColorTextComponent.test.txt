@@ -1,0 +1,26 @@
+import { render, screen } from "@testing-library/react";
+import ColorTextComponent from "./ColorTextComponent";
+
+describe("ColorTextComponent", () => {
+    it("renders the amount in green when the amount is greater than 0", () => {
+        render(<ColorTextComponent amount={10} />);
+        const textElement = screen.getByText("10");
+        expect(textElement).toBeInTheDocument();
+        expect(textElement).toHaveStyle("color: rgb(0, 128, 0)");
+    });
+
+    it("renders the amount in red when the amount is less than 0", () => {
+        render(<ColorTextComponent amount={-5} />);
+        const textElement = screen.getByText("-5");
+        expect(textElement).toBeInTheDocument();
+        expect(textElement).toHaveStyle("color: rgb(255, 0, 0)");
+    });
+
+    it("renders the amount in gray when the amount is 0", () => {
+        render(<ColorTextComponent amount={0} />);
+        const textElement = screen.getByText("0");
+        expect(textElement).toBeInTheDocument();
+        expect(textElement).toHaveStyle("color: rgb(128, 128, 128)");
+    });
+});
+
