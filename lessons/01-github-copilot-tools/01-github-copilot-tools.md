@@ -16,7 +16,7 @@ Engage interactively with Copilot to ask questions, request code suggestions, an
 - Requesting code examples or implementations of specific features.
 - Improving existing code with optimization suggestions.
 
-- **Lab:** [Exploring GitHub Copilot Chat](Labs/01a-exploring-copilot-ask.md)
+- **Lab:** [Exploring GitHub Copilot Chat](labs/01a-exploring-copilot-ask.md)
 
 ### 2. GitHub Copilot Edit
 
@@ -28,7 +28,7 @@ Use Copilot Edit to perform extensive refactoring and optimizations across large
 - Updating methods or classes across multiple files to ensure consistency.
 - Optimizing large code blocks or implementing significant logic changes.
 
-- **Lab:** [Exploring Github Copilot Edit](Labs/01b-exploring-copilot-edit.md)
+- **Lab:** [Exploring Github Copilot Edit](labs/01b-exploring-copilot-edit.md)
 
 ### 3. GitHub Copilot Agent
 
@@ -40,7 +40,7 @@ Leverage Copilot Agent to automate repetitive tasks and workflows, integrating s
 - Managing dependency updates and routine environment configurations.
 - Automating code reviews and routine coding checks.
 
-- **Lab:** [Automating Tasks with Copilot Agent](Labs/01c-exploring-copilot-agent.md)
+- **Lab:** [Automating Tasks with Copilot Agent](labs/01c-exploring-copilot-agent.md)
 
 ### 4. GitHub Copilot Inline
 
@@ -52,7 +52,7 @@ Enhance productivity by using inline prompts directly within your editor, enabli
 - Generating and inserting simple code blocks or functions.
 - Rapid prototyping within the editor itself.
 
-- **Lab:** [Exploring Github Copilot Inline](Labs/01d-exploring-copilot-inline.md)
+- **Lab:** [Exploring Github Copilot Inline](labs/01d-exploring-copilot-inline.md)
 
 ### 5. GitHub Copilot Website
 
@@ -64,7 +64,7 @@ Utilize the Copilot Web interface to explore suggestions, manage preferences, an
 - Analyzing your coding patterns to identify improvement areas.
 - Managing subscription details and preferences.
 
-- **Lab:** [Navigating Copilot's Web Interface](Labs/01e-github-copilot-website.md)
+- **Lab:** [Navigating Copilot's Web Interface](labs/01e-github-copilot-website.md)
 
 ### 6. GitHub Copilot CLI
 

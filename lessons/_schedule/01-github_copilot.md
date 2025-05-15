@@ -18,17 +18,17 @@
 
 #### 2. Overview of Copilot Tools (10-15 min)
 
-- [Lesson 01: Copilot Tools Overview](../01-github-copilot-tools.md)
+- [Lesson 01: Copilot Tools Overview](../01-github-copilot-tools/01-github-copilot-tools.md)
 - IDE usage: inline, chat, edit, agent
 - CLI commands and GitHub web UI
 
 #### 3. Hands-On Labs for Each Tool (90 min)
 
-- **Copilot Chat:** [Exploring GitHub Copilot Chat](../Labs/01a-exploring-copilot-ask.md)
-- **Copilot Edit:** [Exploring GitHub Copilot Edit](../Labs/01b-exploring-copilot-edit.md)
-- **Copilot Agent:** [Automating Tasks with Copilot Agent](../Labs/01c-exploring-copilot-agent.md)
-- **Copilot Inline:** [Exploring GitHub Copilot Inline](../Labs/01d-exploring-copilot-inline.md)
-- **Copilot Website:** [Exploring GitHub Copilot on GitHub.com](../Labs/01e-exploring-copilot-website.md)
+- **Copilot Chat:** [Exploring GitHub Copilot Chat](../01-github-copilot-tools/labs/01a-exploring-copilot-ask.md)
+- **Copilot Edit:** [Exploring GitHub Copilot Edit](../01-github-copilot-tools/labs/01b-exploring-copilot-edit.md)
+- **Copilot Agent:** [Automating Tasks with Copilot Agent](../01-github-copilot-tools/labs/01c-exploring-copilot-agent.md)
+- **Copilot Inline:** [Exploring GitHub Copilot Inline](../01-github-copilot-tools/labs/01d-exploring-copilot-inline.md)
+- **Copilot Website:** [Exploring GitHub Copilot on GitHub.com](../01-github-copilot-tools/labs/01e-exploring-copilot-website.md)
 - **Copilot CLI:** Coming soon...
 
 #### 5. Open Q&A (10–15 min)
