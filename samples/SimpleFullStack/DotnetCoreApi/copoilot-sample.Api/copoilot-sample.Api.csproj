@@ -19,4 +19,8 @@
     <ProjectReference Include="..\DataAccess\copoilot-sample.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+
 </Project>

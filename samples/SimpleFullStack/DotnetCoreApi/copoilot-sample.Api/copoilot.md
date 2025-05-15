@@ -1,6 +1,21 @@
 # Copoilot chat
+To open the copilot chat, click on the copilot icon in the top right corner of the Visual Studio window.
+Refer : https://learn.microsoft.com/en-us/visualstudio/ide/visual-studio-github-copilot-chat?view=vs-2022
+
+![Image-open-gh-cp-chat](./Images/open-gh-cp-chat.png)
+
+The github copilot chat window will open on the right side of the Visual Studio window. and its header has the following options:
+1. Chat thread dropdown: Select a thread to view the chat history.
+1. Create new thread button: Click to create a new chat thread.
+1. Edit thread button: Click to edit the current thread.
+1. Delete thread button: Click to delete the current thread.
+
+  ![Copilot chat window](./Images/gh-cp-header.png)
+
+
 ## Ask mode in Copilot
-1. Explain the code: 
+Open the copilot chat thread and ask by clicking on "Create new thread button".
+1. 1. Explain the code: 
 	```
 	@workspace , Explain the DataAccess project in the solution. Also explain how is it being used and triggerred
 	```
@@ -19,6 +34,7 @@
 	```
 
 ## Edit Mode in Copoilot
+Click on Create new Edits thread button to open the edit mode chat.
 1. Document the code:
 	```
 	@workspace , Document the productAttributeService class and its methods. 
@@ -34,6 +50,8 @@
 	```
 
 # Inline chat with copoilot
+To open inline chat, select a code block and press "Alt + /".
+
 1. Explain about a selected code:
 
 2. Ask copoilot to write code:
