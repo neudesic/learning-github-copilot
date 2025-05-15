@@ -1,12 +1,14 @@
 # Database Setup
 
-1. Need a MsSql DB in localhost. download and install Developer or Express versions. Refer https://www.microsoft.com/en-us/sql-server/sql-server-downloads
-2. Create a database named "Inventory"
-3. Run below DDL statements to create necessary tables
+1. Install MS SQL Server (Developer or Express) on localhost.  
+   Download: <https://www.microsoft.com/en-us/sql-server/sql-server-downloads>
+2. Create a database named **Inventory**.
+3. Run the following DDL statements to create the necessary tables:
 
-```
+```sql
 -- Inventory Database schema
---Categories Table
+
+-- Categories Table
 CREATE TABLE Categories (
     CategoryID INT PRIMARY KEY IDENTITY(1,1),
     Name NVARCHAR(100) NOT NULL,
@@ -15,7 +17,7 @@ CREATE TABLE Categories (
     FOREIGN KEY (ParentCategoryID) REFERENCES Categories(CategoryID)
 );
 
---Products Table
+-- Products Table
 CREATE TABLE Products (
     ProductID INT PRIMARY KEY IDENTITY(1,1),
     Name NVARCHAR(200) NOT NULL,
@@ -29,7 +31,7 @@ CREATE TABLE Products (
     FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID)
 );
 
---Pricing Table
+-- Pricing Table
 CREATE TABLE ProductPrices (
     PriceID INT PRIMARY KEY IDENTITY(1,1),
     ProductID INT NOT NULL,
@@ -40,7 +42,7 @@ CREATE TABLE ProductPrices (
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
---Inventory Table
+-- Inventory Table
 CREATE TABLE Inventory (
     InventoryID INT PRIMARY KEY IDENTITY(1,1),
     ProductID INT NOT NULL,
@@ -49,7 +51,7 @@ CREATE TABLE Inventory (
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
---Product Attributes
+-- Product Attributes
 CREATE TABLE ProductAttributes (
     AttributeID INT PRIMARY KEY IDENTITY(1,1),
     ProductID INT NOT NULL,
@@ -58,7 +60,7 @@ CREATE TABLE ProductAttributes (
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
---Product Reviews
+-- Product Reviews
 CREATE TABLE ProductReviews (
     ReviewID INT PRIMARY KEY IDENTITY(1,1),
     ProductID INT NOT NULL,
@@ -68,12 +70,11 @@ CREATE TABLE ProductReviews (
     ReviewDate DATETIME DEFAULT GETDATE(),
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
-
 ```
 
-4. Run below DML statements to insert some sample data
+4. Run the following DML statements to insert sample data:
 
-```
+```sql
 -- Insert Categories
 INSERT INTO Categories (Name, Description, ParentCategoryID) VALUES
 ('Electronics', 'Electronic gadgets and devices', NULL),
@@ -128,7 +129,6 @@ INSERT INTO ProductReviews (ProductID, ReviewerName, Rating, Comment) VALUES
 (4, 'Emma Stone', 4, 'Very comfortable fit and great sound.'),
 (4, 'John Doe', 2, 'Connection drops sometimes.');
 
-
 -- More Products
 INSERT INTO Products (Name, Description, SKU, CategoryID, Brand) VALUES
 ('ThinkMate Pro 14', 'Durable business laptop with excellent battery life', 'SKU-TMP14', 2, 'ThinkCorp'),
@@ -167,6 +167,4 @@ INSERT INTO ProductReviews (ProductID, ReviewerName, Rating, Comment) VALUES
 (6, 'Natasha Romanoff', 4, 'Excellent camera quality and battery.'),
 (7, 'Steve Rogers', 5, 'Lasts all day. Perfect for travel.'),
 (7, 'Tony Stark', 3, 'Charges fast, but gets warm during use.');
-
-
 ```
