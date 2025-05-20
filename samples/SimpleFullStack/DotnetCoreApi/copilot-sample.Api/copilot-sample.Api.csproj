@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess\copilot-sample.DataAccess.csproj" />
+    <ProjectReference Include="..\copilot-sample.DataAccess\copilot-sample.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>
