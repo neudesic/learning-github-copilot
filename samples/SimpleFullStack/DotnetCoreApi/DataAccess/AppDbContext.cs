@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using copoilot_sample.DataAccess.Entities;
-using copoilot_sample.DataAccess.EntityConfiguration;
+using copilot_sample.DataAccess.Entities;
+using copilot_sample.DataAccess.EntityConfiguration;
 
-namespace copoilot_sample.DataAccess
+namespace copilot_sample.DataAccess
 {
     public class AppDbContext : DbContext
     {

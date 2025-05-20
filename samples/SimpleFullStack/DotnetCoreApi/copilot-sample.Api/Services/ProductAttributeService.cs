@@ -1,9 +1,9 @@
-using copoilot_sample.DataAccess;
-using copoilot_sample.DataAccess.Entities;
-using copoilot_sample.Api.Models.Dtos;
+using copilot_sample.DataAccess;
+using copilot_sample.DataAccess.Entities;
+using copilot_sample.Api.Models.Dtos;
 using Microsoft.EntityFrameworkCore;
 
-namespace copoilot_sample.Api.Services
+namespace copilot_sample.Api.Services
 {
     public class ProductAttributeService
     {

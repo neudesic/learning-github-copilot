@@ -1,9 +1,9 @@
-using copoilot_sample.Api.Models.Dtos;
-using copoilot_sample.DataAccess;
-using copoilot_sample.DataAccess.Entities;
+using copilot_sample.Api.Models.Dtos;
+using copilot_sample.DataAccess;
+using copilot_sample.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace copoilot_sample.Api.Services
+namespace copilot_sample.Api.Services
 {
     /// <summary>
     /// Service for managing products in the application.

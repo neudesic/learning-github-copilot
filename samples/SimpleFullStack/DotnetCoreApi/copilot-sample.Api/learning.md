@@ -18,29 +18,34 @@ The GitHub Copilot chat window will open on the right side of the Visual Studio 
 
 Open the Copilot chat thread and ask by clicking on the "Create new thread" button.
 
-### Examples
+### Examples in Ask mode
 
 1. **Explain the code:**
+
     ```text
     @workspace, Explain the DataAccess project in the solution. Also explain how it is being used and triggered.
     ```
 
 2. **Ask Copilot to implement a feature:**
+
     ```text
     @workspace, In ProductService class, AddProductAsync method, add a check to see if the product already exists in the database. If it does, throw a custom exception named ProductAlreadyExistsException.
     ```
 
 3. **Create a controller and service:**
+
     ```text
     @workspace, Create a controller for ProductReviews CRUD operations and add a service named ProductReviewService that implements IProductReviewService interface to handle DB operations and add it to DI. Also add necessary DTO models.
     ```
 
 4. **Ask Copilot about an exception:**
+
     ```text
     Run GetProducts endpoint and check if there are any exceptions, and explore "Analyze with Copilot".
     ```
 
 5. **Generate integration code:**
+
     ```text
     @workspace, I am trying to consume CategoryController endpoint in UI TypeScript project. It uses axios for HTTP calls, please generate TS code with interfaces.
     ```
@@ -49,21 +54,30 @@ Open the Copilot chat thread and ask by clicking on the "Create new thread" butt
 
 Click on the "Create new Edits thread" button to open the edit mode chat.
 
-### Examples
+### Examples for edit mode
 
 1. **Document the code:**
+
     ```text
     @workspace, Document the ProductAttributeService class and its methods.
     ```
 
 2. **Implement a feature:**
+
     ```text
     @workspace, Create a controller for ProductReviews CRUD operations and add a service named ProductReviewService that implements IProductReviewService interface to handle DB operations and add it to DI. Also add necessary DTO models.
     ```
 
 3. **Create unit tests:**
+
     ```text
     @workspace, Create unit tests for the ProductAttributeService class and its methods.
+    ```
+
+4. **Build deployments:**
+
+    ```text
+    I am planning to deploy the .net core api as a docker container on kubernetes, please help me generate the docker file. Also explain what each statement in the dockerfile does
     ```
 
 ## Inline Chat with Copilot
@@ -74,6 +88,7 @@ To open inline chat, select a code block and press `Alt + /`.
 
 1. **Explain a selected code block.**
 2. **Ask Copilot to write code:**
+
     ```text
     In ProductService class, AddProductAsync method, select the method body and click "Alt + /" to open inline chat.
     Please add a check if the Category already exists in the database. If it does, throw an exception.

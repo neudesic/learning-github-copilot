@@ -1,4 +1,4 @@
-namespace copoilot_sample.Api.Models.Dtos
+namespace copilot_sample.Api.Models.Dtos
 {
     public class ProductAttributeDto
     {

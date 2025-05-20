@@ -1,6 +1,0 @@
-@copoilot_sample_HostAddress = http://localhost:5147
-
-GET {{copoilot_sample_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

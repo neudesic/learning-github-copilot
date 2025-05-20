@@ -1,6 +1,6 @@
-using copoilot_sample.Api.Models.Dtos;
+using copilot_sample.Api.Models.Dtos;
 
-namespace copoilot_sample.Api.Services
+namespace copilot_sample.Api.Services
 {
     /// <summary>
     /// Interface for managing products in the application.

@@ -1,8 +1,8 @@
-using copoilot_sample.Api.Models.Dtos;
-using copoilot_sample.Api.Services;
+using copilot_sample.Api.Models.Dtos;
+using copilot_sample.Api.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace copoilot_sample.Api.Controllers
+namespace copilot_sample.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

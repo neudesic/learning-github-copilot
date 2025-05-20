@@ -1,5 +1,5 @@
-using copoilot_sample.DataAccess;
-using copoilot_sample.Api.Services;
+using copilot_sample.DataAccess;
+using copilot_sample.Api.Services;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 

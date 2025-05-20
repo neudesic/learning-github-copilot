@@ -1,4 +1,4 @@
-namespace copoilot_sample.DataAccess.Entities
+namespace copilot_sample.DataAccess.Entities
 {
     public class Product
     {

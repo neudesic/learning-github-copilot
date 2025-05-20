@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
-using copoilot_sample.DataAccess.Entities;
+using copilot_sample.DataAccess.Entities;
 
-namespace copoilot_sample.Api.Models.Dtos
+namespace copilot_sample.Api.Models.Dtos
 {
     public static class CategoryMappings
     {

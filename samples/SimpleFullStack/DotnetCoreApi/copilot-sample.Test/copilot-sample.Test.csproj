@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>copoilot_sample.Test</RootNamespace>
+    <RootNamespace>copilot_sample.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\copoilot-sample.Api\copoilot-sample.Api.csproj" />
+    <ProjectReference Include="..\copilot-sample.Api\copilot-sample.Api.csproj" />
   </ItemGroup>
 
   <ItemGroup>

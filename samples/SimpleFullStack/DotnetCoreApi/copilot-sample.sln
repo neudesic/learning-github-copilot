@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copoilot-sample.Api", "copoilot-sample.Api\copoilot-sample.Api.csproj", "{8E754013-64CD-402F-A9D1-10D3CFE753D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copilot-sample.Api", "copilot-sample.Api\copilot-sample.Api.csproj", "{8E754013-64CD-402F-A9D1-10D3CFE753D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copoilot-sample.Test", "copoilot-sample.Test\copoilot-sample.Test.csproj", "{0AE92036-1C6A-41C7-A84D-FE4E1A579351}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copilot-sample.Test", "copilot-sample.Test\copilot-sample.Test.csproj", "{0AE92036-1C6A-41C7-A84D-FE4E1A579351}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copoilot-sample.DataAccess", "DataAccess\copoilot-sample.DataAccess.csproj", "{8EFCEFC0-CD82-48B2-8E7C-CB56BA85BAE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copilot-sample.DataAccess", "DataAccess\copilot-sample.DataAccess.csproj", "{8EFCEFC0-CD82-48B2-8E7C-CB56BA85BAE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		copilot-instructions.md = copilot-instructions.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

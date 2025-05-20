@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using copoilot_sample.DataAccess.Entities;
+using copilot_sample.DataAccess.Entities;
 
-namespace copoilot_sample.DataAccess.EntityConfiguration
+namespace copilot_sample.DataAccess.EntityConfiguration
 {
     public class ProductAttributeConfiguration : IEntityTypeConfiguration<ProductAttribute>
     {
