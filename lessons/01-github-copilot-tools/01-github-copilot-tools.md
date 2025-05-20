@@ -44,37 +44,99 @@ Leverage Copilot Agent to automate repetitive tasks and workflows, integrating s
 
 ### 4. GitHub Copilot Inline
 
-Enhance productivity by using inline prompts directly within your editor, enabling quick code changes, method generation, and small incremental improvements without leaving the coding context. Ideal for quick, iterative coding and minor adjustments.
+Enhance productivity by using inline prompts directly within your editor, enabling quick code changes, method generation, and small incremental improvements without leaving the coding context. This approach is ideal for quick, iterative coding and minor adjustments that don't require extensive context switching.
+
+**When to use:**
+
+- When making focused changes to a specific section of code
+- During active development sessions where flow state is important
+- For quick prototyping or iterative improvements to existing code
+- When you need immediate suggestions without breaking your concentration
 
 **Example use cases:**
 
-- Quickly renaming methods or variables across a single file.
-- Generating and inserting simple code blocks or functions.
-- Rapid prototyping within the editor itself.
+- Quickly renaming methods or variables across a single file
+- Generating and inserting simple code blocks or functions
+- Implementing standard design patterns (e.g., Factory, Singleton, Observer)
+- Writing unit tests for existing methods
+- Converting between code formats (e.g., converting a for loop to LINQ in C#)
+- Generating regular expressions for specific validation requirements
+- Implementing interface methods or abstract class implementations
+- Creating data models or DTOs based on existing patterns in your codebase
+
+**Azure-specific examples:**
+
+- Quickly adding Azure SDK authentication code snippets directly in your editor
+- Generating Azure Storage or Cosmos DB access code inline where needed
+- Converting local configuration to Azure App Configuration or Key Vault references
+- Adding Azure Monitor Application Insights telemetry to existing methods
 
 - **Lab:** [Exploring Github Copilot Inline](labs/01d-exploring-copilot-inline.md)
 
 ### 5. GitHub Copilot Website
 
-Utilize the Copilot Web interface to explore suggestions, manage preferences, and gain insights into your coding habits and productivity. This centralized interface is helpful for reviewing usage analytics, setting global preferences, and accessing educational resources.
+Utilize the Copilot Web interface to explore suggestions, manage preferences, and gain insights into your coding habits and productivity. This centralized interface provides a comprehensive dashboard for reviewing usage analytics, setting global preferences, accessing educational resources, and managing your Copilot subscription.
+
+**When to use:**
+
+- For managing subscription details and billing information
+- To review personal usage metrics and productivity insights
+- When setting up global preferences that apply across all development environments
+- To access educational materials and latest updates about Copilot capabilities
+- For providing feedback on Copilot's performance and suggestions
 
 **Example use cases:**
 
-- Reviewing coding suggestions outside of your IDE.
-- Analyzing your coding patterns to identify improvement areas.
-- Managing subscription details and preferences.
+- Reviewing coding suggestions outside of your IDE
+- Analyzing your coding patterns to identify improvement areas
+- Managing subscription details and preferences
+- Customizing Copilot's behavior across different programming languages
+- Setting up global ignore patterns for sensitive or proprietary code
+- Accessing learning resources and official documentation
+- Reviewing historical usage statistics to optimize your development workflow
+- Providing feedback to the GitHub team on Copilot's suggestions
+
+**Azure-specific examples:**
+
+- Accessing tailored Azure best practices resources through your Copilot dashboard
+- Reviewing Azure-related code quality metrics in your Copilot analytics
+- Managing Azure-specific Copilot custom instructions through the web interface
+- Exploring additional Azure development resources linked from the Copilot dashboard
 
 - **Lab:** [Navigating Copilot's Web Interface](labs/01e-github-copilot-website.md)
 
 ### 6. GitHub Copilot CLI
 
-Streamline command-line operations by generating shell commands and automating tasks directly from your terminal. Copilot CLI is especially valuable for developers who prefer terminal-based interactions, enabling fast and efficient execution of complex shell commands.
+Streamline command-line operations by generating shell commands and automating tasks directly from your terminal. Copilot CLI transforms natural language descriptions into powerful command-line instructions, making complex operations accessible without requiring memorization of syntax or extensive documentation lookups.
+
+**When to use:**
+
+- For executing complex or infrequently used commands
+- When working in terminal-heavy workflows
+- For automating repetitive command-line tasks
+- When you need to construct complex pipelines or data transformations
+- If you're unfamiliar with command syntax for specific tools or platforms
 
 **Example use cases:**
 
-- Generating complex git commands for repository management.
-- Creating automation scripts quickly through natural language prompts.
-- Executing system-level operations without extensive command-line expertise.
+- Generating complex git commands for repository management (e.g., interactive rebasing, complex merges)
+- Creating automation scripts quickly through natural language prompts
+- Executing system-level operations without extensive command-line expertise
+- Constructing advanced grep, sed, or awk commands for text processing
+- Building deployment pipelines and CI/CD scripts
+- Generating database queries or migration scripts
+- Creating Docker and Kubernetes management commands
+- Formulating complex data transformation pipelines using tools like jq or yq
+
+**Azure-specific examples:**
+
+- Generating Azure CLI (az) commands for resource management
+- Creating complex Azure Resource Manager (ARM) deployment commands
+- Building Azure DevOps pipeline definitions and commands
+- Automating Azure resource monitoring and maintenance tasks
+- Generating secure connection strings and authentication commands
+- Creating Azure Kubernetes Service (AKS) management commands
+- Developing multi-stage deployment scripts for Azure environments
 
 - **Lab:** [Mastering GitHub Copilot CLI](#) Coming Soon
 
