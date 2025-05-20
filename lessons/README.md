@@ -12,7 +12,7 @@ Lessons are conceptual and not tied to a specific programming language. They cov
 - **Examples:**
   - `01-github_copilot.md`: Overview of GitHub Copilot tools.
   - `02-prompt_engineering.md`: Learn how to craft effective prompts.
-  - `03-design_patterns.md`: Explore design patterns with Copilot.
+  - `03-copilot-best-practices.md`: Explore best practices of Copilot.
 
 ### Labs
 
