@@ -129,3 +129,7 @@ By completing this lab, you've learned to:
 - Integrate analytics tracking and performance optimizations
 
 These skills will help you leverage GitHub Copilot Edit to maintain and improve your React codebase efficiently while maintaining full control over the changes.
+
+---
+
+© Copyright Neudeisc 2025

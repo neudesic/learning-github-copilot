@@ -20,11 +20,13 @@
 
 - Use meaningful variable and function names.
 - The quality of results from Copilot Chat may be degraded if very large files, or a large number of files, are used as context for a question.
+
   - Break down your tasks.
   - Keep functions short and readable.
   - Comment clearly above complex logic.
 
 - **Ways to provide necessary Context:**
+
   - Open relevant files and close irrelevant files to provide accurate context.
   - Provide folder or workspace as context.
   - Provide context from images, or by attaching files.
@@ -36,10 +38,12 @@
 - **Custom Instructions to GitHub Copilot:**
 
   1. Different models at different times can generate code that does not take every detail in your solution into account, depending on the current context and model capacity.
+
      - For example, open the file `src/Basket.API/Grpc/BasketService.cs` and press `Ctrl-Alt-I` to open Chat view and ask to "create unit tests for this class" and observe the generated code.
      - In most cases, for .NET solutions, it will generate code using the `Moq` library for mocking dependencies.
 
   2. You can create a custom instructions file to automatically add information to all questions you ask Copilot.
+
      - Create a file `.github/copilot-instructions.md` and add instructions like "When mocking dependencies in tests, use NSubstitute." Close the file and retry the question.
      - Observe two things:
        - GitHub Copilot used two references: the file in focus and the custom instructions file.
@@ -56,6 +60,7 @@ Never blindly accept code, especially for security-critical or production system
 
 - **Ask for variants when needed.**
 - **Review before you commit.**
+
   - **Checklist:**
     - Read line by line
     - Check logic and edge cases
@@ -63,8 +68,11 @@ Never blindly accept code, especially for security-critical or production system
     - Run tests or static analysis
     - Make it match your team’s standards
 
-- Use Copilot for repetitive, boilerplate tasks:
-  - Writing model classes (e.g., C# classes, TS interfaces)
+- Use Copilot for repetitive, boilerplate tasks: - Writing model classes (e.g., C# classes, TS interfaces)
   - Setting up routes or endpoints
   - Writing unit test scaffolds
   - Generating repetitive validation or serialization logic
+
+---
+
+© Copyright Neudeisc 2025

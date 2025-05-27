@@ -160,3 +160,7 @@ By completing this lab, you've learned to:
 - Refactor application architecture with minimal manual intervention
 
 These capabilities demonstrate how GitHub Copilot Agent can dramatically accelerate development by handling complex, multi-file changes that would typically require significant manual effort.
+
+---
+
+© Copyright Neudeisc 2025

@@ -137,3 +137,7 @@ By completing this lab, you've learned to:
 - Accept ghost text to streamline minor edits and logic insertions.
 
 GitHub Copilot Inline provides an efficient way to iterate rapidly on your React components without breaking your development flow.
+
+---
+
+© Copyright Neudeisc 2025

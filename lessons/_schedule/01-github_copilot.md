@@ -34,3 +34,7 @@
 #### 5. Open Q&A (10–15 min)
 
 # Any questions or clarifications about the labs or Copilot in general.
+
+---
+
+© Copyright Neudeisc 2025

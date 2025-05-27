@@ -67,3 +67,5 @@ The `_schedule/` folder contains the structured agenda for the workshop. It outl
 We welcome your feedback! Please open an issue or submit a pull request if you have suggestions for improving the workshop.
 
 ---
+
+© Copyright Neudeisc 2025

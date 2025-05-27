@@ -96,3 +96,7 @@ By completing this lab, you’ve learned to:
 - Chain inline edits for a more interactive and focused development experience.
 
 GitHub Copilot Inline is a fast, intuitive way to stay in the flow while writing or improving code directly in your editor.
+
+---
+
+© Copyright Neudeisc 2025

@@ -136,3 +136,5 @@ Streamline command-line operations by generating shell commands and automating t
 - [Mastering GitHub Copilot CLI](#) (Coming Soon)
 
 ---
+
+© Copyright Neudeisc 2025

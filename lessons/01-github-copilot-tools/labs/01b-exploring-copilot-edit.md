@@ -69,3 +69,7 @@ By completing this lab, you’ve learned to:
 - Leverage full-file editing to streamline development and maintenance in real-world scenarios.
 
 This lab demonstrates how GitHub Copilot Edit can boost productivity for developers managing and evolving mid-to-large sized codebases.
+
+---
+
+© Copyright Neudeisc 2025

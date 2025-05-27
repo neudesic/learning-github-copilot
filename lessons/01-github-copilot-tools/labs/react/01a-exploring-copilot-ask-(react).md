@@ -127,3 +127,7 @@ By completing this lab, you've learned to:
 - Understand how to leverage Copilot for React-specific tasks.
 
 These techniques will help you incorporate GitHub Copilot Chat into your daily React development workflow effectively.
+
+---
+
+© Copyright Neudeisc 2025

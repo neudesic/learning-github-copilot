@@ -38,3 +38,7 @@
 - Generate mock data and error handling stubs
 
 #### 6. Recap and Feedback (10–15 min)
+
+---
+
+© Copyright Neudeisc 2025

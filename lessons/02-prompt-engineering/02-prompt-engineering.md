@@ -252,3 +252,5 @@ Guide me through this setup step by step, explaining each command and configurat
 ```
 
 ---
+
+© Copyright Neudeisc 2025

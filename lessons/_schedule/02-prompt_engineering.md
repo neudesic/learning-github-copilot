@@ -42,3 +42,7 @@
   - Code translations
 
 #### 6. Discussion & Q&A (10–15 min)
+
+---
+
+© Copyright Neudeisc 2025

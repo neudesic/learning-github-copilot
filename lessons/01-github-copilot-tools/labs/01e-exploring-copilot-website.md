@@ -78,3 +78,7 @@ By completing this lab, you’ve learned to:
 - Get actionable feedback and code suggestions without needing to open an IDE
 
 GitHub Copilot on the web is perfect for quick insights, documentation reviews, and exploring unfamiliar codebases in the browser.
+
+---
+
+© Copyright Neudeisc 2025

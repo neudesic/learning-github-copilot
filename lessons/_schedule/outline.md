@@ -186,3 +186,7 @@
 - Open Q&A session
 - Guided practical exercises and examples
 - Feedback session
+
+---
+
+© Copyright Neudeisc 2025
