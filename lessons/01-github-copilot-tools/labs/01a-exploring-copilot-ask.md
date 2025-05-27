@@ -28,7 +28,7 @@ Developers, QA testers, DevOps engineers, and Technical Writers.
 
 ### 2. Ask Contextual Questions
 
-- Browse to `src/Ordering.API/Apis` folder and open the `OrdersApi.cs` file.
+- Browse to `samples/Orders/Orders.Api/Controllers` folder and open the `OrderController.cs` file.
 - In the Copilot Chat prompt, type:
 
 ```text

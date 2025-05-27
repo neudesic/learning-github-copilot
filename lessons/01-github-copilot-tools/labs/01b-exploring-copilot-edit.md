@@ -23,7 +23,7 @@ Developers, QA testers, DevOps engineers, and Technical Writers working with med
 ### 1. Reset Your Code
 
 - Undo or discard any previous changes made to the `Order` class (if following from a previous lab).
-- Ensure you have a clean version of `Order.cs` open for editing.
+- Ensure you have a clean version of `samples/Orders/Orders.Domain/Order.cs` open for editing.
 
 ### 2. Launch Copilot Edit
 
@@ -34,7 +34,7 @@ Developers, QA testers, DevOps engineers, and Technical Writers working with med
 
 ### 3. Add the File to Context
 
-- Click `+ Add Files` and select the `Order.cs` file from your project to add it to the edit context.
+- Click `+ Add Files` and select the `samples/Orders/Orders.Domain/Order.cs` file from your project to add it to the edit context.
 
 ### 4. Issue a Refactoring Prompt
 

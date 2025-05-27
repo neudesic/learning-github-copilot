@@ -1,4 +1,4 @@
-### Lab: Exploring GitHub Copilot Edit
+### Lab: Exploring GitHub Copilot Inline
 
 ## Overview
 
@@ -22,7 +22,7 @@ Developers looking to boost their productivity through fast, context-aware code 
 
 ### 1. Open Target File
 
-- Navigate to the `samples/eshop/src/Ordering.Domain/AggregatesModel/OrderAggregate` folder in Visual Studio Code.
+- Navigate to the `samples/Orders/Orders.Domain` folder in Visual Studio Code.
 - Open the `Order.cs` file for editing.
 
 ### 2. Rename the Method
