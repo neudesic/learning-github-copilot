@@ -49,7 +49,7 @@ Both GitHub Copilot and GitHub Copilot Chat extensions are installed in Visual S
 **Description:**  
 You will install GitHub CLI (_gh_) and GitHub Copilot extension in Windows using _winget_.
 For Windows _gh_ is available via [WinGet](https://github.com/microsoft/winget-cli), [scoop](https://scoop.sh/), [Chocolatey](https://chocolatey.org/), [Conda](https://github.com/cli/cli?tab=readme-ov-file#conda), [Webi](https://github.com/cli/cli?tab=readme-ov-file#webi), and as downloadable MSI.  
-For other platforms, see the instructions [here](https://github.com/cli/cli?tab=readme-ov-file#installation).
+For other platforms, see the instructions [in the official GitHub CLI installation guide](https://github.com/cli/cli?tab=readme-ov-file#installation).
 
 **Instructions:**
 
@@ -78,7 +78,6 @@ For other platforms, see the instructions [here](https://github.com/cli/cli?tab=
 
 **Expected Outcome:**  
 GitHub CLI and GitHub Copilot extension are installed and connected to your GitHub account.
----
 
 ## Verification
 

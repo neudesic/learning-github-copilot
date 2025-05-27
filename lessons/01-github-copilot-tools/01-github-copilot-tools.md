@@ -133,7 +133,7 @@ Streamline command-line operations by generating shell commands and automating t
 
 **Labs:**
 
-- [Mastering GitHub Copilot CLI](#) (Coming Soon)
+- Mastering GitHub Copilot CLI (Coming Soon)
 
 ---
 

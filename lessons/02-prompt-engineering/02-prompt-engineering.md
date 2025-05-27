@@ -32,7 +32,7 @@ Explore how Copilot processes text through tokens and how context window limitat
 - When faced with token limitations, break down complex requests into sequential, smaller prompts
 - Remove unnecessary comments, documentation, or boilerplate when providing code as context
 
-- **Lab:** [Working with Tokens and Context Windows](#) Coming Soon
+- **Lab:** Coming Soon
 
 ### 2. Crafting Effective Prompts
 
@@ -62,7 +62,7 @@ Learn the elements that make a good prompt and how to structure your requests to
 - Use formatting to emphasize important aspects of your request (bullet points, numbering)
 - For complex requests, provide an example of similar code or pseudocode
 
-- **Lab:** [Crafting Effective Prompts for Code Generation](#) Coming Soon
+- **Lab:** Coming Soon
 
 ### 3. Adding Context in VS Code
 
@@ -91,7 +91,7 @@ Master techniques for providing additional context to Copilot within VS Code, in
 - When implementing interfaces or extending classes, always provide the original definitions
 - Use tabs in VS Code to keep related files open, improving Copilot's awareness of context
 
-- **Lab:** [Providing Context in VS Code](#) Coming Soon
+- **Lab:** Coming Soon
 
 ### 4. Prompt Engineering Best Practices
 
@@ -121,7 +121,7 @@ Discover industry-proven best practices for prompt engineering that consistently
 - Use consistent terminology within your prompts and across your project
 - Explicitly mention testing requirements: "Include unit tests for edge cases"
 
-- **Lab:** [Implementing Prompt Engineering Best Practices](#) Coming Soon
+- **Lab:** Coming Soon
 
 ### 5. Advanced Prompting Techniques
 
@@ -151,7 +151,7 @@ Explore sophisticated prompting patterns and techniques that leverage Copilot's 
 - For debugging, use hypothesis testing: "Could the issue be related to X? If so, how would we fix it?"
 - Use comparative prompting: "Generate two solutions to this problem using different approaches"
 
-- **Lab:** [Advanced Prompting Techniques](#) Coming Soon
+- **Lab:** Coming Soon
 
 ### 6. Prompting with GitHub Copilot Agent
 
@@ -182,7 +182,7 @@ Master specialized prompting strategies for GitHub Copilot Agent to automate tas
 - Combine Agent with other Copilot tools: "Use Copilot Edit to implement the changes we discussed"
 - Establish clear scope boundaries: "Focus only on the backend API for now, we'll address the frontend later"
 
-- **Lab:** [Effective Prompting with GitHub Copilot Agent](#) Coming Soon
+- **Lab:** Coming Soon
 
 ---
 
