@@ -84,10 +84,12 @@ GitHub Copilot Agent
 
 Enhance productivity by using inline prompts directly within your editor, enabling quick code changes, method generation, and small incremental improvements without leaving the coding context. This approach is ideal for quick, iterative coding and minor adjustments that don't require extensive context switching.
 
+_Hover over inline suggestions in your IDE to see the available options, and use the Copilot icon in the bottom right corner to access inline suggestions_
 ![
 GitHub Copilot Inline
 ](images/copilot-inline.png 'GitHub Copilot Inline')
 
+_Ctrl + I to open the inline suggestions window, where you can see and select from multiple suggestions based on your current cursor position. This allows you to quickly apply changes or generate new code snippets without interrupting your coding flow._
 ![
 GitHub Copilot Inline Ask
 ](images/copilot-inline-ask.png 'GitHub Copilot Inline Ask')
