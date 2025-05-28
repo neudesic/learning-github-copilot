@@ -254,6 +254,7 @@ const ProductDetailPage = () => {
                                             </TableRow>
                                         ))}
                                     </TableBody>
+
                                 </Table>
                             </TableContainer>
                         ) : (
@@ -263,6 +264,12 @@ const ProductDetailPage = () => {
                         )}
                     </Paper>
                 </Grid>
+
+                {/* Add a section */}
+
+
+
+
             </Grid>
         </Container>
     );

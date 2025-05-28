@@ -6,6 +6,9 @@ Explore the different tools available within GitHub Copilot to enhance your deve
 
 GitHub Copilot provides developers with powerful AI-assisted coding tools designed to streamline coding, debugging, optimization, and automation tasks. These tools integrate seamlessly into various development environments, improving productivity and efficiency across multiple stages of the software development lifecycle.
 
+![Copilot Icon Upper Right](images/copilot-icon-upper-right.png)
+![Copilot Icon Bottom Right](images/copilot-icon-bottom-right.png)
+
 ### 1. GitHub Copilot Ask
 
 GitHub Copilot Ask provides a simple yet powerful way to get quick answers to your programming questions without interrupting your workflow. Simply highlight code, ask a question in the Chat window, and receive immediate guidance. Copilot Ask operates as a "quick gut check" that helps you understand code, solve problems, or learn new concepts without making any changes to your codebase.
@@ -81,6 +84,14 @@ GitHub Copilot Agent
 
 Enhance productivity by using inline prompts directly within your editor, enabling quick code changes, method generation, and small incremental improvements without leaving the coding context. This approach is ideal for quick, iterative coding and minor adjustments that don't require extensive context switching.
 
+![
+GitHub Copilot Inline
+](images/copilot-inline.png 'GitHub Copilot Inline')
+
+![
+GitHub Copilot Inline Ask
+](images/copilot-inline-ask.png 'GitHub Copilot Inline Ask')
+
 **Example use cases:**
 
 - Quickly renaming methods or variables across a single file
@@ -100,6 +111,8 @@ Enhance productivity by using inline prompts directly within your editor, enabli
 ### 5. GitHub Copilot Website
 
 Utilize the Copilot Web interface to explore suggestions, manage preferences, and gain insights into your coding habits and productivity. This centralized interface provides a comprehensive dashboard for reviewing usage analytics, setting global preferences, accessing educational resources, and managing your Copilot subscription.
+
+![GitHub Copilot Website](images/copilot-website.png 'GitHub Copilot Website')
 
 **Example use cases:**
 
