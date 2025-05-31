@@ -1,18 +1,4 @@
-# Copilot Chat
 
-To open the Copilot chat, click on the Copilot icon in the top right corner of the Visual Studio window.  
-Refer: [Visual Studio GitHub Copilot Chat Documentation](https://learn.microsoft.com/en-us/visualstudio/ide/visual-studio-github-copilot-chat?view=vs-2022)
-
-![Image-open-gh-cp-chat](./Images/open-gh-cp-chat.png)
-
-The GitHub Copilot chat window will open on the right side of the Visual Studio window. Its header has the following options:
-
-1. **Chat thread dropdown:** Select a thread to view the chat history.
-2. **Create new thread button:** Click to create a new chat thread.
-3. **Edit thread button:** Click to edit the current thread.
-4. **Delete thread button:** Click to delete the current thread.
-
-![Copilot chat window](./Images/gh-cp-header.png)
 
 ## Ask Mode in Copilot
 

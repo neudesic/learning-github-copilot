@@ -27,10 +27,11 @@ This mode leverages your current editor context to provide highly relevant answe
 - Finding the right syntax for specific programming tasks
 - Getting unstuck on problems without committing to architectural changes
 
-**Labs:**
+#### Lab - Ask
 
-- [Exploring GitHub Copilot Chat](labs/01a-exploring-copilot-ask.md) (C#/.NET)
+- [Exploring GitHub Copilot Chat](labs/01a-exploring-copilot-ask.md)
 - [Exploring GitHub Copilot Chat with React](<labs/react/01a-exploring-copilot-ask-(react).md>) (React)
+- [Exploring Copilot Chat in Visual Studio with DonetCoreApi](../../samples/SimpleFullStack/DotnetCoreApi/lessons/01-github-copilot-tools/01a-exploring-copilot-ask.md)
 
 ### 2. GitHub Copilot Edit
 
@@ -49,10 +50,11 @@ What makes Edit mode powerful is that you maintain full control. Copilot does th
 - Applying consistent patterns to related files without affecting other components
 - Working in brownfield applications where you need surgical precision
 
-**Labs:**
+#### Labs - Edit
 
 - [Exploring GitHub Copilot Edit](labs/01b-exploring-copilot-edit.md) (C#/.NET)
 - [Exploring GitHub Copilot Edit with React](<labs/react/01b-exploring-copilot-edit-(react).md>) (React)
+- [Exploring Copilot Edit in Visual Studio with DonetCoreApi](../../samples/SimpleFullStack/DotnetCoreApi/lessons/01-github-copilot-tools/01b-exploring-copilot-edit.md)
 
 ### 3. GitHub Copilot Agent
 
@@ -74,7 +76,7 @@ GitHub Copilot Agent
 - Setting up new projects based on README specifications or requirements documents
 - Refactoring code while maintaining consistent patterns throughout the codebase
 
-**Labs:**
+#### Labs - Agent
 
 - [Automating Tasks with Copilot Agent](labs/01c-exploring-copilot-agent.md) (C#/.NET)
 - [Automating Tasks with Copilot Agent in eShop](<labs/01c-exploring-copilot-agent-(eshop).md>) (eShop microservices)
@@ -109,6 +111,7 @@ GitHub Copilot Inline Ask
 
 - [Exploring GitHub Copilot Inline](labs/01d-exploring-copilot-inline.md) (C#/.NET)
 - [Exploring GitHub Copilot Inline with React](<labs/react/01d-exploring-copilot-inline-(react).md>) (React)
+- [Exploring Copilot Inline in Visual Studio with DonetCoreApi](../../samples/SimpleFullStack/DotnetCoreApi/lessons/01-github-copilot-tools/01d-exploring-copilot-inline.md)
 
 ### 5. GitHub Copilot Website
 

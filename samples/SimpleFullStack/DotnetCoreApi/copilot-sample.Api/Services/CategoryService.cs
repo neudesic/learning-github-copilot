@@ -46,15 +46,7 @@ namespace copilot_sample.Api.Services
         }
 
         public async Task<CategoryDto?> AddCategoryAsync(AddCategoryDto addCategoryDto)
-        {
-            var existingCategory = await _dbContext.Categories
-                .FirstOrDefaultAsync(c => c.Name.ToLower() == addCategoryDto.Name.ToLower());
-
-            if (existingCategory != null)
-            {
-                return null;
-            }
-
+        {            
             var category = new Category
             {
                 Name = addCategoryDto.Name,
@@ -85,16 +77,7 @@ namespace copilot_sample.Api.Services
         }
 
         public async Task<bool> DeleteCategoryAsync(int id)
-        {
-            var category = await _dbContext.Categories.FindAsync(id);
-            if (category == null)
-            {
-                return false;
-            }
-
-            _dbContext.Categories.Remove(category);
-            await _dbContext.SaveChangesAsync();
-
+        {            
             return true;
         }
     }
