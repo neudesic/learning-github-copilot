@@ -98,3 +98,5 @@ By completing this lab, you’ve learned to:
 - Request documentation or refactoring suggestions.
 
 These techniques will help you incorporate GitHub Copilot Chat into your daily development workflow effectively.
+
+© Copyright Neudeisc 2025

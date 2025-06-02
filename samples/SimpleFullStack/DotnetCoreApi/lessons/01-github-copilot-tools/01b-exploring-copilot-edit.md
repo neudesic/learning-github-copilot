@@ -84,3 +84,5 @@ This lab demonstrates how GitHub Copilot Edit can boost productivity for develop
 ```text
 I am planning to deploy the .net core api as a docker container on kubernetes, please helpme generate the docker file. Also explain what each statement in the dockerfile does
 ```
+
+© Copyright Neudeisc 2025

@@ -2,6 +2,8 @@
 
 ## Overview
 
+For Visual Studio 2022 Copilot setup refer [GitHub Copilot for Visual Studio](../../samples/SimpleFullStack/DotnetCoreApi/lessons/00-VS-copilot-setup.md).
+
 **Goal:**  
 In this lab, you will learn how to install:
 
