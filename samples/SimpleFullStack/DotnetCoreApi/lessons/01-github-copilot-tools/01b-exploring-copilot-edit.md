@@ -3,7 +3,7 @@
 ## Overview
 
 **Goal:**  
-Use GitHub Copilot Edit to refactor, enhance, and optimize code with large-scope changes using natural language prompts across multiple files or code blocks.
+Use GitHub Copilot Edit to refactor, enhance, and optimize .NET Core Web API code with large-scope changes using natural language prompts across multiple files or code blocks in Visual Studio 2022.
 
 **Estimated Duration:**  
 15-20 minutes
@@ -13,21 +13,23 @@ Developers, QA testers, DevOps engineers, and Technical Writers working with med
 
 **Prerequisites:**
 
-- Visual Studio 2022 installed
-- GitHub Copilot extension enabled
-- Access to GitHub Copilot Edit (in Preview as part of GitHub Copilot Chat)
-- Familiarity with a sample project (C# preferred for this example)
+- Visual Studio 2022 (version 17.6 or later)
+- GitHub Copilot extension enabled in Visual Studio
+- Access to GitHub Copilot Edit (available as part of GitHub Copilot Chat)
+- Access to the DotnetCoreApi sample project
+- Basic familiarity with ASP.NET Core Web API patterns
 
 ## Lab Steps
 
-### 1. Launch Copilot Edit
+### 1. Launch Copilot Edit in Visual Studio 2022
 
+- Open the DotnetCoreApi solution in Visual Studio 2022
 - Open the Copilot Chat interface by clicking the Copilot icon in the Visual Studio activity bar or using the shortcut `Ctrl + \, C` (Windows/Linux).
 - In the Copilot Chat window, click the **Create New Edits thread** icon in the top-right corner.
 
 ![copilot edit](../images/VS-open-edits-thread.png)
 
-### 2. Add the File to Context
+### 2. Add API Files to Edit Context
 
 - Click `+ Add Files` and select the `Services/ProductAttributeService.cs` file from your `copilot-sample.Api` project to add it to the edit context.
 
@@ -36,7 +38,10 @@ Developers, QA testers, DevOps engineers, and Technical Writers working with med
 In the Copilot Edit prompt, enter the following natural language instruction:
 
 ```plaintext
-Document the ProductAttributeService class and its methods. 
+Add comprehensive XML documentation comments to the ProductAttributeService class and all its methods. 
+Include parameter descriptions, return value descriptions, and exception documentation.
+Also add input validation with proper exception handling for null or invalid parameters.
+Follow ASP.NET Core service layer best practices.
 ```
 
 Copilot Edit will now scan the full file and apply necessary updates across the class.
@@ -57,17 +62,18 @@ Review the proposed changes directly in the chat interface.
 
 ## Summary
 
-By completing this lab, you’ve learned to:
+By completing this lab, you've learned to:
 
 - Use Copilot Edit to modify an entire class file based on a natural language instruction.
 - Apply and verify complex changes like tax and discount logic refactoring.
 - Leverage full-file editing to streamline development and maintenance in real-world scenarios.
+- Follow ASP.NET Core best practices through AI-assisted code transformation
 
-This lab demonstrates how GitHub Copilot Edit can boost productivity for developers managing and evolving mid-to-large sized codebases.
+This demonstrates how GitHub Copilot Edit can significantly accelerate development and maintenance by handling complex, multi-line changes that would be time-consuming to implement manually.
 
-## Exercise
+## Hands-On Exercises
 
-### 1. Implement a feature
+### Exercise 1: Implement a feature
 
 ```text
 @workspace, Create a controller for ProductReviews CRUD operations and add a service namedProductReviewService that implements IProductReviewService interface to handle DB operationsand add it to DI. Also add necessary DTO models.
@@ -76,7 +82,7 @@ This lab demonstrates how GitHub Copilot Edit can boost productivity for develop
 ### 2. Create unit tests
 
 ```text
-@workspace, Create unit tests for the ProductAttributeService class and its methods.
+@workspace, Create unit tests for the ProductAttributeService class and its methods. Use xUnit and Moq for mocking dependencies. Ensure to cover all public methods, including edge cases and exception handling.
 ```
 
 ### 3. Build deployments

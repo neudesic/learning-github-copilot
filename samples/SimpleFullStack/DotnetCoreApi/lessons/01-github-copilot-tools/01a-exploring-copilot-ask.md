@@ -3,7 +3,7 @@
 ## Overview
 
 **Goal:**  
-Learn how to use GitHub Copilot Ask to explore, understand, and improve your codebase by asking natural language questions directly within Visual Studio.
+Learn how to use GitHub Copilot Ask to explore, understand, and enhance your .NET Core Web API project by asking natural language questions directly within Visual Studio 2022.
 
 **Estimated Duration:**  
 15-20 minutes
@@ -13,10 +13,11 @@ Developers, QA testers, DevOps engineers, and Technical Writers.
 
 **Prerequisites:**
 
-- Visual Studio installed
-- GitHub Copilot extension enabled
+- Visual Studio 2022 (version 17.6 or later)
+- GitHub Copilot extension enabled in Visual Studio
 - Access to GitHub Copilot Chat (requires a Copilot subscription)
-- Familiarity with a sample project (C# .NET Core API project is used in this lab)
+- Access to the DotnetCoreApi sample project
+- Basic familiarity with ASP.NET Core Web API concepts
 
 ## Lab Steps
 
@@ -31,7 +32,7 @@ Developers, QA testers, DevOps engineers, and Technical Writers.
 - In the Copilot Chat prompt, type:
 
 ```text
- @workspace, Explain the DataAccess project in the solution. Also explain how it is being used and triggered.
+@workspace, Explain the Entity Framework Core data access patterns in this Web API. How are DbContext and repositories implemented and used by controllers?
 ```
 
 Observe the GitHub Copilot response explaining the code.
@@ -72,13 +73,14 @@ Observe how Copilot suggests a complete function and copy or insert it into your
 ### 4. Ask Copilot about an exception
 
 ```text
-Run GetProducts endpoint and check if there are any exceptions, and explore "Analyze with Copilot".
+Run the API, Call GetProducts endpoint and check if there are any exceptions, and explore "Analyze with Copilot".
 ```
 
 ### 5. Generate integration code
 
 ```text
-@workspace, I am trying to consume CategoryController endpoint in UI TypeScript project. It uses axios for HTTP calls, please generate TS code with interfaces.
+@workspace, Please generate a strongly-typed TypeScript client for my ProductController API using axios. 
+Include interfaces for all DTOs, error handling, and authentication token management.
 ```
 
 ## Best Practices
