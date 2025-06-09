@@ -155,4 +155,44 @@ Streamline command-line operations by generating shell commands and automating t
 
 ---
 
+### 7. GitHub Copilot Code Review
+
+GitHub Copilot now extends its capabilities to the code review process, offering **AI-generated code review suggestions** directly within your workflow. This tool provides actionable, context-aware recommendations—such as identifying potential bugs, suggesting best practices, highlighting security vulnerabilities, and flagging style inconsistencies.
+
+With Copilot Code Review, you get tailored suggestions for improving your code quality before merging or deploying changes. The system analyzes the code in your pull requests and surfaces comments just like a human reviewer, saving you time and helping your team maintain high standards.
+
+**How to Use:**  
+ When you create or view a pull request on GitHub, look for the Copilot suggestions in the “Conversation” or “Files changed” tab. You can accept, reject, or discuss Copilot’s code review comments just like any other feedback.
+
+For more details, see [Using GitHub Copilot code review](https://docs.github.com/en/copilot/reviewing-code-with-github-copilot).
+
+---
+
+### 8. Copilot Pull Request Summaries
+
+Copilot can now **automatically generate a summary for your pull request**, giving reviewers a clear overview of what’s changed and what to focus on. These AI-generated summaries highlight which files are impacted, the nature of the changes, and any potential areas of concern for reviewers.
+
+This feature accelerates the review process, ensures nothing is overlooked, and reduces manual documentation efforts. Summaries appear automatically in your pull request description, making collaboration faster and more transparent.
+
+**How to Use:**  
+ When opening a pull request, Copilot may prompt you to generate a summary or insert one automatically. Review and edit as needed before publishing your PR.
+
+Learn more: [Creating a pull request summary with GitHub Copilot](https://docs.github.com/en/copilot/creating-a-pull-request-summary-with-github-copilot).
+
+---
+
+### 9. Generate Commit Message inside VS Code Git
+
+Writing meaningful commit messages is essential for project history and collaboration. With GitHub Copilot integrated into VS Code, you can now **generate commit messages directly from the Git panel**.  
+Copilot analyzes your staged changes and suggests clear, descriptive commit messages, saving you time and ensuring consistency.
+
+This is especially helpful when making multiple or complex updates—Copilot will propose a concise summary based on what’s been changed, which you can accept as-is or modify as needed.
+
+**How to Use:**
+
+- In VS Code, stage your changes in the Source Control panel.
+- In the commit message box, look for the Copilot icon or prompt.
+- Click to have Copilot suggest a commit message for your changes.
+- Edit if necessary, then commit as usual.
+
 © Copyright Neudeisc 2025
