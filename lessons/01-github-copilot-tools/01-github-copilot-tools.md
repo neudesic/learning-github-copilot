@@ -164,7 +164,7 @@ With Copilot Code Review, you get tailored suggestions for improving your code q
 **How to Use:**  
  When you create or view a pull request on GitHub, look for the Copilot suggestions in the “Conversation” or “Files changed” tab. You can accept, reject, or discuss Copilot’s code review comments just like any other feedback.
 
-For more details, see [Using GitHub Copilot code review](https://docs.github.com/en/copilot/reviewing-code-with-github-copilot).
+![GitHub Copilot Generate Git Message](images/copilot-pr-review.png 'GitHub Copilot Generate Git Message')
 
 ---
 
@@ -177,7 +177,7 @@ This feature accelerates the review process, ensures nothing is overlooked, and 
 **How to Use:**  
  When opening a pull request, Copilot may prompt you to generate a summary or insert one automatically. Review and edit as needed before publishing your PR.
 
-Learn more: [Creating a pull request summary with GitHub Copilot](https://docs.github.com/en/copilot/creating-a-pull-request-summary-with-github-copilot).
+![GitHub Copilot Generate Git Message](images/copilot-pr-message.png 'GitHub Copilot Generate Git Message')
 
 ---
 
@@ -194,5 +194,9 @@ This is especially helpful when making multiple or complex updates—Copilot wil
 - In the commit message box, look for the Copilot icon or prompt.
 - Click to have Copilot suggest a commit message for your changes.
 - Edit if necessary, then commit as usual.
+
+![GitHub Copilot Generate Git Message](images/copilot-generate-git-message.png 'GitHub Copilot Generate Git Message')
+
+---
 
 © Copyright Neudeisc 2025
