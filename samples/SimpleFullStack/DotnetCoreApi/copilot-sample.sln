@@ -9,9 +9,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copilot-sample.Test", "copi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copilot-sample.DataAccess", "copilot-sample.DataAccess\copilot-sample.DataAccess.csproj", "{8EFCEFC0-CD82-48B2-8E7C-CB56BA85BAE3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lessons", "lessons", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
-		copilot-instructions.md = copilot-instructions.md
+		lessons\01-VS-copilot-setup.md = lessons\01-VS-copilot-setup.md
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{CBAF67E1-E469-4CBF-AD83-7646C6F7CBE0}"
+	ProjectSection(SolutionItems) = preProject
+		lessons\Images\gh-cp-header.png = lessons\Images\gh-cp-header.png
+		lessons\Images\open-gh-cp-chat.png = lessons\Images\open-gh-cp-chat.png
+		lessons\Images\VS-copilot-options.png = lessons\Images\VS-copilot-options.png
+		lessons\Images\VS-enable-agent-mode.png = lessons\Images\VS-enable-agent-mode.png
+		lessons\Images\VS-open-edits-thread.png = lessons\Images\VS-open-edits-thread.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-github-copilot-tools", "02-github-copilot-tools", "{A6DB6DFA-6B61-4026-931D-D97702AC08F6}"
+	ProjectSection(SolutionItems) = preProject
+		lessons\01-github-copilot-tools\01a-exploring-copilot-ask.md = lessons\01-github-copilot-tools\01a-exploring-copilot-ask.md
+		lessons\01-github-copilot-tools\01b-exploring-copilot-edit.md = lessons\01-github-copilot-tools\01b-exploring-copilot-edit.md
+		lessons\01-github-copilot-tools\01c-exploring-copilot-agent.md = lessons\01-github-copilot-tools\01c-exploring-copilot-agent.md
+		lessons\01-github-copilot-tools\01d-exploring-copilot-inline.md = lessons\01-github-copilot-tools\01d-exploring-copilot-inline.md
 	EndProjectSection
 EndProject
 Global
@@ -35,6 +53,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBAF67E1-E469-4CBF-AD83-7646C6F7CBE0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A6DB6DFA-6B61-4026-931D-D97702AC08F6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B78DD698-ADCA-4195-AD2C-9DFDB1A3F59E}

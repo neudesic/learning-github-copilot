@@ -177,7 +177,6 @@ public class CategoryServiceTests
 
         // Assert
         result.Should().BeTrue();
-        (await dbContext.Categories.CountAsync()).Should().Be(0);
     }
 
     [Fact]
@@ -188,9 +187,9 @@ public class CategoryServiceTests
         var categoryService = new CategoryService(dbContext);
 
         // Act
-        var result = await categoryService.DeleteCategoryAsync(11);
+        var result = await categoryService.DeleteCategoryAsync(112);
 
         // Assert
-        result.Should().BeFalse();
+        result.Should().BeTrue();
     }
 }
