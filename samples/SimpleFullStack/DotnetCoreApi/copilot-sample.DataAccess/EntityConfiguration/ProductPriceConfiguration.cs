@@ -9,33 +9,27 @@ namespace copilot_sample.DataAccess.EntityConfiguration
         public void Configure(EntityTypeBuilder<ProductPrice> builder)
         {
             // Table mapping
-            builder.ToTable("ProductPrices");
-
-            // Primary key
+            builder.ToTable("ProductPrices");            // Primary key
             builder.HasKey(pp => pp.PriceID);
 
             // Column mappings
             builder.Property(pp => pp.PriceID)
                 .HasColumnName("PriceID")
-                .UseIdentityColumn();
+                .ValueGeneratedOnAdd();
 
             builder.Property(pp => pp.ProductID)
                 .HasColumnName("ProductID")
-                .IsRequired();
-
-            builder.Property(pp => pp.Price)
+                .IsRequired();            builder.Property(pp => pp.Price)
                 .HasColumnName("Price")
-                .HasColumnType("DECIMAL(18, 2)")
+                .HasPrecision(18, 2)
                 .IsRequired();
 
             builder.Property(pp => pp.CurrencyCode)
                 .HasColumnName("CurrencyCode")
                 .HasMaxLength(3)
-                .HasDefaultValue("USD");
-
-            builder.Property(pp => pp.EffectiveFrom)
+                .HasDefaultValue("USD");            builder.Property(pp => pp.EffectiveFrom)
                 .HasColumnName("EffectiveFrom")
-                .HasDefaultValueSql("GETDATE()");
+                .HasDefaultValueSql("datetime('now')");
 
             builder.Property(pp => pp.EffectiveTill)
                 .HasColumnName("EffectiveTill");

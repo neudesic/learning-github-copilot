@@ -7,9 +7,8 @@ namespace copilot_sample.DataAccess.EntityConfiguration
     public class ProductReviewConfiguration : IEntityTypeConfiguration<ProductReview>
     {
         public void Configure(EntityTypeBuilder<ProductReview> builder)
-        {
-            // Table mapping
-            builder.ToTable("ProductReviews");
+        {            // Table mapping with check constraint
+            builder.ToTable("ProductReviews", t => t.HasCheckConstraint("CK_ProductReviews_Rating", "Rating BETWEEN 1 AND 5"));
 
             // Primary key
             builder.HasKey(pr => pr.ReviewID);
@@ -17,7 +16,7 @@ namespace copilot_sample.DataAccess.EntityConfiguration
             // Column mappings
             builder.Property(pr => pr.ReviewID)
                 .HasColumnName("ReviewID")
-                .UseIdentityColumn();
+                .ValueGeneratedOnAdd();
 
             builder.Property(pr => pr.ProductID)
                 .HasColumnName("ProductID")
@@ -25,22 +24,14 @@ namespace copilot_sample.DataAccess.EntityConfiguration
 
             builder.Property(pr => pr.ReviewerName)
                 .HasColumnName("ReviewerName")
-                .HasMaxLength(100);
-
-            builder.Property(pr => pr.Rating)
+                .HasMaxLength(100);            builder.Property(pr => pr.Rating)
                 .HasColumnName("Rating")
-                .IsRequired();
-
-            // Add check constraint for Rating
-            builder.HasCheckConstraint("CK_ProductReviews_Rating", "Rating BETWEEN 1 AND 5");
-
-            builder.Property(pr => pr.Comment)
-                .HasColumnName("Comment")
-                .HasColumnType("NVARCHAR(MAX)");
+                .IsRequired();            builder.Property(pr => pr.Comment)
+                .HasColumnName("Comment");
 
             builder.Property(pr => pr.ReviewDate)
                 .HasColumnName("ReviewDate")
-                .HasDefaultValueSql("GETDATE()");
+                .HasDefaultValueSql("datetime('now')");
 
             // Relationships
             builder.HasOne(pr => pr.Product)

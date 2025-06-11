@@ -11,7 +11,8 @@
 
 - VS Code setup (recommended) - [Instructions](../00-copilot-setup/00a-installing-copilot.md)
 - JetBrains integration (if needed)
-- Other: Neovim, Visual Studio
+- Other: Neovim, Visual Studio 
+For Visual Studio 2022 Copilot setup refer [GitHub Copilot for Visual Studio](../../samples/SimpleFullStack/DotnetCoreApi/lessons/00-VS-copilot-setup.md)
 - Refer to the [Installing the GitHub Copilot extension in your environment](https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/installing-the-github-copilot-extension-in-your-environment?tool=visualstudio) for detailed IDE setup instructions.
 
 ## 3. CLI and Web Interface

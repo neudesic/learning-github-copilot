@@ -12,12 +12,10 @@ namespace copilot_sample.DataAccess.EntityConfiguration
             builder.ToTable("ProductAttributes");
 
             // Primary key
-            builder.HasKey(pa => pa.AttributeID);
-
-            // Column mappings
+            builder.HasKey(pa => pa.AttributeID);            // Column mappings
             builder.Property(pa => pa.AttributeID)
                 .HasColumnName("AttributeID")
-                .UseIdentityColumn();
+                .ValueGeneratedOnAdd();
 
             builder.Property(pa => pa.ProductID)
                 .HasColumnName("ProductID")

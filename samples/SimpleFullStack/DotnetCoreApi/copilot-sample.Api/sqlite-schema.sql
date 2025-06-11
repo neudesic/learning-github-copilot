@@ -1,106 +1,70 @@
-# Database Setup
-
-## SQLite Setup (Current Configuration)
-
-1. The project is configured to use SQLite database with Entity Framework Core.
-2. The database file `inventory.db` will be created automatically in the project root when you run the application.
-3. You can use Entity Framework migrations to create and seed the database:
-
-```bash
-# Navigate to the DataAccess project
-cd copilot-sample.DataAccess
-
-# Add initial migration
-dotnet ef migrations add InitialCreate --startup-project ../copilot-sample.Api
-
-# Update database (creates SQLite file and tables)
-dotnet ef database update --startup-project ../copilot-sample.Api
-```
-
-4. Alternatively, you can manually create the database using the provided SQLite schema file:
-
-```bash
-# From the Api project directory
-sqlite3 inventory.db < sqlite-schema.sql
-```
-
-## Original SQL Server Setup (For Reference)
-
-1. Install MS SQL Server (Developer or Express) on localhost.  
-   Download: <https://www.microsoft.com/en-us/sql-server/sql-server-downloads>
-2. Create a database named **Inventory**.
-3. Run the following DDL statements to create the necessary tables:
-
-```sql
--- Inventory Database schema
+-- SQLite Database Schema for Inventory System
+-- Note: SQLite uses AUTOINCREMENT instead of IDENTITY and different data types
 
 -- Categories Table
 CREATE TABLE Categories (
-    CategoryID INT PRIMARY KEY IDENTITY(1,1),
-    Name NVARCHAR(100) NOT NULL,
-    Description NVARCHAR(500),
-    ParentCategoryID INT NULL,
+    CategoryID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT NOT NULL,
+    Description TEXT,
+    ParentCategoryID INTEGER,
     FOREIGN KEY (ParentCategoryID) REFERENCES Categories(CategoryID)
 );
 
 -- Products Table
 CREATE TABLE Products (
-    ProductID INT PRIMARY KEY IDENTITY(1,1),
-    Name NVARCHAR(200) NOT NULL,
-    Description NVARCHAR(MAX),
-    SKU NVARCHAR(100) UNIQUE NOT NULL,
-    CategoryID INT NOT NULL,
-    Brand NVARCHAR(100),
-    CreatedAt DATETIME DEFAULT GETDATE(),
-    UpdatedAt DATETIME DEFAULT GETDATE(),
-    IsActive BIT DEFAULT 1,
+    ProductID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT NOT NULL,
+    Description TEXT,
+    SKU TEXT UNIQUE NOT NULL,
+    CategoryID INTEGER NOT NULL,
+    Brand TEXT,
+    CreatedAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UpdatedAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    IsActive INTEGER DEFAULT 1,
     FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID)
 );
 
 -- Pricing Table
 CREATE TABLE ProductPrices (
-    PriceID INT PRIMARY KEY IDENTITY(1,1),
-    ProductID INT NOT NULL,
+    PriceID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductID INTEGER NOT NULL,
     Price DECIMAL(18, 2) NOT NULL,
-    CurrencyCode CHAR(3) DEFAULT 'USD',
-    EffectiveFrom DATETIME DEFAULT GETDATE(),
-    EffectiveTill DATETIME NULL,
+    CurrencyCode TEXT DEFAULT 'USD',
+    EffectiveFrom DATETIME DEFAULT CURRENT_TIMESTAMP,
+    EffectiveTill DATETIME,
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
 -- Inventory Table
 CREATE TABLE Inventory (
-    InventoryID INT PRIMARY KEY IDENTITY(1,1),
-    ProductID INT NOT NULL,
-    Quantity INT NOT NULL,
-    LastUpdated DATETIME DEFAULT GETDATE(),
+    InventoryID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductID INTEGER NOT NULL,
+    Quantity INTEGER NOT NULL,
+    LastUpdated DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
 -- Product Attributes
 CREATE TABLE ProductAttributes (
-    AttributeID INT PRIMARY KEY IDENTITY(1,1),
-    ProductID INT NOT NULL,
-    AttributeName NVARCHAR(100),
-    AttributeValue NVARCHAR(255),
+    AttributeID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductID INTEGER NOT NULL,
+    AttributeName TEXT,
+    AttributeValue TEXT,
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
 -- Product Reviews
 CREATE TABLE ProductReviews (
-    ReviewID INT PRIMARY KEY IDENTITY(1,1),
-    ProductID INT NOT NULL,
-    ReviewerName NVARCHAR(100),
-    Rating INT CHECK (Rating BETWEEN 1 AND 5),
-    Comment NVARCHAR(MAX),
-    ReviewDate DATETIME DEFAULT GETDATE(),
+    ReviewID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductID INTEGER NOT NULL,
+    ReviewerName TEXT,
+    Rating INTEGER CHECK (Rating BETWEEN 1 AND 5),
+    Comment TEXT,
+    ReviewDate DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
-```
 
-4. Run the following DML statements to insert sample data:
-
-```sql
+-- Insert Sample Data
 -- Insert Categories
 INSERT INTO Categories (Name, Description, ParentCategoryID) VALUES
 ('Electronics', 'Electronic gadgets and devices', NULL),
@@ -193,4 +157,3 @@ INSERT INTO ProductReviews (ProductID, ReviewerName, Rating, Comment) VALUES
 (6, 'Natasha Romanoff', 4, 'Excellent camera quality and battery.'),
 (7, 'Steve Rogers', 5, 'Lasts all day. Perfect for travel.'),
 (7, 'Tony Stark', 3, 'Charges fast, but gets warm during use.');
-```

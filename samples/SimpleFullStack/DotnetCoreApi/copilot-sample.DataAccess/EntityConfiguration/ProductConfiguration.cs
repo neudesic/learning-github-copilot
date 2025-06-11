@@ -9,24 +9,19 @@ namespace copilot_sample.DataAccess.EntityConfiguration
         public void Configure(EntityTypeBuilder<Product> builder)
         {
             // Table mapping
-            builder.ToTable("Products");
-
-            // Primary key
+            builder.ToTable("Products");            // Primary key
             builder.HasKey(p => p.ProductID);
 
             // Column mappings
             builder.Property(p => p.ProductID)
                 .HasColumnName("ProductID")
-                .UseIdentityColumn();
+                .ValueGeneratedOnAdd();
 
             builder.Property(p => p.Name)
                 .HasColumnName("Name")
                 .HasMaxLength(200)
-                .IsRequired();
-
-            builder.Property(p => p.Description)
-                .HasColumnName("Description")
-                .HasColumnType("NVARCHAR(MAX)");
+                .IsRequired();            builder.Property(p => p.Description)
+                .HasColumnName("Description");
 
             builder.Property(p => p.SKU)
                 .HasColumnName("SKU")
@@ -42,15 +37,13 @@ namespace copilot_sample.DataAccess.EntityConfiguration
 
             builder.Property(p => p.Brand)
                 .HasColumnName("Brand")
-                .HasMaxLength(100);
-
-            builder.Property(p => p.CreatedAt)
+                .HasMaxLength(100);            builder.Property(p => p.CreatedAt)
                 .HasColumnName("CreatedAt")
-                .HasDefaultValueSql("GETDATE()");
+                .HasDefaultValueSql("datetime('now')");
 
             builder.Property(p => p.UpdatedAt)
                 .HasColumnName("UpdatedAt")
-                .HasDefaultValueSql("GETDATE()");
+                .HasDefaultValueSql("datetime('now')");
 
             builder.Property(p => p.IsActive)
                 .HasColumnName("IsActive")

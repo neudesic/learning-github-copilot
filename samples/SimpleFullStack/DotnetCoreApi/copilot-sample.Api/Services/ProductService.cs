@@ -20,9 +20,7 @@ namespace copilot_sample.Api.Services
         public ProductService(AppDbContext dbContext)
         {
             _dbContext = dbContext;
-        }
-
-        public async Task<List<ProductDto>> GetProductsAsync()
+        }        public async Task<List<ProductDto>> GetProductsAsync()
         {
             var products = await _dbContext.Products.ToListAsync();
             return products.Select(p => new ProductDto
