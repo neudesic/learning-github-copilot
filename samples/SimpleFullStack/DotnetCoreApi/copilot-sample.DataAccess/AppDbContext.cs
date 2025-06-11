@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using copilot_sample.DataAccess.Entities;
 using copilot_sample.DataAccess.EntityConfiguration;
+using copilot_sample.DataAccess.SeedData;
 
 namespace copilot_sample.DataAccess
 {
@@ -29,6 +30,15 @@ namespace copilot_sample.DataAccess
             modelBuilder.ApplyConfiguration(new InventoryConfiguration());
             modelBuilder.ApplyConfiguration(new ProductAttributeConfiguration());
             modelBuilder.ApplyConfiguration(new ProductReviewConfiguration());
+
+            // Seed data
+            SeedData(modelBuilder);
+        }
+
+        private void SeedData(ModelBuilder modelBuilder)
+        {
+            // Use centralized seed data from the SeedData folder
+            InventorySeedData.ApplyToModelBuilder(modelBuilder);
         }
     }
 }
