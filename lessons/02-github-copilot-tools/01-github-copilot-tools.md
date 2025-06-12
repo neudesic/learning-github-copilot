@@ -1,4 +1,4 @@
-## Lesson 01 - GitHub Copilot Tools
+## Lesson 02 - GitHub Copilot Tools
 
 Explore the different tools available within GitHub Copilot to enhance your development workflow. Below are sections highlighting each tool, including detailed descriptions, use cases, and links to dedicated labs for hands-on learning.
 

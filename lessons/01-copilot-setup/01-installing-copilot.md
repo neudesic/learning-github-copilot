@@ -49,7 +49,7 @@ You are now ready to use GitHub Copilot in Visual Studio 2022.
 To open the Copilot chat, click on the Copilot icon in the top right corner of the Visual Studio window and select **Open Chat Window**.  
 Refer: [Visual Studio GitHub Copilot Chat Documentation](https://learn.microsoft.com/en-us/visualstudio/ide/visual-studio-github-copilot-chat?view=vs-2022)
 
-![Image-open-gh-cp-chat](./Images/open-gh-cp-chat.png)
+![Image-open-gh-cp-chat](./images/open-gh-cp-chat.png)
 
 The GitHub Copilot chat window will open on the right side of the Visual Studio window. Its header has the following options:
 
@@ -58,4 +58,4 @@ The GitHub Copilot chat window will open on the right side of the Visual Studio 
 3. **Edit thread button:** Click to open a chat in edit mode.
 4. **Delete thread button:** Click to delete the current thread.
 
-![Copilot chat window](./Images/gh-cp-header.png)
+![Copilot chat window](./images//gh-cp-header.png)

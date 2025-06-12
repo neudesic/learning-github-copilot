@@ -2,7 +2,18 @@
 
 Learn How to Effectively Use the GitHub Copilot Family of Tools.
 
+## Goal
+
+In this workshop, you will learn how to effectively use GitHub Copilot tools, including Copilot Chat, Copilot Ask, Copilot Edit, and Copilot Agent. The workshop is structured into lessons and labs that provide both conceptual understanding and hands-on experience.
+
 ## Overview
+
+This repository contains lessons and labs designed to help you learn how to effectively use GitHub Copilot tools, including Copilot Chat, Copilot Ask, Copilot Edit, and Copilot Agent. The lessons cover foundational topics, best practices, and real-world examples, while the labs provide hands-on exercises to apply what you've learned.
+
+## Repository Structure
+
+- **Lessons**: Conceptual lessons that cover foundational topics, best practices, and real-world examples.
+- **Labs**: Hands-on exercises that allow you to apply what you've learned in the lessons. These are often language-specific and provide practical experience with GitHub Copilot.
 
 ## Getting Started
 
@@ -11,18 +22,9 @@ Learn How to Effectively Use the GitHub Copilot Family of Tools.
 1. Review the lessons.
 1. Review the sample apps.
 
-### Lessons
+## Lessons
 
-- [Lesson 1: Installing and Configuring GitHub Copilot](docs/1-installing-copilot.md)
-- [Lesson 2: Development with GitHub Copilot](docs/2-development-with-copilot.md)
-- [Lesson 3: Testing with GitHub Copilot](docs/3-testing-with-copilot.md)
-- [Lesson 4: Creating Documentation with GitHub Copilot](docs/4-creating-documentation-with-copilot.md)
-- [Lesson 5: DevOps with GitHub Copilot](docs/5-devops-with-copilot.md)
-- [Lesson 6: Best practices with GitHub Copilot](docs/6-best-practices-with-copilot.md)
-- [Lesson 7: Hot keys and commands](docs/7-hot-keys-and-commands.md)
-- [Lesson 8: Using GitHub Copilot Agent](docs/8-using-github-copilot-agent.md)
+This repository contains lessons and labs designed to help you learn how to effectively use GitHub Copilot tools, including Copilot Chat, Copilot Ask, Copilot Edit, and Copilot Agent.
 
-## Directory Structure
-
-1. `docs` - holds lessons and other documentation
-1. `samples` - holds sample code for lessons
+- **[01 - GitHub Copilot Tools](lessons/01-github-copilot-tools/README.md)**: Overview of GitHub Copilot tools.
+- **[02 - Prompt Engineering](lessons/02-prompt-engineering/README.md)**: Learn how to craft effective prompts for Copilot.

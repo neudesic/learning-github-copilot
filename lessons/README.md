@@ -24,15 +24,6 @@ Labs are hands-on exercises that allow you to apply what you've learned in the l
   - `01b-exploring-copilot-edit.md`: Hands-on with Copilot Edit.
   - `01c-exploring-copilot-agent.md`: Hands-on with Copilot Agent.
 
-### Schedule
-
-The `_schedule/` folder contains the structured agenda for the workshop. It outlines the flow of lessons and labs to ensure a cohesive learning experience.
-
-- **Location:** `lessons/_schedule/`
-- **Examples:**
-  - `00-copilot_setup.md`: Initial setup for the workshop.
-  - `01-github_copilot.md`: Introduction to GitHub Copilot.
-
 ## How to Contribute
 
 1. **Adding Lessons:**
@@ -44,10 +35,6 @@ The `_schedule/` folder contains the structured agenda for the workshop. It outl
 
    - Create a new markdown file in the `labs/` folder under the relevant lesson.
    - Ensure the lab is hands-on and provides clear instructions.
-
-3. **Updating the Schedule:**
-   - Modify the `_schedule/` folder to include your new lesson or lab.
-   - Ensure the schedule maintains a logical flow.
 
 ## Getting Started
 
