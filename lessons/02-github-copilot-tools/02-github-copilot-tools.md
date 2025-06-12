@@ -1,19 +1,61 @@
-## Lesson 02 - GitHub Copilot Tools
+# 🚀 Lesson 02 - GitHub Copilot Tools
+
+---
+
+## 📝 Overview
+
+GitHub Copilot provides developers with powerful AI-assisted coding tools designed to streamline coding, debugging, optimization, and automation tasks. These tools integrate seamlessly into various development environments, improving productivity and efficiency across multiple stages of the software development lifecycle.
+
+---
+
+## 🎯 Goal
+
+Learn about the different GitHub Copilot tools, their use cases, and how to leverage them to enhance your development workflow across various environments.
+
+---
+
+## ⏱️ Estimated Time
+
+45-60 minutes
+
+---
+
+## 👥 Participants
+
+Everyone (Developers, QA testers, DevOps engineers, Technical Writers, and more)
+
+---
+
+## 🛠️ Explore Copilot Tools
 
 Explore the different tools available within GitHub Copilot to enhance your development workflow. Below are sections highlighting each tool, including detailed descriptions, use cases, and links to dedicated labs for hands-on learning.
 
-## Overview
+---
 
-GitHub Copilot provides developers with powerful AI-assisted coding tools designed to streamline coding, debugging, optimization, and automation tasks. These tools integrate seamlessly into various development environments, improving productivity and efficiency across multiple stages of the software development lifecycle.
+## 🔑 Accessing Copilot: The Two Main Icons
+
+GitHub Copilot provides two main icons in your IDE to help you quickly access Copilot features and settings:
+
+- **Top Right Copilot Icon:**
+  - Located in the upper right corner of your IDE window.
+  - Click this icon to open the Copilot Chat panel, start a new chat, or access Copilot settings and account information.
+  - This is the primary entry point for interacting with Copilot's conversational features and managing your Copilot experience.
+
+- **Bottom Right Copilot Icon:**
+  - Found in the lower right corner of your IDE status bar.
+  - Click this icon to quickly toggle Copilot on or off, view Copilot's current status, or access inline suggestions and quick settings.
+  - This icon is especially useful for enabling/disabling Copilot or checking if Copilot is active in your current workspace.
 
 ![Copilot Icon Upper Right](images/copilot-icon-upper-right.png)
 ![Copilot Icon Bottom Right](images/copilot-icon-bottom-right.png)
 
-### 1. GitHub Copilot Ask
+---
+
+## 1️⃣ GitHub Copilot Ask
 
 GitHub Copilot Ask provides a simple yet powerful way to get quick answers to your programming questions without interrupting your workflow. Simply highlight code, ask a question in the Chat window, and receive immediate guidance. Copilot Ask operates as a "quick gut check" that helps you understand code, solve problems, or learn new concepts without making any changes to your codebase.
 
-This mode leverages your current editor context to provide highly relevant answers - explaining what code does, suggesting testing approaches, providing code snippets, or addressing edge cases. Think of it as having an expert programmer quietly whispering helpful advice in your ear.
+This mode leverages your current editor context to provide highly relevant answers—explaining what code does, suggesting testing approaches, providing code snippets, or addressing edge cases. Think of it as having an expert programmer quietly whispering helpful advice in your ear.
 
 ![Github Copilot Ask](images/copilot-ask.png 'GitHub Copilot Ask')
 
@@ -27,15 +69,16 @@ This mode leverages your current editor context to provide highly relevant answe
 - Finding the right syntax for specific programming tasks
 - Getting unstuck on problems without committing to architectural changes
 
-#### Lab - Ask
+**Labs:**
+- [Exploring GitHub Copilot Chat](labs/c-sharp-1/2.1-exploring-copilot-ask.md) (C#/.NET)
+- [Exploring GitHub Copilot Chat with React](<labs/react/2.1-exploring-copilot-ask-(react).md>) (React)
+- [Exploring Copilot Ask with Ecommerce](labs/c-sharp-2/2.1-exploring-copilot-ask.md) (C# Ecommerce)
 
-- [Exploring GitHub Copilot Chat](labs/01a-exploring-copilot-ask.md)
-- [Exploring GitHub Copilot Chat with React](<labs/react/01a-exploring-copilot-ask-(react).md>) (React)
-- [Exploring Copilot Chat in Visual Studio with DonetCoreApi](../../samples/SimpleFullStack/DotnetCoreApi/lessons/01-github-copilot-tools/01a-exploring-copilot-ask.md)
+---
 
-### 2. GitHub Copilot Edit
+## 2️⃣ GitHub Copilot Edit
 
-GitHub Copilot Edit enables you to apply precise modifications to specific files or sections within your codebase using natural language instructions. This tool excels when you need targeted changes to a well-defined set of files rather than extensive modifications across your entire project. Simply highlight the code you want to change, provide instructions like "add error handling" or "refactor using async/await," and Copilot rewrites the code for you – while always showing you the diff for review before any changes are saved.
+GitHub Copilot Edit enables you to apply precise modifications to specific files or sections within your codebase using natural language instructions. This tool excels when you need targeted changes to a well-defined set of files rather than extensive modifications across your entire project. Simply highlight the code you want to change, provide instructions like "add error handling" or "refactor using async/await," and Copilot rewrites the code for you—while always showing you the diff for review before any changes are saved.
 
 What makes Edit mode powerful is that you maintain full control. Copilot does the work, but you get the final say. You can also enhance its effectiveness by providing custom instructions that teach Copilot your team's coding standards, style preferences, and documentation requirements.
 
@@ -50,23 +93,23 @@ What makes Edit mode powerful is that you maintain full control. Copilot does th
 - Applying consistent patterns to related files without affecting other components
 - Working in brownfield applications where you need surgical precision
 
-#### Labs - Edit
+**Labs:**
+- [Exploring GitHub Copilot Edit](labs/c-sharp-1/2.2-exploring-copilot-edit.md) (C#/.NET)
+- [Exploring GitHub Copilot Edit with React](<labs/react/2.2-exploring-copilot-edit-(react).md>) (React)
+- [Exploring Copilot Edit with Ecommerce](labs/c-sharp-2/2.2-exploring-copilot-edit.md) (C# Ecommerce)
 
-- [Exploring GitHub Copilot Edit](labs/01b-exploring-copilot-edit.md) (C#/.NET)
-- [Exploring GitHub Copilot Edit with React](<labs/react/01b-exploring-copilot-edit-(react).md>) (React)
-- [Exploring Copilot Edit in Visual Studio with DonetCoreApi](../../samples/SimpleFullStack/DotnetCoreApi/lessons/01-github-copilot-tools/01b-exploring-copilot-edit.md)
+---
 
-### 3. GitHub Copilot Agent
+## 3️⃣ GitHub Copilot Agent
 
 GitHub Copilot Agent represents the most powerful mode in Copilot Chat, enabling autonomous planning and execution across your entire project. With Agent mode, you provide a high-level prompt and Copilot independently selects the right files, runs necessary tools or terminal commands, and applies code edits until the task is complete. Unlike Edit mode, Agent analyzes related code and identifies additional changes needed across the project to maintain consistency.
 
-What distinguishes Agent mode is its ability to work autonomously - applying edits automatically rather than waiting for explicit approval at each step, while still surfacing potentially risky commands for review. This creates a continuous-edit "driver" model where you define the goal and Copilot executes updates without interruption.
+What distinguishes Agent mode is its ability to work autonomously—applying edits automatically rather than waiting for explicit approval at each step, while still surfacing potentially risky commands for review. This creates a continuous-edit "driver" model where you define the goal and Copilot executes updates without interruption.
 
 For maximum effectiveness, Agent mode works best with custom instructions that define your project structure, coding standards, and other guidelines. These instructions provide a stronger foundation for Copilot to work from, resulting in more consistent and aligned outcomes across multiple sessions.
 
-![
-GitHub Copilot Agent
-](images/copilot-agent.png 'GitHub Copilot Agent')
+![GitHub Copilot Agent](images/copilot-agent.png 'GitHub Copilot Agent')
+
 **Example use cases:**
 
 - Building complete features from high-level descriptions
@@ -76,25 +119,24 @@ GitHub Copilot Agent
 - Setting up new projects based on README specifications or requirements documents
 - Refactoring code while maintaining consistent patterns throughout the codebase
 
-#### Labs - Agent
+**Labs:**
+- [Exploring GitHub Copilot Agent](labs/c-sharp-1/2.3-exploring-copilot-agent.md) (C#/.NET)
+- [Exploring GitHub Copilot Agent with React](<labs/react/2.3-exploring-copilot-agent-(react).md>) (React)
+- [Exploring Copilot Agent with Ecommerce](labs/c-sharp-2/2.3-exploring-copilot-agent.md) (C# Ecommerce)
 
-- [Automating Tasks with Copilot Agent](labs/01c-exploring-copilot-agent.md) (C#/.NET)
-- [Automating Tasks with Copilot Agent in eShop](<labs/01c-exploring-copilot-agent-(eshop).md>) (eShop microservices)
-- [Automating Tasks with Copilot Agent in React](<labs/react/01c-exploring-copilot-agent-(react).md>) (React)
+---
 
-### 4. GitHub Copilot Inline
+## 4️⃣ GitHub Copilot Inline
 
 Enhance productivity by using inline prompts directly within your editor, enabling quick code changes, method generation, and small incremental improvements without leaving the coding context. This approach is ideal for quick, iterative coding and minor adjustments that don't require extensive context switching.
 
-_Hover over inline suggestions in your IDE to see the available options, and use the Copilot icon in the bottom right corner to access inline suggestions_
-![
-GitHub Copilot Inline
-](images/copilot-inline.png 'GitHub Copilot Inline')
+_Hover over inline suggestions in your IDE to see the available options, and use the Copilot icon in the bottom right corner to access inline suggestions._
+
+![GitHub Copilot Inline](images/copilot-inline.png 'GitHub Copilot Inline')
 
 _Ctrl + I to open the inline suggestions window, where you can see and select from multiple suggestions based on your current cursor position. This allows you to quickly apply changes or generate new code snippets without interrupting your coding flow._
-![
-GitHub Copilot Inline Ask
-](images/copilot-inline-ask.png 'GitHub Copilot Inline Ask')
+
+![GitHub Copilot Inline Ask](images/copilot-inline-ask.png 'GitHub Copilot Inline Ask')
 
 **Example use cases:**
 
@@ -108,12 +150,13 @@ GitHub Copilot Inline Ask
 - Creating data models or DTOs based on existing patterns in your codebase
 
 **Labs:**
+- [Exploring GitHub Copilot Inline](labs/c-sharp-1/2.4-exploring-copilot-inline.md) (C#/.NET)
+- [Exploring GitHub Copilot Inline with React](<labs/react/2.4-exploring-copilot-inline-(react).md>) (React)
+- [Exploring Copilot Inline with Ecommerce](labs/c-sharp-2/2.4-exploring-copilot-inline.md) (C# Ecommerce)
 
-- [Exploring GitHub Copilot Inline](labs/01d-exploring-copilot-inline.md) (C#/.NET)
-- [Exploring GitHub Copilot Inline with React](<labs/react/01d-exploring-copilot-inline-(react).md>) (React)
-- [Exploring Copilot Inline in Visual Studio with DonetCoreApi](../../samples/SimpleFullStack/DotnetCoreApi/lessons/01-github-copilot-tools/01d-exploring-copilot-inline.md)
+---
 
-### 5. GitHub Copilot Website
+## 5️⃣ GitHub Copilot Website
 
 Utilize the Copilot Web interface to explore suggestions, manage preferences, and gain insights into your coding habits and productivity. This centralized interface provides a comprehensive dashboard for reviewing usage analytics, setting global preferences, accessing educational resources, and managing your Copilot subscription.
 
@@ -131,10 +174,11 @@ Utilize the Copilot Web interface to explore suggestions, manage preferences, an
 - Providing feedback to the GitHub team on Copilot's suggestions
 
 **Labs:**
+- [Exploring GitHub Copilot Website](labs/c-sharp-2/2.5-exploring-copilot-website.md) (C#/.NET)
 
-- [Navigating Copilot's Web Interface](labs/01e-github-copilot-website.md)
+---
 
-### 6. GitHub Copilot CLI
+## 6️⃣ GitHub Copilot CLI
 
 Streamline command-line operations by generating shell commands and automating tasks directly from your terminal. Copilot CLI transforms natural language descriptions into powerful command-line instructions, making complex operations accessible without requiring memorization of syntax or extensive documentation lookups.
 
@@ -150,46 +194,44 @@ Streamline command-line operations by generating shell commands and automating t
 - Formulating complex data transformation pipelines using tools like jq or yq
 
 **Labs:**
-
 - Mastering GitHub Copilot CLI (Coming Soon)
 
 ---
 
-### 7. GitHub Copilot Code Review
+## 7️⃣ GitHub Copilot Code Review
 
 GitHub Copilot now extends its capabilities to the code review process, offering **AI-generated code review suggestions** directly within your workflow. This tool provides actionable, context-aware recommendations—such as identifying potential bugs, suggesting best practices, highlighting security vulnerabilities, and flagging style inconsistencies.
 
 With Copilot Code Review, you get tailored suggestions for improving your code quality before merging or deploying changes. The system analyzes the code in your pull requests and surfaces comments just like a human reviewer, saving you time and helping your team maintain high standards.
 
-**How to Use:**  
- When you create or view a pull request on GitHub, look for the Copilot suggestions in the “Conversation” or “Files changed” tab. You can accept, reject, or discuss Copilot’s code review comments just like any other feedback.
+**How to Use:**
+When you create or view a pull request on GitHub, look for the Copilot suggestions in the “Conversation” or “Files changed” tab. You can accept, reject, or discuss Copilot’s code review comments just like any other feedback.
 
 ![GitHub Copilot Generate Git Message](images/copilot-pr-review.png 'GitHub Copilot Generate Git Message')
 
 ---
 
-### 8. Copilot Pull Request Summaries
+## 8️⃣ Copilot Pull Request Summaries
 
 Copilot can now **automatically generate a summary for your pull request**, giving reviewers a clear overview of what’s changed and what to focus on. These AI-generated summaries highlight which files are impacted, the nature of the changes, and any potential areas of concern for reviewers.
 
 This feature accelerates the review process, ensures nothing is overlooked, and reduces manual documentation efforts. Summaries appear automatically in your pull request description, making collaboration faster and more transparent.
 
-**How to Use:**  
- When opening a pull request, Copilot may prompt you to generate a summary or insert one automatically. Review and edit as needed before publishing your PR.
+**How to Use:**
+When opening a pull request, Copilot may prompt you to generate a summary or insert one automatically. Review and edit as needed before publishing your PR.
 
 ![GitHub Copilot Generate Git Message](images/copilot-pr-message.png 'GitHub Copilot Generate Git Message')
 
 ---
 
-### 9. Generate Commit Message inside VS Code Git
+## 9️⃣ Generate Commit Message inside VS Code Git
 
-Writing meaningful commit messages is essential for project history and collaboration. With GitHub Copilot integrated into VS Code, you can now **generate commit messages directly from the Git panel**.  
+Writing meaningful commit messages is essential for project history and collaboration. With GitHub Copilot integrated into VS Code, you can now **generate commit messages directly from the Git panel**.
 Copilot analyzes your staged changes and suggests clear, descriptive commit messages, saving you time and ensuring consistency.
 
 This is especially helpful when making multiple or complex updates—Copilot will propose a concise summary based on what’s been changed, which you can accept as-is or modify as needed.
 
 **How to Use:**
-
 - In VS Code, stage your changes in the Source Control panel.
 - In the commit message box, look for the Copilot icon or prompt.
 - Click to have Copilot suggest a commit message for your changes.
