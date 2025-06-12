@@ -1,4 +1,4 @@
-## Lesson 02 - Prompt Engineering with GitHub Copilot
+## Lesson 03 - Prompt Engineering with GitHub Copilot
 
 Learn effective prompt engineering techniques to maximize your productivity with GitHub Copilot. This lesson covers essential concepts, best practices, and strategies to communicate effectively with AI coding assistants.
 
