@@ -26,5 +26,5 @@ This repository contains lessons and labs designed to help you learn how to effe
 
 This repository contains lessons and labs designed to help you learn how to effectively use GitHub Copilot tools, including Copilot Chat, Copilot Ask, Copilot Edit, and Copilot Agent.
 
-- **[01 - Github Copilot Setup](/lessons/01-copilot-setup/01-installing-copilot.md)**: Overview of GitHub Copilot tools.
-- **[02 - Github Copilot Tools and Features](/lessons//02-github-copilot-tools/02-github-copilot-tools.md)**: Learn how to craft effective prompts for Copilot.
+- **[01 - Github Copilot Setup](./lessons/01-copilot-setup/01-installing-copilot.md)**: Overview of GitHub Copilot tools.
+- **[02 - Github Copilot Tools and Features](./lessons//02-github-copilot-tools/02-github-copilot-tools.md)**: Learn how to craft effective prompts for Copilot.
