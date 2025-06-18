@@ -1,0 +1,360 @@
+# Java Spring Boot Application - .gitignore
+# Generated for copilot-sample-api project
+
+# =============================================================================
+# Java and Maven
+# =============================================================================
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# =============================================================================
+# Spring Boot
+# =============================================================================
+
+# Spring Boot DevTools
+.spring-boot-devtools.properties
+
+# Spring Boot application properties (if they contain sensitive data)
+# Uncomment if you have sensitive configuration
+# application-*.properties
+# application-*.yml
+
+# =============================================================================
+# Database Files
+# =============================================================================
+
+# SQLite database files
+# *.db
+# *.sqlite
+# *.sqlite3
+# *.db-journal
+# *.db-wal
+# *.db-shm
+
+# H2 Database files
+*.h2.db
+*.trace.db
+*.lock.db
+
+# =============================================================================
+# IDE and Editor Files
+# =============================================================================
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.idea_modules/
+
+# Eclipse
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.metadata
+.recommenders
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# Operating System Files
+# =============================================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# Build and Deployment
+# =============================================================================
+
+# Node.js (if using frontend tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+docker-compose.*.yml
+
+# Kubernetes
+*.yaml
+*.yml
+!application.yml
+!application-*.yml
+
+# =============================================================================
+# Security and Environment
+# =============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+keystore.jks
+truststore.jks
+
+# =============================================================================
+# Testing and Coverage
+# =============================================================================
+
+# JaCoCo Test Coverage
+.jacoco/
+jacoco.exec
+jacoco-it.exec
+jacoco-aggregate.exec
+
+# Surefire reports
+surefire-reports/
+
+# TestNG reports
+test-output/
+
+# Coverage reports
+coverage/
+.nyc_output
+
+# =============================================================================
+# Documentation and Temporary Files
+# =============================================================================
+
+# Generated documentation
+docs/generated/
+javadoc/
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# =============================================================================
+# Application Specific
+# =============================================================================
+
+# Application logs
+logs/
+spring.log
+application.log
+error.log
+debug.log
+
+# Uploaded files (if any)
+uploads/
+attachments/
+
+# Cache directories
+.cache/
+cache/
+
+# =============================================================================
+# Development Tools
+# =============================================================================
+
+# Gradle (if project is converted to Gradle)
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# SonarQube
+.sonar/
+.scannerwork/
+
+# SpotBugs
+.spotbugs/
+
+# Checkstyle
+.checkstyle
+
+# PMD
+.pmd
+
+# OWASP Dependency Check
+dependency-check-report.html
+
+# =============================================================================
+# CI/CD
+# =============================================================================
+
+# Jenkins
+.jenkins/
+
+# GitHub Actions
+# Note: Usually .github/ is tracked, but you might want to ignore some files
+# .github/
+
+# Azure DevOps
+.azure/
+
+# GitLab CI
+.gitlab-ci-local/
+
+# =============================================================================
+# Miscellaneous
+# =============================================================================
+
+# JRebel
+rebel.xml
+
+# JProfiler
+*.jprofiler
+
+# YourKit
+*.yjp
+
+# Flight Recorder
+*.jfr
+
+# Heap dumps
+*.hprof
+
+# Thread dumps
+*.tdump
+
+# JVM arguments
+.java-version
+
+# Spring Boot Actuator sensitive endpoints data
+/actuator/
+
+# =============================================================================
+# Custom Application Files (Add your specific ignores below)
+# =============================================================================
+
+# Add any project-specific files or directories here
+# Example:
+# custom-config/
+# private-data/

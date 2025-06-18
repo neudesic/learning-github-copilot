@@ -1,0 +1,114 @@
+### Test Category Endpoints
+
+# Get all categories
+GET http://localhost:5000/api/category
+Accept: application/json
+
+###
+
+# Get category by ID
+GET http://localhost:5000/api/category/1
+Accept: application/json
+
+###
+
+# Create new category
+POST http://localhost:5000/api/category
+Content-Type: application/json
+
+{
+  "name": "Test Category",
+  "description": "A test category",
+  "parentCategoryId": null
+}
+
+###
+
+# Update category description
+PATCH http://localhost:5000/api/category/1/description
+Content-Type: application/json
+
+{
+  "description": "Updated description"
+}
+
+###
+
+### Test Product Endpoints
+
+# Get all products
+GET http://localhost:5000/api/product
+Accept: application/json
+
+###
+
+# Get product by ID
+GET http://localhost:5000/api/product/1
+Accept: application/json
+
+###
+
+# Create new product
+POST http://localhost:5000/api/product
+Content-Type: application/json
+
+{
+  "name": "Test Product",
+  "description": "A test product",
+  "sku": "TEST-001",
+  "categoryId": 1,
+  "brand": "Test Brand",
+  "isActive": true
+}
+
+###
+
+# Update product
+PUT http://localhost:5000/api/product/1
+Content-Type: application/json
+
+{
+  "name": "Updated Product Name",
+  "description": "Updated description",
+  "isActive": true
+}
+
+###
+
+# Get products by category
+GET http://localhost:5000/api/product/category/1
+Accept: application/json
+
+###
+
+### Test Product Attribute Endpoints
+
+# Get product attributes
+GET http://localhost:5000/api/productattribute/product/1
+Accept: application/json
+
+###
+
+# Create product attribute
+POST http://localhost:5000/api/productattribute
+Content-Type: application/json
+
+{
+  "productId": 1,
+  "attributeName": "Color",
+  "attributeValue": "Blue"
+}
+
+###
+
+# Update product attribute
+PUT http://localhost:5000/api/productattribute/1
+Content-Type: application/json
+
+{
+  "productId": 1,
+  "attributeName": "Color",
+  "attributeValue": "Red"
+}
+
+###
