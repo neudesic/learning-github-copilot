@@ -53,26 +53,14 @@ GitHub Copilot provides two main icons in your IDE to help you quickly access Co
 
 ## 1️⃣ GitHub Copilot Ask
 
-GitHub Copilot Ask provides a simple yet powerful way to get quick answers to your programming questions without interrupting your workflow. Simply highlight code, ask a question in the Chat window, and receive immediate guidance. Copilot Ask operates as a "quick gut check" that helps you understand code, solve problems, or learn new concepts without making any changes to your codebase.
+GitHub Copilot Ask provides quick, non-intrusive answers to programming questions directly in your editor. Get instant help understanding code, solving problems, or learning concepts without modifying your codebase.
 
-This mode leverages your current editor context to provide highly relevant answers—explaining what code does, suggesting testing approaches, providing code snippets, or addressing edge cases. Think of it as having an expert programmer quietly whispering helpful advice in your ear.
+**[📄 View detailed documentation →](2.1-github-copilot-ask.md)**
 
-![Github Copilot Ask](images/copilot-ask.png 'GitHub Copilot Ask')
-
-**Example use cases:**
-
-- Understanding unfamiliar or complex code functionality
-- Getting guidance on how to test specific code blocks
-- Learning how to use specific libraries or frameworks
-- Optimizing queries or algorithms for better performance
-- Refreshing your knowledge on programming concepts (like closures in JavaScript)
-- Finding the right syntax for specific programming tasks
-- Getting unstuck on problems without committing to architectural changes
-
-**Labs:**
-- [Exploring GitHub Copilot Chat](labs/c-sharp-1/2.1-exploring-copilot-ask.md) (C#/.NET)
-- [Exploring GitHub Copilot Chat with React](<labs/react/2.1-exploring-copilot-ask-(react).md>) (React)
-- [Exploring Copilot Ask with Ecommerce](labs/c-sharp-2/2.1-exploring-copilot-ask.md) (C# Ecommerce)
+**Key Benefits:**
+- Context-aware responses based on your current editor state
+- Non-intrusive guidance without code modifications
+- Educational support for learning new concepts
 
 ---
 
