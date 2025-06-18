@@ -48,13 +48,7 @@ To open inline chat, select a code block and press `Alt + /`.
 
   Accept the generated code suggestion by clicking `Tab` or discard it by clicking `Alt + Del` .
 
-### 4. Implement a feature
-
-```text
-    @workspace, Create a controller for ProductReviews CRUD operations and add a service named ProductReviewService that implements IProductReviewService interface to handle DB operations and add it to DI. Also add necessary DTO models.
-```
-
-### 5. explain the code
+### 4. explain the code
 
 - In the `CategoryService.cs` file, select a method you want to understand better, such as `AddCategoryAsync`.
 - Open an inline chat prompt by pressing `Alt + /`.

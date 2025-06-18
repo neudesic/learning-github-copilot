@@ -76,7 +76,7 @@ This demonstrates how GitHub Copilot Edit can significantly accelerate developme
 ### Exercise 1: Implement a feature
 
 ```text
-@workspace, Create a controller for ProductReviews CRUD operations and add a service namedProductReviewService that implements IProductReviewService interface to handle DB operationsand add it to DI. Also add necessary DTO models.
+@workspace, Create a controller for ProductReviews CRUD operations and add a service named ProductReviewService that implements IProductReviewService interface to handle DB operationsand add it to DI. Also add necessary DTO models.
 ```
 
 ### 2. Create unit tests
