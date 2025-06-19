@@ -10,7 +10,7 @@ interface ProductCardProps {
     onViewDetails: (productId: number) => void;
 }
 
-const ExpandMore = styled(IconButton)<{ expanded: boolean }>(({ theme, expanded }) => ({
+const ExpandMore = styled(IconButton)<{ expanded: boolean }>(({ expanded }) => ({
     transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)',
     transition: 'transform 0.3s',
 }));
