@@ -18,35 +18,28 @@ Learn how to use GitHub Copilot Edit mode to make direct code modifications, ref
 
 ### 1. Access Copilot Edit Mode
 
-- Open any Java file in the project (e.g., `ProductController.java`)
 - Press `Ctrl + Shift + I` to open Copilot Chat
-- Type `@workspace` to ensure workspace context
 - Select the Edit mode in the Copilot Chat window to enter edit mode
+- Open any Java file in the project (e.g., `ProductController.java`)
+- Type `#codebase` to ensure workspace context
 
 ### 2. Refactor Service Methods
 
 Select the `ProductService` class and ask:
 
 ```text
-@workspace /edit Refactor this service class to use proper exception handling and add logging. Also implement input validation for all public methods.
+#codebase /edit Refactor this Category service class to use proper exception handling and add logging. Also implement input validation for all public methods.
 ```
 
 Review the proposed changes and apply them selectively.
 
-### 3. Add New Features
 
-In the `CategoryController`, in the Copilot Chat, type:
-
-```text
-@workspace /edit Add a new endpoint to get category hierarchy with all subcategories in CategoryController and implement the corresponding service method.
-```
-
-### 4. Add New Code Implementation
+### 3. Add New Code Implementation
 
 Type the following prompt in Copilot Chat:
 
 ```text
-@workspace In the ProductService class, add a method called `findProductsByCategory` that takes categoryId as a parameter. Include proper error handling and return list of products.
+#codebase In the ProductService class, add a method called findProductsByCategory that takes categoryId as a parameter and return list of products.
 ```
 
 Review the proposed changes and apply them selectively.
@@ -57,18 +50,24 @@ Follow up with:
 Now add the corresponding REST endpoint in ProductController for the new service method findProductsByCategory with proper validation and response handling.
 ```
 
-### 5. Unit Testing
+### 4. Unit Testing
 
 Open any test file and ask:
 
 ```text
-@workspace Add unit tests for the productService class and ensure all methods are covered. Include edge cases and exception scenarios.
+#codebase Add unit tests for the productService class and ensure all methods are covered. Include edge cases and exception scenarios.
 ```
 
-### 6. Generating documentation
+### 5. Generating documentation
 
 ```text
-@workspace Add OpenAPI 3.0 annotations to all REST controllers. Include detailed descriptions, example values, and error response documentation. Also update the Swagger configuration class to include these annotations.
+#codebase Add OpenAPI 3.0 annotations to Product REST controller. Include detailed descriptions, example values, and error response documentation. Also update the Swagger configuration class to include these annotations.
+```
+
+### 6. Generate Docekr file
+
+```text
+#codebase Generate a Dockerfile for the Spring Boot application. Ensure it includes multi-stage builds for production and development environments. Also, include instructions for building and running the Docker container.
 ```
 
 ## Best Practices for Edit Mode
