@@ -12,19 +12,64 @@ This repository contains lessons and labs designed to help you learn how to effe
 
 ## Repository Structure
 
-- **Lessons**: Conceptual lessons that cover foundational topics, best practices, and real-world examples.
-- **Labs**: Hands-on exercises that allow you to apply what you've learned in the lessons. These are often language-specific and provide practical experience with GitHub Copilot.
+- **lessons/**: Structured learning modules covering GitHub Copilot fundamentals, tools, and advanced techniques
+  - **01-Installation-and-Setup/**: Installation guides and environment setup
+  - **02-Getting-Started/**: Core Copilot tools and features with language-specific labs
+  - **03-Context-and-Prompt/**: Advanced prompting techniques and context management
+  - **04-Advanced-Tools/**: Advanced features including MCP (Model Context Protocol)
+- **sample-code/**: Practical applications for hands-on learning
+  - **eShop/**: Enterprise e-commerce application (.NET)
+  - **Orders/**: Simple order management API (.NET)
+  - **SimpleFullStack/**: Full-stack application with .NET API and web frontend
 
 ## Getting Started
 
-1. Clone this repo.
-1. Install recommended extensions.
-1. Review the lessons.
-1. Review the sample apps.
+1. Clone this repository
+2. Install recommended VS Code extensions (GitHub Copilot, GitHub Copilot Chat)
+3. Review the lessons in order
+4. Practice with the sample applications
+5. Complete the hands-on labs
 
 ## Lessons
 
-This repository contains lessons and labs designed to help you learn how to effectively use GitHub Copilot tools, including Copilot Chat, Copilot Ask, Copilot Edit, and Copilot Agent.
+### 01 - Installation and Setup
+- **[Installing GitHub Copilot](./lessons/01-Installation-and-Setup/01-installing-copilot.md)**: Complete setup guide with troubleshooting and enterprise considerations
 
-- **[01 - Github Copilot Setup](./lessons/01-copilot-setup/01-installing-copilot.md)**: Overview of GitHub Copilot tools.
-- **[02 - Github Copilot Tools and Features](./lessons//02-github-copilot-tools/02-github-copilot-tools.md)**: Learn how to craft effective prompts for Copilot.
+### 02 - Getting Started with GitHub Copilot Tools
+- **[GitHub Copilot Tools Overview](./lessons/02-Getting-Started/2-github-copilot-tools.md)**: Introduction to the Copilot tool family
+- **[GitHub Copilot Ask](./lessons/02-Getting-Started/2.1-github-copilot-ask.md)**: Interactive assistance and code explanations
+- **[Code Review with Copilot](./lessons/02-Getting-Started/2.2-Copilot-code-review.md)**: AI-assisted code review workflows
+
+#### Language-Specific Labs
+**C# / .NET:**
+- **[Exploring @workspace](./lessons/02-Getting-Started/c%23/2.0-exploring-workspace.md)**: Comprehensive workspace analysis and coding standards
+- **[Copilot Ask Lab](./lessons/02-Getting-Started/c%23/2.2-exploring-copilot-ask.md)**: Targeted development assistance with Orders API
+- **[Copilot Agent Lab](./lessons/02-Getting-Started/c%23/2.3-exploring-copilot-agent.md)**: End-to-end feature development
+- **[Copilot Inline Lab](./lessons/02-Getting-Started/c%23/2.4-exploring-copilot-inline.md)**: Rapid code generation and editing
+
+**React / JavaScript:**
+- **[Copilot Ask (React)](./lessons/02-Getting-Started/react/2.1-exploring-copilot-ask-(react).md)**: React-specific assistance and optimization
+- **[Copilot Edit (React)](./lessons/02-Getting-Started/react/2.2-exploring-copilot-edit-(react).md)**: Component modernization and enhancement
+- **[Copilot Agent (React)](./lessons/02-Getting-Started/react/2.3-exploring-copilot-agent-(react).md)**: Full-scale React application development
+
+### 03 - Context and Prompt Engineering
+- **[Prompt Engineering](./lessons/03-Context-and-Prompt/03-prompt-engineering.md)**: Advanced prompting techniques
+- **[Setup Copilot Instructions](./lessons/03-Context-and-Prompt/2.1-Setup-Copilot-instructions.md)**: Custom instructions and context configuration
+- **[Adding Context](./lessons/03-Context-and-Prompt/sections/02.1-adding-context.md)**: Effective context management
+- **[Copilot Best Practices](./lessons/03-Context-and-Prompt/sections/02a-copoilot-best-practices.md)**: Professional usage guidelines
+
+### 04 - Advanced Tools
+- **[Understanding MCP](./lessons/04-Adavanced-Tools/4.1-understanding-mcp.md)**: Model Context Protocol fundamentals
+- **[GitHub MCP Lab](./lessons/04-Adavanced-Tools/4.2-github-mcp-lab.md)**: Hands-on MCP implementation
+
+## Sample Applications
+
+The repository includes three sample applications for hands-on practice:
+
+1. **eShop**: A comprehensive .NET enterprise e-commerce application with microservices architecture
+2. **Orders**: A simple .NET Web API for order management, perfect for learning Copilot basics
+3. **SimpleFullStack**: A full-stack application combining .NET API with modern web frontend
+
+## Contributing
+
+This is an educational repository. Feel free to suggest improvements or additional examples that would enhance the learning experience.
