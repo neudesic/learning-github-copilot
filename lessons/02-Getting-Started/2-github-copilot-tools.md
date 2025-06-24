@@ -72,6 +72,13 @@ What makes Edit mode powerful is that you maintain full control. Copilot does th
 
 ![Github Copilot Edit](images/copilot-edit.png 'GitHub Copilot Edit')
 
+**How to Use:**
+1. **Select the code** you want to modify in your editor.
+2. **Right-click** and choose **"Copilot: Edit"** or use `Ctrl+K` (Windows/Linux) or `Cmd+K` (macOS).
+3. **Type your instruction** in natural language (e.g., "add error handling", "refactor using async/await").
+4. **Review the diff** that Copilot presents showing the proposed changes.
+5. **Accept or reject** the changes, or provide additional feedback to refine the result.
+
 **Example use cases:**
 
 - Making controlled changes to a specific subset of your codebase
@@ -98,6 +105,14 @@ For maximum effectiveness, Agent mode works best with custom instructions that d
 
 ![GitHub Copilot Agent](images/copilot-agent.png 'GitHub Copilot Agent')
 
+**How to Use:**
+1. **Open Copilot Chat** by clicking the chat icon in your IDE or using the keyboard shortcut.
+2. **Type `@workspace`** to enable Agent mode for your entire project.
+3. **Provide a high-level description** of what you want to accomplish (e.g., "implement user authentication", "add error logging throughout the app").
+4. **Review the plan** that Copilot presents before execution.
+5. **Monitor the progress** as Copilot autonomously makes changes across multiple files.
+6. **Approve any risky operations** when prompted (like running terminal commands).
+
 **Example use cases:**
 
 - Building complete features from high-level descriptions
@@ -118,13 +133,17 @@ For maximum effectiveness, Agent mode works best with custom instructions that d
 
 Enhance productivity by using inline prompts directly within your editor, enabling quick code changes, method generation, and small incremental improvements without leaving the coding context. This approach is ideal for quick, iterative coding and minor adjustments that don't require extensive context switching.
 
-_Hover over inline suggestions in your IDE to see the available options, and use the Copilot icon in the bottom right corner to access inline suggestions._
-
 ![GitHub Copilot Inline](images/copilot-inline.png 'GitHub Copilot Inline')
 
-_Ctrl + I to open the inline suggestions window, where you can see and select from multiple suggestions based on your current cursor position. This allows you to quickly apply changes or generate new code snippets without interrupting your coding flow._
-
 ![GitHub Copilot Inline Ask](images/copilot-inline-ask.png 'GitHub Copilot Inline Ask')
+
+**How to Use:**
+1. **Position your cursor** where you want to generate or modify code.
+2. **Press `Ctrl+I`** (Windows/Linux) or `Cmd+I` (macOS) to open the inline suggestions window.
+3. **Type your instruction** or question in natural language.
+4. **Review the suggestions** that appear based on your current cursor position.
+5. **Select and apply** the changes directly without interrupting your coding flow.
+6. **Alternatively**, hover over inline suggestions in your IDE to see available options, or use the Copilot icon in the bottom right corner.
 
 **Example use cases:**
 
@@ -150,6 +169,17 @@ Utilize the Copilot Web interface to explore suggestions, manage preferences, an
 
 ![GitHub Copilot Website](images/copilot-website.png 'GitHub Copilot Website')
 
+**How to Use:**
+1. **Visit** [github.com/copilot](https://github.com/copilot) or access it through your GitHub account.
+2. **Sign in** with your GitHub account that has Copilot access.
+3. **Navigate through the dashboard** to explore different sections:
+   - **Usage Analytics**: Review your coding statistics and productivity metrics
+   - **Settings**: Configure global preferences and language-specific behaviors
+   - **Billing**: Manage subscription details and payment information
+   - **Resources**: Access documentation, tutorials, and community content
+4. **Customize settings** to optimize Copilot's behavior for your workflow.
+5. **Review usage patterns** to understand how Copilot is helping your development process.
+
 **Example use cases:**
 
 - Reviewing coding suggestions outside of your IDE
@@ -169,6 +199,17 @@ Utilize the Copilot Web interface to explore suggestions, manage preferences, an
 ## 6️⃣ GitHub Copilot CLI
 
 Streamline command-line operations by generating shell commands and automating tasks directly from your terminal. Copilot CLI transforms natural language descriptions into powerful command-line instructions, making complex operations accessible without requiring memorization of syntax or extensive documentation lookups.
+
+**How to Use:**
+1. **Install GitHub Copilot CLI** by running `gh extension install github/gh-copilot` (requires GitHub CLI).
+2. **Authenticate** with `gh auth login` if not already signed in.
+3. **Use `gh copilot suggest`** followed by your natural language description of what you want to do.
+4. **Use `gh copilot explain`** to understand what a complex command does.
+5. **Review and execute** the suggested commands as needed.
+
+**Example Commands:**
+- `gh copilot suggest "find all files larger than 100MB"`
+- `gh copilot explain "docker run -d -p 8080:80 nginx"`
 
 **Example use cases:**
 
