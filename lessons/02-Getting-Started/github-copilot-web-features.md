@@ -17,7 +17,7 @@ React developers and teams using GitHub for version control and collaboration.
 
 Utilize the Copilot Web interface to explore suggestions, manage preferences, and gain insights into your coding habits and productivity. This centralized interface provides a comprehensive dashboard for reviewing usage analytics, setting global preferences, accessing educational resources, and managing your Copilot subscription.
 
-![GitHub Copilot Website](../images/copilot-website.png 'GitHub Copilot Website')
+![GitHub Copilot Website](images/copilot-website.png 'GitHub Copilot Website')
 
 **How to Use:**
 1. **Visit** [github.com/copilot](https://github.com/copilot) or access it through your GitHub account.
@@ -83,10 +83,10 @@ With Copilot Code Review, you get tailored suggestions for improving your code q
 **How to Use:**
 When you create or view a pull request on GitHub, look for the Copilot suggestions in the "Conversation" or "Files changed" tab. You can accept, reject, or discuss Copilot's code review comments just like any other feedback.
 
-![GitHub Copilot Code Review](../images/copilot-pr-review.png 'GitHub Copilot Code Review')
+![GitHub Copilot Code Review](images/copilot-pr-review.png 'GitHub Copilot Code Review')
 
 **Labs:**
-- [Code Review with Copilot (React)](2.5-Copilot-code-review.md)
+- [Code Review with Copilot](copilot-code-review.md)
 
 ---
 
@@ -99,7 +99,7 @@ This feature accelerates the review process, ensures nothing is overlooked, and 
 **How to Use:**
 When opening a pull request, Copilot may prompt you to generate a summary or insert one automatically. Review and edit as needed before publishing your PR.
 
-![GitHub Copilot PR Summary](../images/copilot-pr-message.png 'GitHub Copilot PR Summary')
+![GitHub Copilot PR Summary](images/copilot-pr-message.png 'GitHub Copilot PR Summary')
 
 ---
 
@@ -116,7 +116,7 @@ This is especially helpful when making multiple or complex updates—Copilot wil
 - Click to have Copilot suggest a commit message for your changes.
 - Edit if necessary, then commit as usual.
 
-![GitHub Copilot Generate Git Message](../images/copilot-generate-git-message.png 'GitHub Copilot Generate Git Message')
+![GitHub Copilot Generate Git Message](images/copilot-generate-git-message.png 'GitHub Copilot Generate Git Message')
 
 ---
 

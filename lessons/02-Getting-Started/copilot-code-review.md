@@ -613,7 +613,7 @@ By mastering this comprehensive code review approach, you've learned to:
 
 Ready to implement AI-assisted code review in your organization? Follow our comprehensive implementation roadmap that provides a structured 8-week approach for successful adoption.
 
-**[📋 View Implementation Roadmap →](2.7-implementation-roadmap.md)**
+**[📋 View Implementation Roadmap →](implementation-roadmap.md)**
 
 **What You'll Find:**
 - **Phase 1: Foundation** - Team training and process definition

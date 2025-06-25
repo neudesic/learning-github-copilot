@@ -15,7 +15,7 @@
 - Write clear and intentional prompts.
 - Remove unused or misleading comments in code.
 - Rewrite your prompts to generate different responses. If Copilot is not providing a helpful response, try rephrasing.
-- For a comprehensive guide on this topic, please refer to the [Prompt Engineering documentation](./02-prompt-engineering.md).
+- For a comprehensive guide on this topic, please refer to the [Prompt Engineering documentation](../03-prompt-engineering.md).
 
 ### 2. Control the Context
 

@@ -4,50 +4,48 @@ Welcome to the GitHub Copilot Training Workshop! This repository is designed to 
 
 ## Repository Structure
 
-### Lessons
+### 01. Installation and Setup
+- **[01-installing-copilot.md](01-Installation-and-Setup/01-installing-copilot.md)**: Complete GitHub Copilot installation guide for VS Code and Visual Studio
 
-Lessons are conceptual and not tied to a specific programming language. They cover foundational topics, best practices, and real-world examples to help you understand and maximize the potential of GitHub Copilot.
+### 02. Getting Started
+Core GitHub Copilot tools and hands-on labs:
 
-- **Location:** `lessons/`
-- **Examples:**
-  - `01-github_copilot.md`: Overview of GitHub Copilot tools.
-  - `02-prompt_engineering.md`: Learn how to craft effective prompts.
-  - `03-copilot-best-practices.md`: Explore best practices of Copilot.
+#### Language-Agnostic Resources
+- **[copilot-code-review.md](02-Getting-Started/copilot-code-review.md)**: Enterprise-grade AI-assisted code review
+- **[github-copilot-web-features.md](02-Getting-Started/github-copilot-web-features.md)**: Platform features beyond the IDE
+- **[implementation-roadmap.md](02-Getting-Started/implementation-roadmap.md)**: 8-week team adoption strategy
 
-### Labs
+#### C# Developer Track
+- **[2.0-exploring-workspace.md](02-Getting-Started/c%23/2.0-exploring-workspace.md)**: Master @workspace command
+- **[2.1-exploring-copilot-ask.md](02-Getting-Started/c%23/2.1-exploring-copilot-ask.md)**: Ask tool with slash commands
+- **[2.2-exploring-copilot-agent.md](02-Getting-Started/c%23/2.2-exploring-copilot-agent.md)**: Autonomous Agent mode
+- **[2.3-exploring-copilot-inline.md](02-Getting-Started/c%23/2.3-exploring-copilot-inline.md)**: Inline suggestions and modifications
 
-Labs are hands-on exercises that allow you to apply what you've learned in the lessons. These are often language-specific and provide practical experience with GitHub Copilot.
+#### React Developer Track
+- **[2.0-github-copilot-tools.md](02-Getting-Started/react/2.0-github-copilot-tools.md)**: Comprehensive tools overview
+- **[2.1-exploring-copilot-ask-(react).md](02-Getting-Started/react/2.1-exploring-copilot-ask-%28react%29.md)**: React-specific Ask scenarios
+- **[2.2-exploring-copilot-edit-(react).md](02-Getting-Started/react/2.2-exploring-copilot-edit-%28react%29.md)**: React component editing workflows
+- **[2.3-exploring-copilot-agent-(react).md](02-Getting-Started/react/2.3-exploring-copilot-agent-%28react%29.md)**: Complex React feature implementation
+- **[2.4-exploring-copilot-inline-(react).md](02-Getting-Started/react/2.4-exploring-copilot-inline-%28react%29.md)**: React inline development patterns
 
-- **Location:** `lessons/01-github-copilot-tools/labs/`
-- **Examples:**
-  - `01a-exploring-copilot-ask.md`: Hands-on with Copilot Ask.
-  - `01b-exploring-copilot-edit.md`: Hands-on with Copilot Edit.
-  - `01c-exploring-copilot-agent.md`: Hands-on with Copilot Agent.
+### 03. Context and Prompt Engineering
+- **[2.1-Setup-Copilot-instructions.md](03-Context-and-Prompt/2.1-Setup-Copilot-instructions.md)**: Custom instructions and workspace configuration
+- **[03-prompt-engineering.md](03-Context-and-Prompt/03-prompt-engineering.md)**: Effective prompting strategies
 
-## How to Contribute
-
-1. **Adding Lessons:**
-
-   - Create a new markdown file in the `lessons/` folder.
-   - Follow the format of existing lessons for consistency.
-
-2. **Adding Labs:**
-
-   - Create a new markdown file in the `labs/` folder under the relevant lesson.
-   - Ensure the lab is hands-on and provides clear instructions.
+### 04. Advanced Tools
+- **[4.1-understanding-mcp.md](04-Adavanced-Tools/4.1-understanding-mcp.md)**: Model Context Protocol fundamentals
+- **[4.2-github-mcp-lab.md](04-Adavanced-Tools/4.2-github-mcp-lab.md)**: Hands-on GitHub MCP integration
+- **[4.3-playwright-mcp.md](04-Adavanced-Tools/4.3-playwright-mcp.md)**: Playwright MCP setup
 
 ## Getting Started
 
-1. Clone this repository:
+1. **Installation**: Start with [Installing GitHub Copilot](01-Installation-and-Setup/01-installing-copilot.md)
 
-   ```bash
-   git clone https://github.com/your-repo/github-copilot-workshop.git
-   cd github-copilot-workshop
-   ```
+2. **Choose Your Track**:
+   - **C# Developers**: Begin with [Exploring @workspace](02-Getting-Started/c%23/2.0-exploring-workspace.md)
+   - **React Developers**: Begin with [GitHub Copilot Tools Overview](02-Getting-Started/react/2.0-github-copilot-tools.md)
 
-2. Follow the setup instructions in `lessons/_schedule/00-copilot_setup.md`.
-
-3. Start with the first lesson: `lessons/_schedule/01-github_copilot.md`.
+3. **Advanced Topics**: Explore context engineering and MCP tools for enterprise scenarios
 
 ## Feedback
 
