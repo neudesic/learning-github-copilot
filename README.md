@@ -29,6 +29,7 @@ This repository contains lessons and labs designed to help you learn how to effe
 3. Review the lessons in order
 4. Practice with the sample applications
 5. Complete the hands-on labs
+6. Explore advanced topics and contribute to the repository
 
 ## Lessons
 
