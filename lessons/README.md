@@ -16,10 +16,10 @@ Core GitHub Copilot tools and hands-on labs:
 - **[implementation-roadmap.md](02-Getting-Started/implementation-roadmap.md)**: 8-week team adoption strategy
 
 #### C# Developer Track
-- **[2.0-exploring-workspace.md](02-Getting-Started/c#/2.0-exploring-workspace.md)**: Master @workspace command
-- **[2.1-exploring-copilot-ask.md](02-Getting-Started/c#/2.1-exploring-copilot-ask.md)**: Ask tool with slash commands
-- **[2.2-exploring-copilot-agent.md](02-Getting-Started/c#/2.2-exploring-copilot-agent.md)**: Autonomous Agent mode
-- **[2.3-exploring-copilot-inline.md](02-Getting-Started/c#/2.3-exploring-copilot-inline.md)**: Inline suggestions and modifications
+- **[2.0-exploring-workspace.md](02-Getting-Started/c%23/2.0-exploring-workspace.md)**: Master @workspace command
+- **[2.1-exploring-copilot-ask.md](02-Getting-Started/c%23/2.1-exploring-copilot-ask.md)**: Ask tool with slash commands
+- **[2.2-exploring-copilot-agent.md](02-Getting-Started/c%23/2.2-exploring-copilot-agent.md)**: Autonomous Agent mode
+- **[2.3-exploring-copilot-inline.md](02-Getting-Started/c%23/2.3-exploring-copilot-inline.md)**: Inline suggestions and modifications
 
 #### React Developer Track
 - **[2.0-github-copilot-tools.md](02-Getting-Started/react/2.0-github-copilot-tools.md)**: Comprehensive tools overview
@@ -43,7 +43,7 @@ Core GitHub Copilot tools and hands-on labs:
 1. **Installation**: Start with [Installing GitHub Copilot](01-Installation-and-Setup/01-installing-copilot.md)
 
 2. **Choose Your Track**:
-   - **C# Developers**: Begin with [Exploring @workspace](02-Getting-Started/c#/2.0-exploring-workspace.md)
+   - **C# Developers**: Begin with [Exploring @workspace](02-Getting-Started/c%23/2.0-exploring-workspace.md)
    - **React Developers**: Begin with [GitHub Copilot Tools Overview](02-Getting-Started/react/2.0-github-copilot-tools.md)
 
 3. **Advanced Topics**: Explore context engineering and MCP tools for enterprise scenarios
