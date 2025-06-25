@@ -38,24 +38,26 @@ This repository contains lessons and labs designed to help you learn how to effe
 
 ### 02 - Getting Started with GitHub Copilot Tools
 
-- **[GitHub Copilot Tools Overview](./lessons/02-Getting-Started/2-github-copilot-tools.md)**: Introduction to the Copilot tool family
-- **[GitHub Copilot Ask](./lessons/02-Getting-Started/2.1-github-copilot-ask.md)**: Interactive assistance and code explanations
-- **[Code Review with Copilot](./lessons/02-Getting-Started/2.2-Copilot-code-review.md)**: AI-assisted code review workflows
+- **[GitHub Copilot Tools Overview](./lessons/02-Getting-Started/react/2.0-github-copilot-tools.md)**: Introduction to the Copilot tool family
+- **[GitHub Copilot Web Features](./lessons/02-Getting-Started/github-copilot-web-features.md)**: Platform features beyond the IDE
+- **[Code Review with Copilot](./lessons/02-Getting-Started/copilot-code-review.md)**: AI-assisted code review workflows
+- **[Team Adoption Strategy](./lessons/02-Getting-Started/implementation-roadmap.md)**: An 8-week roadmap for successful team adoption
 
 #### Language-Specific Labs
 
 **C# / .NET:**
 
 - **[Exploring @workspace](./lessons/02-Getting-Started/c%23/2.0-exploring-workspace.md)**: Comprehensive workspace analysis and coding standards
-- **[Copilot Ask Lab](./lessons/02-Getting-Started/c%23/2.2-exploring-copilot-ask.md)**: Targeted development assistance with Orders API
-- **[Copilot Agent Lab](./lessons/02-Getting-Started/c%23/2.3-exploring-copilot-agent.md)**: End-to-end feature development
-- **[Copilot Inline Lab](./lessons/02-Getting-Started/c%23/2.4-exploring-copilot-inline.md)**: Rapid code generation and editing
+- **[Copilot Ask Lab](./lessons/02-Getting-Started/c%23/2.1-exploring-copilot-ask.md)**: Targeted development assistance with Orders API
+- **[Copilot Agent Lab](./lessons/02-Getting-Started/c%23/2.2-exploring-copilot-agent.md)**: End-to-end feature development
+- **[Copilot Inline Lab](./lessons/02-Getting-Started/c%23/2.3-exploring-copilot-inline.md)**: Rapid code generation and editing
 
 **React / JavaScript:**
 
 - **[Copilot Ask (React)](./lessons/02-Getting-Started/react/2.1-exploring-copilot-ask-(react).md)**: React-specific assistance and optimization
 - **[Copilot Edit (React)](./lessons/02-Getting-Started/react/2.2-exploring-copilot-edit-(react).md)**: Component modernization and enhancement
 - **[Copilot Agent (React)](./lessons/02-Getting-Started/react/2.3-exploring-copilot-agent-(react).md)**: Full-scale React application development
+- **[Copilot Inline (React)](./lessons/02-Getting-Started/react/2.4-exploring-copilot-inline-(react).md)**: Rapid iterations and inline development
 
 ### 03 - Context and Prompt Engineering
 
