@@ -29,8 +29,9 @@ Core GitHub Copilot tools and hands-on labs:
 - **[2.4-exploring-copilot-inline-(react).md](02-Getting-Started/react/2.4-exploring-copilot-inline-%28react%29.md)**: React inline development patterns
 
 ### 03. Context and Prompt Engineering
-- **[2.1-Setup-Copilot-instructions.md](03-Context-and-Prompt/2.1-Setup-Copilot-instructions.md)**: Custom instructions and workspace configuration
-- **[03-prompt-engineering.md](03-Context-and-Prompt/03-prompt-engineering.md)**: Effective prompting strategies
+- **[3.1-managing-context-effectively.md](03-Context-and-Prompt/3.1-managing-context-effectively.md)**: Master context management with #-mentions, @-participants, and external references
+- **[3.2-custom-instructions-workspace.md](03-Context-and-Prompt/3.2-custom-instructions-workspace.md)**: Configure custom instructions and workspace settings for team consistency
+- **[3.3-prompt-engineering-advanced.md](03-Context-and-Prompt/3.3-prompt-engineering-advanced.md)**: Advanced prompting techniques for complex development scenarios
 
 ### 04. Advanced Tools
 - **[4.1-understanding-mcp.md](04-Adavanced-Tools/4.1-understanding-mcp.md)**: Model Context Protocol fundamentals
