@@ -66,8 +66,8 @@ This repository contains lessons and labs designed to help you learn how to effe
 
 ### 04 - Advanced Tools
 
-- **[Understanding MCP](./lessons/04-Adavanced-Tools/4.1-understanding-mcp.md)**: Model Context Protocol fundamentals
-- **[GitHub MCP Lab](./lessons/04-Adavanced-Tools/4.2-github-mcp-lab.md)**: Hands-on MCP implementation
+- **[Understanding MCP](./lessons/04-Advanced-Tools/4.1-understanding-mcp.md)**: Model Context Protocol fundamentals
+- **[GitHub MCP Lab](./lessons/04-Advanced-Tools/4.2-github-mcp-lab.md)**: Hands-on MCP implementation
 
 ## Sample Applications
 
