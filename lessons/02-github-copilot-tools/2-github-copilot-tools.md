@@ -90,27 +90,13 @@ What makes Edit mode powerful is that you maintain full control. Copilot does th
 
 ## 3️⃣ GitHub Copilot Agent
 
-GitHub Copilot Agent represents the most powerful mode in Copilot Chat, enabling autonomous planning and execution across your entire project. With Agent mode, you provide a high-level prompt and Copilot independently selects the right files, runs necessary tools or terminal commands, and applies code edits until the task is complete. Unlike Edit mode, Agent analyzes related code and identifies additional changes needed across the project to maintain consistency.
+GitHub Copilot Agent is a tool that automates complex coding tasks by understanding your project context and executing changes across multiple files. It acts like a virtual assistant, capable of making significant modifications based on inputted descriptions, such as "create a new feature" or "refactor the codebase to use async/await."
 
-What distinguishes Agent mode is its ability to work autonomously—applying edits automatically rather than waiting for explicit approval at each step, while still surfacing potentially risky commands for review. This creates a continuous-edit "driver" model where you define the goal and Copilot executes updates without interruption.
+**[📄 View detailed documentation →](2.3-github-copilot-agent.md)**
 
-For maximum effectiveness, Agent mode works best with custom instructions that define your project structure, coding standards, and other guidelines. These instructions provide a stronger foundation for Copilot to work from, resulting in more consistent and aligned outcomes across multiple sessions.
-
-![GitHub Copilot Agent](images/copilot-agent.png 'GitHub Copilot Agent')
-
-**Example use cases:**
-
-- Building complete features from high-level descriptions
-- Fixing complex bugs that require changes across multiple files
-- Creating new files and scaffolding entire sections of an application
-- Implementing architectural changes that affect multiple components
-- Setting up new projects based on README specifications or requirements documents
-- Refactoring code while maintaining consistent patterns throughout the codebase
-
-**Labs:**
-- [Exploring GitHub Copilot Agent](labs/c-sharp-1/2.3-exploring-copilot-agent.md) (C#/.NET)
-- [Exploring GitHub Copilot Agent with React](<labs/react/2.3-exploring-copilot-agent-(react).md>) (React)
-- [Exploring Copilot Agent with Ecommerce](labs/c-sharp-2/2.3-exploring-copilot-agent.md) (C# Ecommerce)
+**Key Benefits:**
+- Automates large-scale changes across multiple files
+- Understands project context to make informed decisions
 
 ---
 
