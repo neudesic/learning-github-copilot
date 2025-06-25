@@ -61,10 +61,9 @@ This repository contains lessons and labs designed to help you learn how to effe
 
 ### 03 - Context and Prompt Engineering
 
-- **[Prompt Engineering](./lessons/03-Context-and-Prompt/03-prompt-engineering.md)**: Advanced prompting techniques
-- **[Setup Copilot Instructions](./lessons/03-Context-and-Prompt/2.1-Setup-Copilot-instructions.md)**: Custom instructions and context configuration
-- **[Adding Context](./lessons/03-Context-and-Prompt/sections/02.1-adding-context.md)**: Effective context management
-- **[Copilot Best Practices](./lessons/03-Context-and-Prompt/sections/02a-copoilot-best-practices.md)**: Professional usage guidelines
+- **[Managing Context Effectively](./lessons/03-Context-and-Prompt/3.1-managing-context-effectively.md)**: Master context with #-mentions, @-participants, and external references
+- **[Custom Instructions & Workspace Configuration](./lessons/03-Context-and-Prompt/3.2-custom-instructions-workspace.md)**: Align Copilot with team standards and project requirements
+- **[Advanced Prompt Engineering](./lessons/03-Context-and-Prompt/3.3-prompt-engineering-advanced.md)**: Apply advanced prompting techniques for complex scenarios
 
 ### 04 - Advanced Tools
 
