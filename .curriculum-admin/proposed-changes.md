@@ -1,29 +1,17 @@
-## Proposed Curriculum Updates (July 2025)
+# Proposed Curriculum Changes
+_Last updated: July 25, 2025_
 
-### 1. GitHub Copilot Chat & Agent Mode
-- Add a module on the open source Copilot Chat extension, including how to contribute and explore its codebase.
-- Expand coverage of agent mode, including MCP server installation, management, and agentic workflows (loops, task handoff).
-- Include hands-on labs for configuring custom chat modes and selecting language models.
+| Date       | Update/Feature                | Brief Description                                                                 | Source Link                                                                 | Gap Analysis | User Impact | Recommendation Analysis | Priority |
+|------------|------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------|------------|------------------------|----------|
+| 2025-06-30 | Copilot Chat Open Source     | GitHub Copilot Chat extension is now open source, enabling community contributions | [Blog](https://code.visualstudio.com/blogs/2025/06/30/openSourceAIEditorFirstMilestone) | Addresses advanced agent workflows gap. | Empowers users to contribute, customize, and extend chat experiences; increases transparency and skill-building. | Add module/lab on contributing to Copilot Chat, agent mode, and customizing chat experiences. | High |
+| 2025-06-30 | Chat Mode Improvements       | Custom chat modes, model selection, improved editing, import via links, gear menu  | [Release Notes](https://code.visualstudio.com/updates/v1_102#_chat-mode-improvements) | Addresses prompt engineering and extensibility gaps. | Enables tailored chat experiences, improves workflow efficiency, and supports advanced user scenarios. | Update lessons on chat modes, prompt files, and agent mode. Add hands-on labs for custom modes and model selection. | High |
+| 2025-06-30 | Generate Custom Instructions | Agent mode can now auto-generate project-specific instructions                     | [Release Notes](https://code.visualstudio.com/updates/v1_102#_generate-custom-instructions) | Supports best practices and onboarding gaps. | Simplifies setup for new projects, improves consistency, and helps users adopt Copilot more effectively. | Add lab for using "Generate Instructions" and customizing `.github/copilot-instructions.md`. | Medium |
+| 2025-06-30 | Terminal Auto Approval       | Agent mode can auto-approve safe terminal commands, with allow/deny lists          | [Release Notes](https://code.visualstudio.com/updates/v1_102#_terminal-auto-approval-experimental) | Addresses security and automation gaps. | Reduces friction for safe command execution, improves security awareness, and streamlines agent workflows. | Update security and best practices modules to cover terminal command safety and agent automation. | Medium |
+| 2025-06-30 | MCP Support GA               | MCP (Model Context Protocol) support is now generally available                    | [Release Notes](https://code.visualstudio.com/updates/v1_102#_mcp-support-in-vs-code-is-generally-available) | Addresses advanced agent workflows and extensibility gaps. | Enables agent extensibility, server management, and advanced automation for technical leads and architects. | Add advanced module on MCP, agent extensibility, and server management. | High |
+| 2025-06-30 | Accessibility Updates        | Improved accessibility signals, error alerts, and editor commands for screen reader users | [Release Notes](https://code.visualstudio.com/updates/v1_102#_accessibility) | Addresses accessibility and inclusivity gaps. | Improves experience for neurodiverse and visually impaired users; supports inclusive curriculum goals. | Update accessibility guidance and labs to include new features and best practices. | Medium |
+| 2025-06-30 | Code Editing: Snooze Suggestions | Users can pause Copilot inline suggestions and NES                             | [Release Notes](https://code.visualstudio.com/updates/v1_102#_snooze-code-completions) | Minor gap in user control and focus. | Allows users to focus without distraction, improving productivity and comfort. | Add tip or FAQ entry about managing Copilot suggestions for focus. | Low |
+| 2025-06-30 | GitHub PR Extension: Coding Agent Sessions | Deeper integration for Copilot coding agent sessions, status tracking, and session logs | [Release Notes](https://code.visualstudio.com/updates/v1_102#_start-a-coding-agent-session-preview) | Supports advanced agent workflows gap. | Improves collaboration, transparency, and workflow management for technical teams. | Add advanced labs for coding agent sessions and PR workflows. | Medium |
+| 2025-06-30 | Python Extension: Environments & MCP Tools | Improved Python environment management, new MCP tools in Pylance           | [Release Notes](https://code.visualstudio.com/updates/v1_102#_python-environments-extension-improvements) | Minor gap in Python environment management. | Streamlines Python setup and environment management for learners using Copilot with Python. | Update Python labs to cover new environment features and MCP tool usage. | Low |
 
-### 2. Custom Instructions & Prompts
-- Add a lesson on generating and customizing Copilot instructions using agent mode.
-- Demonstrate best practices for prompt engineering and instruction files, including workspace analysis.
 
-### 3. Accessibility & Inclusivity
-- Update accessibility guidance to reflect new chat alerts, sounds, and screen reader improvements.
-- Add practical exercises for testing accessibility in Copilot Chat and VS Code.
-
-### 4. Learning Pathways & Guides
-- Integrate new scenario-based guides for learning programming languages with Copilot as a tutor.
-- Highlight strategies for using Copilot to foster coding independence and skill development.
-
-### 5. Security & Dependabot Metrics
-- Add content on using Dependabot metrics and prioritization guides for vulnerability management.
-- Include exercises for interpreting security metrics and alerts in organizational settings.
-
-### 6. Pay-As-You-Go & BYOK for GitHub Models
-- Briefly introduce new billing and API key options for GitHub Models, with links for further reading.
-
----
-**Next Steps:**
-- Review and approve these proposed changes before creating GitHub issues for curriculum updates.
+**Instructions:**
