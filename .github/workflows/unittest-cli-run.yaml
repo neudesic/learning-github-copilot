@@ -24,20 +24,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: "24"
+          registry-url: "https://registry.npmjs.org"
 
       - name: Configure npm for private packages
         run: |
           npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
-      
+
       - name: Install dependencies
-        run: npm install
+        run: npm install -g @neudesic/unittest@0.0.1
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      
+
       - name: Run package command
         working-directory: samples/SimpleFullStack/DotnetCoreApi
-        run: npm run start
-        
-      
+        run: unittest-cli help
