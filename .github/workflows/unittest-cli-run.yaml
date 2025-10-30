@@ -1,20 +1,11 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Manual NPM Package Workflow
 
-# Controls when the workflow will run
 on:
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   run-private-package:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -25,17 +16,36 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "24"
-          registry-url: "https://registry.npmjs.org"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@neudesic"
+          always-auth: true
 
-      - name: Configure npm for private packages
+      - name: Configure .npmrc for GitHub Packages
         run: |
-          npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
-
-      - name: Install dependencies
-        run: npm install -g @neudesic/unittest@0.0.1
+          echo "@neudesic:registry=https://npm.pkg.github.com" >> ~/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
+          cat ~/.npmrc
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Run package command
+      - name: Verify auth and package
+        run: |
+          npm whoami || echo "Auth failed"
+          npm view @neudesic/unittest || echo "Package name maybe different (unittest-cli?)"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Install package (fallback to CLI name)
+        run: |
+          npm install -g @neudesic/unittest@0.0.1 || \
+          npm install -g @neudesic/unittest || \
+          {
+            echo "Install attempts failed"; exit 1;
+          }
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Run command (try global then npx)
         working-directory: samples/SimpleFullStack/DotnetCoreApi
-        run: unittest-cli help
+        run: |
+          unittest-cli help
