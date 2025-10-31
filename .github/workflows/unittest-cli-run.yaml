@@ -45,7 +45,17 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Run command (try global then npx)
+      - name: Run command help
         working-directory: samples/SimpleFullStack/DotnetCoreApi
         run: |
           unittest-cli help
+
+      - name: Run command missing
+        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        run: |
+          unittest-cli missing
+
+      - name: Run command sync
+        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        run: |
+          unittest-cli sync
