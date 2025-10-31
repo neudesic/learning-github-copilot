@@ -1,7 +1,5 @@
 # Lesson 8: Using GitHub Copilot Agent
 
-> **Availability Note:** GitHub Copilot Agent is currently available in Visual Studio Code Insiders as part of the nightly build. In the future, it may be included as a standard feature in Visual Studio Code. The features and interface described in this document may evolve as GitHub Copilot Agent moves toward general availability.
-
 GitHub Copilot Agent takes AI assistance to the next level by enabling deeper and more interactive collaboration on your development projects. This guide will walk you through using GitHub Copilot Agent to create an ASP.NET Core Web API with MediatR pattern implementation.
 
 ## What is GitHub Copilot Agent?
