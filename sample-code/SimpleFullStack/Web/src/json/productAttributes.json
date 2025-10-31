@@ -1,0 +1,230 @@
+[
+    {
+        "attributeID": 1,
+        "productID": 1,
+        "attributeName": "Processor",
+        "attributeValue": "Apple M2 Pro"
+    },
+    {
+        "attributeID": 2,
+        "productID": 1,
+        "attributeName": "RAM",
+        "attributeValue": "16GB"
+    },
+    {
+        "attributeID": 3,
+        "productID": 1,
+        "attributeName": "Storage",
+        "attributeValue": "512GB SSD"
+    },
+    {
+        "attributeID": 4,
+        "productID": 1,
+        "attributeName": "Screen Size",
+        "attributeValue": "16 inches"
+    },
+    {
+        "attributeID": 5,
+        "productID": 1,
+        "attributeName": "Color",
+        "attributeValue": "Space Gray"
+    },
+    {
+        "attributeID": 6,
+        "productID": 2,
+        "attributeName": "Processor",
+        "attributeValue": "Intel Core i7-13700H"
+    },
+    {
+        "attributeID": 7,
+        "productID": 2,
+        "attributeName": "RAM",
+        "attributeValue": "16GB"
+    },
+    {
+        "attributeID": 8,
+        "productID": 2,
+        "attributeName": "Storage",
+        "attributeValue": "1TB SSD"
+    },
+    {
+        "attributeID": 9,
+        "productID": 2,
+        "attributeName": "Screen Size",
+        "attributeValue": "15.6 inches"
+    },
+    {
+        "attributeID": 10,
+        "productID": 2,
+        "attributeName": "Color",
+        "attributeValue": "Silver"
+    },
+    {
+        "attributeID": 11,
+        "productID": 3,
+        "attributeName": "Storage",
+        "attributeValue": "256GB"
+    },
+    {
+        "attributeID": 12,
+        "productID": 3,
+        "attributeName": "Color",
+        "attributeValue": "Titanium"
+    },
+    {
+        "attributeID": 13,
+        "productID": 3,
+        "attributeName": "Screen Size",
+        "attributeValue": "6.1 inches"
+    },
+    {
+        "attributeID": 14,
+        "productID": 3,
+        "attributeName": "Camera",
+        "attributeValue": "48MP Triple Camera"
+    },
+    {
+        "attributeID": 15,
+        "productID": 4,
+        "attributeName": "Storage",
+        "attributeValue": "512GB"
+    },
+    {
+        "attributeID": 16,
+        "productID": 4,
+        "attributeName": "Color",
+        "attributeValue": "Phantom Black"
+    },
+    {
+        "attributeID": 17,
+        "productID": 4,
+        "attributeName": "Screen Size",
+        "attributeValue": "6.8 inches"
+    },
+    {
+        "attributeID": 18,
+        "productID": 4,
+        "attributeName": "Camera",
+        "attributeValue": "200MP Quad Camera"
+    },
+    {
+        "attributeID": 19,
+        "productID": 5,
+        "attributeName": "Color",
+        "attributeValue": "Black"
+    },
+    {
+        "attributeID": 20,
+        "productID": 5,
+        "attributeName": "Battery Life",
+        "attributeValue": "30 hours"
+    },
+    {
+        "attributeID": 21,
+        "productID": 5,
+        "attributeName": "Noise Cancellation",
+        "attributeValue": "Active"
+    },
+    {
+        "attributeID": 22,
+        "productID": 6,
+        "attributeName": "Processor",
+        "attributeValue": "Intel Core i5-13400"
+    },
+    {
+        "attributeID": 23,
+        "productID": 6,
+        "attributeName": "RAM",
+        "attributeValue": "8GB"
+    },
+    {
+        "attributeID": 24,
+        "productID": 6,
+        "attributeName": "Storage",
+        "attributeValue": "512GB SSD"
+    },
+    {
+        "attributeID": 25,
+        "productID": 7,
+        "attributeName": "Size",
+        "attributeValue": "Large"
+    },
+    {
+        "attributeID": 26,
+        "productID": 7,
+        "attributeName": "Material",
+        "attributeValue": "100% Cotton"
+    },
+    {
+        "attributeID": 27,
+        "productID": 7,
+        "attributeName": "Color",
+        "attributeValue": "Navy Blue"
+    },
+    {
+        "attributeID": 28,
+        "productID": 8,
+        "attributeName": "Size",
+        "attributeValue": "Medium"
+    },
+    {
+        "attributeID": 29,
+        "productID": 8,
+        "attributeName": "Material",
+        "attributeValue": "Cotton Blend"
+    },
+    {
+        "attributeID": 30,
+        "productID": 8,
+        "attributeName": "Color",
+        "attributeValue": "Floral Print"
+    },
+    {
+        "attributeID": 31,
+        "productID": 9,
+        "attributeName": "Plants Included",
+        "attributeValue": "Snake Plant, Pothos, ZZ Plant"
+    },
+    {
+        "attributeID": 32,
+        "productID": 9,
+        "attributeName": "Pot Material",
+        "attributeValue": "Ceramic"
+    },
+    {
+        "attributeID": 33,
+        "productID": 9,
+        "attributeName": "Care Level",
+        "attributeValue": "Easy"
+    },
+    {
+        "attributeID": 34,
+        "productID": 10,
+        "attributeName": "Processor",
+        "attributeValue": "Intel Core i9-13900H"
+    },
+    {
+        "attributeID": 35,
+        "productID": 10,
+        "attributeName": "Graphics",
+        "attributeValue": "NVIDIA RTX 4070 8GB"
+    },
+    {
+        "attributeID": 36,
+        "productID": 10,
+        "attributeName": "RAM",
+        "attributeValue": "32GB DDR5"
+    },
+    {
+        "attributeID": 37,
+        "productID": 10,
+        "attributeName": "Storage",
+        "attributeValue": "1TB NVMe SSD"
+    },
+    {
+        "attributeID": 38,
+        "productID": 10,
+        "attributeName": "Screen",
+        "attributeValue": "17.3 inch 240Hz QHD"
+    }
+]

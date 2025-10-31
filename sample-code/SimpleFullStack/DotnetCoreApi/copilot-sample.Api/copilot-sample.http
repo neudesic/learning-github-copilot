@@ -1,0 +1,19 @@
+@copilot_sample_HostAddress = http://localhost:5111
+
+# Test Categories API
+GET {{copilot_sample_HostAddress}}/api/Category
+Accept: application/json
+
+###
+
+# Test Products API
+GET {{copilot_sample_HostAddress}}/api/Product
+Accept: application/json
+
+###
+
+# Test Swagger endpoint
+GET {{copilot_sample_HostAddress}}/swagger
+Accept: text/html
+
+###

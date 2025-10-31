@@ -1,0 +1,75 @@
+[
+    {
+        "categoryID": 1,
+        "name": "Electronics",
+        "description": "Electronic devices and accessories",
+        "parentCategoryID": null,
+        "subCategories": [
+            {
+                "categoryID": 2,
+                "name": "Computers",
+                "description": "Desktop and laptop computers",
+                "parentCategoryID": 1,
+                "subCategories": [
+                    {
+                        "categoryID": 5,
+                        "name": "Laptops",
+                        "description": "Portable computers",
+                        "parentCategoryID": 2,
+                        "subCategories": []
+                    },
+                    {
+                        "categoryID": 6,
+                        "name": "Desktops",
+                        "description": "Stationary computers",
+                        "parentCategoryID": 2,
+                        "subCategories": []
+                    }
+                ]
+            },
+            {
+                "categoryID": 3,
+                "name": "Smartphones",
+                "description": "Mobile phones and accessories",
+                "parentCategoryID": 1,
+                "subCategories": []
+            },
+            {
+                "categoryID": 4,
+                "name": "Audio",
+                "description": "Headphones, speakers, and audio equipment",
+                "parentCategoryID": 1,
+                "subCategories": []
+            }
+        ]
+    },
+    {
+        "categoryID": 7,
+        "name": "Clothing",
+        "description": "Apparel and fashion items",
+        "parentCategoryID": null,
+        "subCategories": [
+            {
+                "categoryID": 8,
+                "name": "Men's",
+                "description": "Men's clothing",
+                "parentCategoryID": 7,
+                "subCategories": []
+            },
+            {
+                "categoryID": 9,
+                "name": "Women's",
+                "description": "Women's clothing",
+                "parentCategoryID": 7,
+                "subCategories": []
+            }
+        ]
+    },
+    {
+        "categoryID": 10,
+        "name": "Home & Garden",
+        "description": "Items for home and outdoor spaces",
+        "parentCategoryID": null,
+        "subCategories": []
+    }
+]

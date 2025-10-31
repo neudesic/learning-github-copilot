@@ -1,0 +1,162 @@
+[
+    {
+        "productID": 1,
+        "name": "MacBook Pro 16-inch",
+        "description": "Apple MacBook Pro with M2 Pro chip, 16GB RAM, 512GB SSD",
+        "sku": "APP-MBP16-M2P",
+        "categoryID": 5,
+        "brand": "Apple",
+        "isActive": true,
+        "category": {
+            "categoryID": 5,
+            "name": "Laptops",
+            "description": "Portable computers",
+            "parentCategoryID": 2,
+            "subCategories": []
+        }
+    },
+    {
+        "productID": 2,
+        "name": "Dell XPS 15",
+        "description": "Dell XPS 15 with Intel i7, 16GB RAM, 1TB SSD",
+        "sku": "DEL-XPS15-I7",
+        "categoryID": 5,
+        "brand": "Dell",
+        "isActive": true,
+        "category": {
+            "categoryID": 5,
+            "name": "Laptops",
+            "description": "Portable computers",
+            "parentCategoryID": 2,
+            "subCategories": []
+        }
+    },
+    {
+        "productID": 3,
+        "name": "iPhone 15 Pro",
+        "description": "Apple iPhone 15 Pro, 256GB",
+        "sku": "APP-IP15P-256",
+        "categoryID": 3,
+        "brand": "Apple",
+        "isActive": true,
+        "category": {
+            "categoryID": 3,
+            "name": "Smartphones",
+            "description": "Mobile phones and accessories",
+            "parentCategoryID": 1,
+            "subCategories": []
+        }
+    },
+    {
+        "productID": 4,
+        "name": "Samsung Galaxy S24 Ultra",
+        "description": "Samsung Galaxy S24 Ultra, 512GB",
+        "sku": "SAM-GS24U-512",
+        "categoryID": 3,
+        "brand": "Samsung",
+        "isActive": true,
+        "category": {
+            "categoryID": 3,
+            "name": "Smartphones",
+            "description": "Mobile phones and accessories",
+            "parentCategoryID": 1,
+            "subCategories": []
+        }
+    },
+    {
+        "productID": 5,
+        "name": "Sony WH-1000XM5",
+        "description": "Sony Wireless Noise Cancelling Headphones",
+        "sku": "SON-WH1000XM5",
+        "categoryID": 4,
+        "brand": "Sony",
+        "isActive": true,
+        "category": {
+            "categoryID": 4,
+            "name": "Audio",
+            "description": "Headphones, speakers, and audio equipment",
+            "parentCategoryID": 1,
+            "subCategories": []
+        }
+    },
+    {
+        "productID": 6,
+        "name": "HP Pavilion Desktop",
+        "description": "HP Pavilion Desktop PC with Intel i5, 8GB RAM, 512GB SSD",
+        "sku": "HP-PVDTOP-I5",
+        "categoryID": 6,
+        "brand": "HP",
+        "isActive": true,
+        "category": {
+            "categoryID": 6,
+            "name": "Desktops",
+            "description": "Stationary computers",
+            "parentCategoryID": 2,
+            "subCategories": []
+        }
+    },
+    {
+        "productID": 7,
+        "name": "Men's Cotton T-Shirt",
+        "description": "Classic fit cotton t-shirt, various colors",
+        "sku": "CLO-MCTS-LG",
+        "categoryID": 8,
+        "brand": "Generic",
+        "isActive": true,
+        "category": {
+            "categoryID": 8,
+            "name": "Men's",
+            "description": "Men's clothing",
+            "parentCategoryID": 7,
+            "subCategories": []
+        }
+    },
+    {
+        "productID": 8,
+        "name": "Women's Casual Dress",
+        "description": "Summer casual dress, knee length",
+        "sku": "CLO-WCDR-MD",
+        "categoryID": 9,
+        "brand": "Generic",
+        "isActive": true,
+        "category": {
+            "categoryID": 9,
+            "name": "Women's",
+            "description": "Women's clothing",
+            "parentCategoryID": 7,
+            "subCategories": []
+        }
+    },
+    {
+        "productID": 9,
+        "name": "Indoor Plant Set",
+        "description": "Set of 3 small indoor plants with pots",
+        "sku": "HG-IPLTS-3PK",
+        "categoryID": 10,
+        "brand": "GreenThumb",
+        "isActive": true,
+        "category": {
+            "categoryID": 10,
+            "name": "Home & Garden",
+            "description": "Items for home and outdoor spaces",
+            "parentCategoryID": null,
+            "subCategories": []
+        }
+    },
+    {
+        "productID": 10,
+        "name": "Gaming Laptop",
+        "description": "High-performance gaming laptop with RTX 4070",
+        "sku": "MSI-GMLPT-4070",
+        "categoryID": 5,
+        "brand": "MSI",
+        "isActive": false,
+        "category": {
+            "categoryID": 5,
+            "name": "Laptops",
+            "description": "Portable computers",
+            "parentCategoryID": 2,
+            "subCategories": []
+        }
+    }
+]
