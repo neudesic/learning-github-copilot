@@ -10,7 +10,7 @@ public class CategoryServiceTests
     private AppDbContext GetInMemoryDbContext()
     {
         var options = new DbContextOptionsBuilder<AppDbContext>()
-            .UseInMemoryDatabase(databaseName: "TestDatabase")
+            .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
             .Options;
 
         return new AppDbContext(options);
@@ -177,6 +177,8 @@ public class CategoryServiceTests
 
         // Assert
         result.Should().BeTrue();
+        var deletedCategory = await dbContext.Categories.FindAsync(11);
+        deletedCategory.Should().BeNull();
     }
 
     [Fact]
@@ -190,6 +192,6 @@ public class CategoryServiceTests
         var result = await categoryService.DeleteCategoryAsync(112);
 
         // Assert
-        result.Should().BeTrue();
+        result.Should().BeFalse();
     }
 }

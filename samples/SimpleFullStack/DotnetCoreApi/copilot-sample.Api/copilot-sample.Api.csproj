@@ -30,4 +30,8 @@
     <ProjectReference Include="..\copilot-sample.DataAccess\copilot-sample.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+
 </Project>

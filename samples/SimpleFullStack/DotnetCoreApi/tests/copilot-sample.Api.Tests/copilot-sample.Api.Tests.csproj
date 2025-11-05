@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\copilot-sample.Api\copilot-sample.Api.csproj" />
+    <ProjectReference Include="..\..\copilot-sample.Api\copilot-sample.Api.csproj" />
   </ItemGroup>
 
   <ItemGroup>

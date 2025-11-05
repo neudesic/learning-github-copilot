@@ -1,3 +1,4 @@
+using System.Threading;
 using Microsoft.EntityFrameworkCore;
 using copilot_sample.DataAccess.Entities;
 using copilot_sample.DataAccess.EntityConfiguration;
@@ -33,6 +34,40 @@ namespace copilot_sample.DataAccess
 
             // Seed data
             SeedData(modelBuilder);
+        }
+
+        public override int SaveChanges()
+        {
+            UpdateTimestamps();
+            return base.SaveChanges();
+        }
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            UpdateTimestamps();
+            return base.SaveChangesAsync(cancellationToken);
+        }
+
+        private void UpdateTimestamps()
+        {
+            var now = DateTime.UtcNow;
+
+            foreach (var entry in ChangeTracker.Entries<Product>())
+            {
+                if (entry.State == EntityState.Added)
+                {
+                    if (entry.Property(p => p.CreatedAt).CurrentValue == default)
+                    {
+                        entry.Property(p => p.CreatedAt).CurrentValue = now;
+                    }
+
+                    entry.Property(p => p.UpdatedAt).CurrentValue = now;
+                }
+                else if (entry.State == EntityState.Modified)
+                {
+                    entry.Property(p => p.UpdatedAt).CurrentValue = now;
+                }
+            }
         }
 
         private void SeedData(ModelBuilder modelBuilder)
