@@ -37,8 +37,8 @@ jobs:
 
       - name: Install package (fallback to CLI name)
         run: |
+          npm install -g @neudesic/unittest@latest || \
           npm install -g @neudesic/unittest@0.0.3 || \
-          npm install -g @neudesic/unittest || \
           {
             echo "Install attempts failed"; exit 1;
           }
@@ -76,7 +76,9 @@ jobs:
       - name: Run command generate
         working-directory: samples/SimpleFullStack/DotnetCoreApi
         run: |
-          unittest-cli generate --copilot -f copilot-sample.Api\Models\Dtos\AddCategoryDto.cs
+          unittest-cli generate --copilot -f "copilot-sample.Api\\Models\\Dtos\\AddCategoryDto.cs"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: git status Check
         working-directory: samples/SimpleFullStack/DotnetCoreApi
