@@ -37,13 +37,26 @@ jobs:
 
       - name: Install package (fallback to CLI name)
         run: |
-          npm install -g @neudesic/unittest@0.0.1 || \
+          npm install -g @neudesic/unittest@0.0.3 || \
           npm install -g @neudesic/unittest || \
           {
             echo "Install attempts failed"; exit 1;
           }
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      ##install GHC package npm install -g @github/copilot
+      - name: Install GitHub Copilot CLI
+        run: |
+          npm install -g @github/copilot || {
+            echo "GitHub Copilot CLI install failed"; exit 1;
+          }
+
+      - name: github copilot cli login
+        run: |
+          copilot -p "logged in user"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Run command help
         working-directory: samples/SimpleFullStack/DotnetCoreApi
@@ -59,3 +72,36 @@ jobs:
         working-directory: samples/SimpleFullStack/DotnetCoreApi
         run: |
           unittest-cli sync
+
+      - name: Run command generate
+        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        run: |
+          unittest-cli generate --copilot -f copilot-sample.Api\Models\Dtos\AddCategoryDto.cs
+
+      - name: git status Check
+        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        run: |
+          git status
+
+      - name: List untracked and modified files
+        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        run: |
+          git ls-files --others --exclude-standard
+          git ls-files -m
+
+      - name: Show diffs
+        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        run: |
+          git diff
+
+      - name: stage changes
+        working-directory: ./
+        run: |
+          git add .
+
+      - name: Commit changes
+        working-directory: ./
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: add generated unit tests from unittest-cli"
