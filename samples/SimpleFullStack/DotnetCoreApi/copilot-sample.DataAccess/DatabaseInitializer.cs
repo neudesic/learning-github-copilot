@@ -23,14 +23,23 @@ namespace copilot_sample.DataAccess
             {
                 using var scope = serviceProvider.CreateScope();
                 var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-                
+
                 logger?.LogInformation("Starting database initialization...");
-                
+
                 // Ensure database is created and apply pending migrations
-                await context.Database.MigrateAsync();
-                
+                // For InMemory databases, use EnsureCreated; for real databases, use Migrate
+                var isInMemory = context.Database.ProviderName == "Microsoft.EntityFrameworkCore.InMemory";
+                if (isInMemory)
+                {
+                    await context.Database.EnsureCreatedAsync();
+                }
+                else
+                {
+                    await context.Database.MigrateAsync();
+                }
+
                 logger?.LogInformation("Database initialization completed successfully. All migrations have been applied.");
-                
+
                 // Check if data exists (seed data is handled by migrations via AppDbContext.SeedData)
                 var hasData = await context.Categories.AnyAsync();
                 if (hasData)
@@ -48,7 +57,7 @@ namespace copilot_sample.DataAccess
                 throw;
             }
         }
-          /// <summary>
+        /// <summary>
         /// Alternative method for runtime seeding if needed (not recommended for production).
         /// Use this only if you need to add data that's not part of migrations.
         /// </summary>
@@ -61,7 +70,7 @@ namespace copilot_sample.DataAccess
             {
                 using var scope = serviceProvider.CreateScope();
                 var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-                
+
                 // Check if seeding is needed
                 var hasData = await context.Categories.AnyAsync();
                 if (hasData && !forceReseed)
@@ -75,12 +84,12 @@ namespace copilot_sample.DataAccess
                     logger?.LogInformation("Force reseed requested. Clearing existing data...");
                     await ClearExistingDataAsync(context, logger);
                 }
-                
+
                 logger?.LogInformation("Starting runtime database seeding...");
-                
+
                 // Apply seed data using the centralized seed data class
                 await InventorySeedData.ApplyToContextAsync(context);
-                
+
                 // Log seeding results
                 var counts = InventorySeedData.GetSeedDataCounts();
                 logger?.LogInformation($"Runtime seeding completed successfully. Added: {counts.Categories} categories, {counts.Products} products, {counts.Prices} prices, {counts.Inventory} inventory items, {counts.Attributes} attributes, {counts.Reviews} reviews.");
@@ -101,7 +110,7 @@ namespace copilot_sample.DataAccess
         private static async Task ClearExistingDataAsync(AppDbContext context, ILogger? logger = null)
         {
             logger?.LogWarning("Clearing all existing data from database...");
-            
+
             // Delete in reverse dependency order to avoid foreign key constraints
             context.ProductReviews.RemoveRange(context.ProductReviews);
             context.ProductAttributes.RemoveRange(context.ProductAttributes);
@@ -109,11 +118,11 @@ namespace copilot_sample.DataAccess
             context.Inventory.RemoveRange(context.Inventory);
             context.Products.RemoveRange(context.Products);
             context.Categories.RemoveRange(context.Categories);
-            
+
             await context.SaveChangesAsync();
             logger?.LogInformation("All existing data cleared from database.");
         }
-        
+
         /// <summary>
         /// Validates that the database schema and seed data are properly configured.
         /// </summary>
@@ -126,7 +135,7 @@ namespace copilot_sample.DataAccess
             {
                 using var scope = serviceProvider.CreateScope();
                 var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-                
+
                 // Check if database can be accessed
                 var canConnect = await context.Database.CanConnectAsync();
                 if (!canConnect)
@@ -134,14 +143,14 @@ namespace copilot_sample.DataAccess
                     logger?.LogError("Cannot connect to the database.");
                     return false;
                 }
-                
+
                 // Check if required tables exist with data
                 var categoriesCount = await context.Categories.CountAsync();
                 var productsCount = await context.Products.CountAsync();
                 var inventoryCount = await context.Inventory.CountAsync();
-                
+
                 logger?.LogInformation($"Database validation: Categories={categoriesCount}, Products={productsCount}, Inventory={inventoryCount}");
-                
+
                 // Basic validation - should have seed data
                 if (categoriesCount >= 4 && productsCount >= 7 && inventoryCount >= 7)
                 {
