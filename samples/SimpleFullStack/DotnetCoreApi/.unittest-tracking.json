@@ -1,58 +1,51 @@
 {
-  "copilot-sample.DataAccess\\EntityConfiguration\\ProductReviewConfiguration.cs": {
+  "copilot-sample.DataAccess/EntityConfiguration/ProductReviewConfiguration.cs": {
     "testedMethods": [
       "Configure"
     ],
-    "lastUpdated": "2025-11-05T21:00:54.070Z",
-    "testFilePath": "copilot-sample.Test\\ProductReviewConfigurationTests.cs"
+    "lastUpdated": "2025-11-07T15:48:06.568Z",
+    "testFilePath": "tests/copilot-sample.DataAccess.Tests/ProductReviewConfigurationTests.cs"
   },
-  "copilot-sample.Api\\Models\\CategoryMappings.cs": {
+  "copilot-sample.DataAccess/EntityConfiguration/ProductPriceConfiguration.cs": {
+    "testedMethods": [
+      "Configure"
+    ],
+    "lastUpdated": "2025-11-07T15:48:06.569Z",
+    "testFilePath": "tests/copilot-sample.DataAccess.Tests/ProductPriceConfigurationTests.cs"
+  },
+  "copilot-sample.DataAccess/EntityConfiguration/ProductConfiguration.cs": {
+    "testedMethods": [
+      "Configure"
+    ],
+    "lastUpdated": "2025-11-07T15:48:06.571Z",
+    "testFilePath": "tests/copilot-sample.DataAccess.Tests/ProductConfigurationTests.cs"
+  },
+  "copilot-sample.DataAccess/EntityConfiguration/ProductAttributeConfiguration.cs": {
+    "testedMethods": [
+      "Configure"
+    ],
+    "lastUpdated": "2025-11-07T15:48:06.572Z",
+    "testFilePath": "tests/copilot-sample.DataAccess.Tests/ProductAttributeConfigurationTests.cs"
+  },
+  "copilot-sample.DataAccess/EntityConfiguration/InventoryConfiguration.cs": {
+    "testedMethods": [
+      "Configure"
+    ],
+    "lastUpdated": "2025-11-07T15:48:06.572Z",
+    "testFilePath": "tests/copilot-sample.DataAccess.Tests/InventoryConfigurationTests.cs"
+  },
+  "copilot-sample.DataAccess/EntityConfiguration/CategoryConfiguration.cs": {
+    "testedMethods": [
+      "Configure"
+    ],
+    "lastUpdated": "2025-11-07T15:48:06.573Z",
+    "testFilePath": "tests/copilot-sample.DataAccess.Tests/CategoryConfigurationTests.cs"
+  },
+  "copilot-sample.Api/Models/CategoryMappings.cs": {
     "testedMethods": [
       "MapWithSubcategories"
     ],
-    "lastUpdated": "2025-11-05T21:00:54.091Z",
-    "testFilePath": "copilot-sample.Test\\CategoryMappingsTests.cs"
-  },
-  "copilot-sample.DataAccess\\SeedData\\InventorySeedData.cs": {
-    "testedMethods": [
-      "ApplyToModelBuilder"
-    ],
-    "lastUpdated": "2025-11-05T20:01:45.767Z",
-    "testFilePath": "copilot-sample.Test\\InventorySeedDataTests.cs"
-  },
-  "copilot-sample.DataAccess\\EntityConfiguration\\ProductPriceConfiguration.cs": {
-    "testedMethods": [
-      "Configure"
-    ],
-    "lastUpdated": "2025-11-05T21:00:54.072Z",
-    "testFilePath": "copilot-sample.Test\\ProductPriceConfigurationTests.cs"
-  },
-  "copilot-sample.DataAccess\\EntityConfiguration\\ProductConfiguration.cs": {
-    "testedMethods": [
-      "Configure"
-    ],
-    "lastUpdated": "2025-11-05T21:00:54.075Z",
-    "testFilePath": "copilot-sample.Test\\ProductConfigurationTests.cs"
-  },
-  "copilot-sample.DataAccess\\EntityConfiguration\\ProductAttributeConfiguration.cs": {
-    "testedMethods": [
-      "Configure"
-    ],
-    "lastUpdated": "2025-11-05T21:00:54.079Z",
-    "testFilePath": "copilot-sample.Test\\ProductAttributeConfigurationTests.cs"
-  },
-  "copilot-sample.DataAccess\\EntityConfiguration\\InventoryConfiguration.cs": {
-    "testedMethods": [
-      "Configure"
-    ],
-    "lastUpdated": "2025-11-05T21:00:54.086Z",
-    "testFilePath": "copilot-sample.Test\\InventoryConfigurationTests.cs"
-  },
-  "copilot-sample.DataAccess\\EntityConfiguration\\CategoryConfiguration.cs": {
-    "testedMethods": [
-      "Configure"
-    ],
-    "lastUpdated": "2025-11-05T21:00:54.061Z",
-    "testFilePath": "copilot-sample.Test\\CategoryConfigurationTests.cs"
+    "lastUpdated": "2025-11-07T15:48:06.576Z",
+    "testFilePath": "tests/copilot-sample.Api.Tests/CategoryMappingsTests.cs"
   }
 }
