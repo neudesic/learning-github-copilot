@@ -61,6 +61,8 @@ jobs:
       - name: github copilot change model
         run: |
           echo "/model claude-haiku-4.5"|copilot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Run command help
         working-directory: samples/SimpleFullStack/DotnetCoreApi
