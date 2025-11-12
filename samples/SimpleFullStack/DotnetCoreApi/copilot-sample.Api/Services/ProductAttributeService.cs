@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace copilot_sample.Api.Services
 {
-    public class ProductAttributeService : IProductAttributeService
+    public class ProductAttributeService
     {
         private readonly AppDbContext _dbContext;
 
