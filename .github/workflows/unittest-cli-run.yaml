@@ -58,6 +58,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
+      - name: github copilot change model
+        run: |
+          echo "/model claude-haiku-4.5"|copilot
+
       - name: Run command help
         working-directory: samples/SimpleFullStack/DotnetCoreApi
         run: |
@@ -76,7 +80,7 @@ jobs:
       - name: Run command generate
         working-directory: samples/SimpleFullStack/DotnetCoreApi
         run: |
-          unittest-cli generate --copilot -f "copilot-sample.Api\\Models\\Dtos\\AddCategoryDto.cs"
+          unittest-cli generate --copilot
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
