@@ -8,9 +8,9 @@ namespace copilot_sample.Api.Controllers
     [Route("api/[controller]")]
     public class ProductAttributeController : ControllerBase
     {
-        private readonly ProductAttributeService _productAttributeService;
+        private readonly IProductAttributeService _productAttributeService;
 
-        public ProductAttributeController(ProductAttributeService productAttributeService)
+        public ProductAttributeController(IProductAttributeService productAttributeService)
         {
             _productAttributeService = productAttributeService;
         }
