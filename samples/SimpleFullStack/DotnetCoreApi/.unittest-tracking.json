@@ -47,5 +47,54 @@
     ],
     "lastUpdated": "2025-11-07T15:48:06.576Z",
     "testFilePath": "tests/copilot-sample.Api.Tests/CategoryMappingsTests.cs"
+  },
+  "copilot-sample.DataAccess\\EntityConfiguration\\ProductReviewConfiguration.cs": {
+    "testedMethods": [
+      "Configure"
+    ],
+    "lastUpdated": "2025-11-12T23:12:27.349Z",
+    "testFilePath": "tests\\copilot-sample.DataAccess.Tests\\ProductReviewConfigurationTests.cs"
+  },
+  "copilot-sample.DataAccess\\EntityConfiguration\\ProductPriceConfiguration.cs": {
+    "testedMethods": [
+      "Configure"
+    ],
+    "lastUpdated": "2025-11-12T23:12:27.360Z",
+    "testFilePath": "tests\\copilot-sample.DataAccess.Tests\\ProductPriceConfigurationTests.cs"
+  },
+  "copilot-sample.DataAccess\\EntityConfiguration\\ProductConfiguration.cs": {
+    "testedMethods": [
+      "Configure"
+    ],
+    "lastUpdated": "2025-11-12T23:12:27.364Z",
+    "testFilePath": "tests\\copilot-sample.DataAccess.Tests\\ProductConfigurationTests.cs"
+  },
+  "copilot-sample.DataAccess\\EntityConfiguration\\ProductAttributeConfiguration.cs": {
+    "testedMethods": [
+      "Configure"
+    ],
+    "lastUpdated": "2025-11-12T23:12:27.370Z",
+    "testFilePath": "tests\\copilot-sample.DataAccess.Tests\\ProductAttributeConfigurationTests.cs"
+  },
+  "copilot-sample.DataAccess\\EntityConfiguration\\InventoryConfiguration.cs": {
+    "testedMethods": [
+      "Configure"
+    ],
+    "lastUpdated": "2025-11-12T23:12:27.378Z",
+    "testFilePath": "tests\\copilot-sample.DataAccess.Tests\\InventoryConfigurationTests.cs"
+  },
+  "copilot-sample.DataAccess\\EntityConfiguration\\CategoryConfiguration.cs": {
+    "testedMethods": [
+      "Configure"
+    ],
+    "lastUpdated": "2025-11-12T23:12:27.383Z",
+    "testFilePath": "tests\\copilot-sample.DataAccess.Tests\\CategoryConfigurationTests.cs"
+  },
+  "copilot-sample.Api\\Models\\CategoryMappings.cs": {
+    "testedMethods": [
+      "MapWithSubcategories"
+    ],
+    "lastUpdated": "2025-11-12T23:12:27.399Z",
+    "testFilePath": "tests\\copilot-sample.Api.Tests\\CategoryMappingsTests.cs"
   }
 }
