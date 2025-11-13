@@ -23,11 +23,13 @@ namespace copilot_sample.DataAccess.EntityConfiguration
 
             builder.Property(pa => pa.AttributeName)
                 .HasColumnName("AttributeName")
-                .HasMaxLength(100);
+                .HasMaxLength(100)
+                .IsRequired();
 
             builder.Property(pa => pa.AttributeValue)
                 .HasColumnName("AttributeValue")
-                .HasMaxLength(255);
+                .HasMaxLength(255)
+                .IsRequired();
 
             // Relationships
             builder.HasOne(pa => pa.Product)

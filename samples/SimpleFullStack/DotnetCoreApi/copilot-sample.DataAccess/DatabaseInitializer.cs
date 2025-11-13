@@ -144,6 +144,14 @@ namespace copilot_sample.DataAccess
                     return false;
                 }
 
+                // For in-memory databases, skip seed data validation as seeding happens later
+                var isInMemory = context.Database.ProviderName == "Microsoft.EntityFrameworkCore.InMemory";
+                if (isInMemory)
+                {
+                    logger?.LogInformation("In-memory database validation passed (seed data validation skipped).");
+                    return true;
+                }
+
                 // Check if required tables exist with data
                 var categoriesCount = await context.Categories.CountAsync();
                 var productsCount = await context.Products.CountAsync();

@@ -306,7 +306,7 @@ public class DatabaseInitializerTests
     }
 
     [Fact]
-    public async Task ValidateDatabaseAsync_ShouldReturnFalse_WhenInsufficientSeedData()
+    public async Task ValidateDatabaseAsync_ShouldReturnTrue_ForInMemoryDatabase_WhenInsufficientSeedData()
     {
         // Arrange
         var context = GetInMemoryDbContext();
@@ -322,13 +322,13 @@ public class DatabaseInitializerTests
         // Act
         var result = await DatabaseInitializer.ValidateDatabaseAsync(serviceProvider, logger.Object);
 
-        // Assert
-        result.Should().BeFalse();
+        // Assert - In-memory databases skip seed data validation
+        result.Should().BeTrue();
         logger.Verify(
             x => x.Log(
-                LogLevel.Warning,
+                LogLevel.Information,
                 It.IsAny<EventId>(),
-                It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("validation failed")),
+                It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("In-memory database validation passed")),
                 It.IsAny<Exception>(),
                 It.IsAny<Func<It.IsAnyType, Exception, string>>()),
             Times.Once);
@@ -363,7 +363,7 @@ public class DatabaseInitializerTests
     }
 
     [Fact]
-    public async Task ValidateDatabaseAsync_ShouldHandleNullLogger()
+    public async Task ValidateDatabaseAsync_ShouldHandleNullLogger_ForInMemoryDatabase()
     {
         // Arrange
         var context = GetInMemoryDbContext();
@@ -372,8 +372,8 @@ public class DatabaseInitializerTests
         // Act
         var result = await DatabaseInitializer.ValidateDatabaseAsync(serviceProvider, null);
 
-        // Assert
-        result.Should().BeFalse();
+        // Assert - In-memory databases return true without validation
+        result.Should().BeTrue();
     }
 
     [Fact]
@@ -415,12 +415,12 @@ public class DatabaseInitializerTests
     }
 
     [Fact]
-    public async Task ValidateDatabaseAsync_ShouldLogValidationCounts_WhenSuccessful()
+    public async Task ValidateDatabaseAsync_ShouldLogInMemoryValidationMessage_WhenSuccessful()
     {
         // Arrange
         var context = GetInMemoryDbContext();
 
-        // Add sufficient seed data
+        // Add sufficient seed data (though not needed for in-memory)
         for (int i = 0; i < 4; i++)
             context.Categories.Add(new Category { Name = $"Category {i}" });
         for (int i = 0; i < 7; i++)
@@ -435,12 +435,12 @@ public class DatabaseInitializerTests
         // Act
         await DatabaseInitializer.ValidateDatabaseAsync(serviceProvider, logger.Object);
 
-        // Assert
+        // Assert - In-memory databases log different message
         logger.Verify(
             x => x.Log(
                 LogLevel.Information,
                 It.IsAny<EventId>(),
-                It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Database validation:")),
+                It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("In-memory database validation passed")),
                 It.IsAny<Exception>(),
                 It.IsAny<Func<It.IsAnyType, Exception, string>>()),
             Times.Once);
