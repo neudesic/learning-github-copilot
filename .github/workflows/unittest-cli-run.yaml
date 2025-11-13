@@ -79,42 +79,42 @@ jobs:
         run: |
           unittest-cli sync
 
-      # - name: Run command generate
-      #   working-directory: samples/SimpleFullStack/DotnetCoreApi
-      #   run: |
-      #     unittest-cli generate --copilot
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Run command generate
+        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        run: |
+          unittest-cli generate --copilot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      # - name: Run dotnet tests
-      #   working-directory: samples/SimpleFullStack/DotnetCoreApi
-      #   run: |
-      #     dotnet test
+      - name: Run dotnet tests
+        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        run: |
+          dotnet test
 
-      # - name: git status Check
-      #   working-directory: samples/SimpleFullStack/DotnetCoreApi
-      #   run: |
-      #     git status
+      - name: git status Check
+        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        run: |
+          git status
 
-      # - name: List untracked and modified files
-      #   working-directory: samples/SimpleFullStack/DotnetCoreApi
-      #   run: |
-      #     git ls-files --others --exclude-standard
-      #     git ls-files -m
+      - name: List untracked and modified files
+        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        run: |
+          git ls-files --others --exclude-standard
+          git ls-files -m
 
-      # - name: Show diffs
-      #   working-directory: samples/SimpleFullStack/DotnetCoreApi
-      #   run: |
-      #     git diff
+      - name: Show diffs
+        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        run: |
+          git diff
 
-      # - name: stage changes
-      #   working-directory: ./
-      #   run: |
-      #     git add .
+      - name: stage changes
+        working-directory: ./
+        run: |
+          git add .
 
-      # - name: Commit changes
-      #   working-directory: ./
-      #   run: |
-      #     git config --global user.name "github-actions[bot]"
-      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      #     git commit -m "chore: add generated unit tests from unittest-cli"
+      - name: Commit changes
+        working-directory: ./
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: add generated unit tests from unittest-cli"
