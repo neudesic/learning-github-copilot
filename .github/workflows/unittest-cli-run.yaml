@@ -82,7 +82,7 @@ jobs:
       - name: Run dotnet restore before generate
         working-directory: samples/eShop-release-8.0
         run: |
-          dotnet restore
+          dotnet workload restore && dotnet restore
       - name: Run dotnet build before generate
         working-directory: samples/eShop-release-8.0
         run: |
