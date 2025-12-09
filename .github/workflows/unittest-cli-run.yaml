@@ -79,6 +79,21 @@ jobs:
         run: |
           unittest-cli sync
 
+      - name: Run dotnet restore before generate
+        working-directory: samples/eShop-release-8.0
+        run: |
+          dotnet restore
+      - name: Run dotnet build before generate
+        working-directory: samples/eShop-release-8.0
+        run: |
+          dotnet build
+
+      - name: Run dotnet clean and test before generate
+        working-directory: samples/eShop-release-8.0
+        run: |
+          dotnet clean && 
+          dotnet test --verbosity normal
+
       - name: Run command generate
         working-directory: samples/eShop-release-8.0
         run: |
