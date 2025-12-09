@@ -6,6 +6,7 @@
     "scminput": false,
     "bicep": true,
     "csharp": true,
-    "typescriptreact": true
+    "typescriptreact": true,
+    "yaml": true
   }
 }
