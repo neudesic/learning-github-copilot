@@ -1,0 +1,48 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  EventBus -> C:\Users\Swagath.Bairi\Downloads\eShop-release-8.0\eShop-release-8.0\src\EventBus\bin\Debug\net8.0\EventBus.dll
+  IntegrationEventLogEF -> C:\Users\Swagath.Bairi\Downloads\eShop-release-8.0\eShop-release-8.0\src\IntegrationEventLogEF\bin\Debug\net8.0\IntegrationEventLogEF.dll
+  IntegrationEventLogEF.Tests -> C:\Users\Swagath.Bairi\Downloads\eShop-release-8.0\eShop-release-8.0\tests\IntegrationEventLogEF.Tests\bin\Debug\net8.0\IntegrationEventLogEF.Tests.dll
+Test run for C:\Users\Swagath.Bairi\Downloads\eShop-release-8.0\eShop-release-8.0\tests\IntegrationEventLogEF.Tests\bin\Debug\net8.0\IntegrationEventLogEF.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.51]     IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_WithMultipleSequentialCalls_BothActionsAttemptExecution [FAIL]
+  Failed IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_WithMultipleSequentialCalls_BothActionsAttemptExecution [242 ms]
+  Error Message:
+   Assert.Contains() Failure: Item not found in collection
+Collection: []
+Not found:  1
+  Stack Trace:
+     at IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_WithMultipleSequentialCalls_BothActionsAttemptExecution() in C:\Users\Swagath.Bairi\Downloads\eShop-release-8.0\eShop-release-8.0\tests\IntegrationEventLogEF.Tests\ResilientTransactionTests.cs:line 166
+--- End of stack trace from previous location ---
+[xUnit.net 00:00:00.52]     IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_WithAsyncAction_ActionExecutesBeforeException [FAIL]
+[xUnit.net 00:00:00.53]     IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_WithComplexAsyncOperation_AllActionsAttemptExecution [FAIL]
+[xUnit.net 00:00:00.53]     IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_CreatesAndExecutesWithinTransaction [FAIL]
+  Failed IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_WithAsyncAction_ActionExecutesBeforeException [6 ms]
+  Error Message:
+   Assert.True() Failure
+Expected: True
+Actual:   False
+  Stack Trace:
+     at IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_WithAsyncAction_ActionExecutesBeforeException() in C:\Users\Swagath.Bairi\Downloads\eShop-release-8.0\eShop-release-8.0\tests\IntegrationEventLogEF.Tests\ResilientTransactionTests.cs:line 98
+--- End of stack trace from previous location ---
+  Failed IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_WithComplexAsyncOperation_AllActionsAttemptExecution [5 ms]
+  Error Message:
+   Assert.Contains() Failure: Item not found in collection
+Collection: []
+Not found:  "Step1"
+  Stack Trace:
+     at IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_WithComplexAsyncOperation_AllActionsAttemptExecution() in C:\Users\Swagath.Bairi\Downloads\eShop-release-8.0\eShop-release-8.0\tests\IntegrationEventLogEF.Tests\ResilientTransactionTests.cs:line 197
+--- End of stack trace from previous location ---
+  Failed IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_CreatesAndExecutesWithinTransaction [2 ms]
+  Error Message:
+   Assert.True() Failure
+Expected: True
+Actual:   False
+  Stack Trace:
+     at IntegrationEventLogEF.Tests.ResilientTransactionTests.ExecuteAsync_CreatesAndExecutesWithinTransaction() in C:\Users\Swagath.Bairi\Downloads\eShop-release-8.0\eShop-release-8.0\tests\IntegrationEventLogEF.Tests\ResilientTransactionTests.cs:line 70
+--- End of stack trace from previous location ---
+
+Failed!  - Failed:     4, Passed:    41, Skipped:     0, Total:    45, Duration: 1 s - IntegrationEventLogEF.Tests.dll (net8.0)
