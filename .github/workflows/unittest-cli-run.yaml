@@ -65,45 +65,45 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Run command help
-        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        working-directory: samples/eShop-release-8.0
         run: |
           unittest-cli help
 
       - name: Run command missing
-        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        working-directory: samples/eShop-release-8.0
         run: |
           unittest-cli missing
 
       - name: Run command sync
-        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        working-directory: samples/eShop-release-8.0
         run: |
           unittest-cli sync
 
       - name: Run command generate
-        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        working-directory: samples/eShop-release-8.0
         run: |
           unittest-cli generate --copilot
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Run dotnet tests
-        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        working-directory: samples/eShop-release-8.0
         run: |
           dotnet test
 
       - name: git status Check
-        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        working-directory: samples/eShop-release-8.0
         run: |
           git status
 
       - name: List untracked and modified files
-        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        working-directory: samples/eShop-release-8.0
         run: |
           git ls-files --others --exclude-standard
           git ls-files -m
 
       - name: Show diffs
-        working-directory: samples/SimpleFullStack/DotnetCoreApi
+        working-directory: samples/eShop-release-8.0
         run: |
           git diff
 
