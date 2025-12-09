@@ -49,8 +49,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Webhooks.API", "src\Webhook
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppComponents", "src\WebAppComponents\WebAppComponents.csproj", "{0186D030-94C7-446B-A2F7-6E482CC9DEBC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientApp", "src\ClientApp\ClientApp.csproj", "{938803BB-4F6F-4108-BDD1-2AD0180BBDC1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{71131B5B-E80D-49A7-B5FA-DB9B4A43C8CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webhooks.API.Tests", "tests\Webhooks.API.Tests\Webhooks.API.Tests.csproj", "{CA8D2B77-088B-448B-8713-630D74C657F8}"
