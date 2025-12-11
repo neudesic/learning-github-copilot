@@ -102,9 +102,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Run dotnet tests
+        id: dotnet-test
         working-directory: samples/eShop-release-8.0
+        continue-on-error: true
         run: |
           dotnet test
+          echo "test_result=$?" >> $GITHUB_OUTPUT
 
       - name: git status Check
         working-directory: samples/eShop-release-8.0
@@ -122,12 +125,22 @@ jobs:
         run: |
           git diff
 
+      - name: Upload generated files as artifact (on test failure)
+        if: steps.dotnet-test.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-unit-tests
+          path: samples/eShop-release-8.0
+          retention-days: 30
+
       - name: stage changes
+        if: steps.dotnet-test.outcome == 'success'
         working-directory: ./
         run: |
           git add .
 
       - name: Commit changes
+        if: steps.dotnet-test.outcome == 'success'
         working-directory: ./
         run: |
           git config --global user.name "github-actions[bot]"
