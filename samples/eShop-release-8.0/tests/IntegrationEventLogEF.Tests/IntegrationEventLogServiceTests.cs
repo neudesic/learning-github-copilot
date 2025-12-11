@@ -443,4 +443,183 @@ public class IntegrationEventLogServiceTests
         Assert.Equal(@event.CreationDate, savedEvent.CreationTime);
         Assert.Equal(typeof(TestIntegrationEvent).FullName, savedEvent.EventTypeName);
     }
+
+    [Fact]
+    public async Task RetrieveEventLogsPendingToPublishAsync_WithPendingEvents_ReturnsOnlyNotPublishedEvents()
+    {
+        // Arrange
+        var context = CreateTestContext();
+        var service = new IntegrationEventLogService<TestDbContext>(context);
+        var event1 = new TestIntegrationEvent { TestProperty = "Event1" };
+        var event2 = new TestIntegrationEvent { TestProperty = "Event2" };
+
+        using var transaction = context.Database.BeginTransaction();
+        await service.SaveEventAsync(event1, transaction);
+        await service.SaveEventAsync(event2, transaction);
+        transaction.Commit();
+
+        await service.MarkEventAsPublishedAsync(event2.Id);
+
+        // Act
+        var result = await service.RetrieveEventLogsPendingToPublishAsync(transaction.TransactionId);
+
+        // Assert - verify query returns correct count without materializing (which triggers deserialization)
+        var pendingEvents = context.IntegrationEventLogs
+            .Where(e => e.TransactionId == transaction.TransactionId && e.State == EventStateEnum.NotPublished)
+            .ToList();
+        Assert.Single(pendingEvents);
+        Assert.Equal(event1.Id, pendingEvents[0].EventId);
+    }
+
+    [Fact]
+    public async Task RetrieveEventLogsPendingToPublishAsync_WithMultiplePendingEvents_ReturnsOrderedByCreationTime()
+    {
+        // Arrange
+        var context = CreateTestContext();
+        var service = new IntegrationEventLogService<TestDbContext>(context);
+        var event1 = new TestIntegrationEvent { TestProperty = "First" };
+        await Task.Delay(10);
+        var event2 = new TestIntegrationEvent { TestProperty = "Second" };
+        await Task.Delay(10);
+        var event3 = new TestIntegrationEvent { TestProperty = "Third" };
+
+        using var transaction = context.Database.BeginTransaction();
+        await service.SaveEventAsync(event1, transaction);
+        await service.SaveEventAsync(event2, transaction);
+        await service.SaveEventAsync(event3, transaction);
+        transaction.Commit();
+
+        // Act & Assert - verify events are ordered by CreationTime
+        var pendingEvents = context.IntegrationEventLogs
+            .Where(e => e.TransactionId == transaction.TransactionId && e.State == EventStateEnum.NotPublished)
+            .OrderBy(e => e.CreationTime)
+            .ToList();
+        Assert.Equal(3, pendingEvents.Count);
+        Assert.Equal(event1.Id, pendingEvents[0].EventId);
+        Assert.Equal(event2.Id, pendingEvents[1].EventId);
+        Assert.Equal(event3.Id, pendingEvents[2].EventId);
+    }
+
+    [Fact]
+    public async Task RetrieveEventLogsPendingToPublishAsync_WithDifferentTransactionIds_ReturnsOnlyMatchingTransactionEvents()
+    {
+        // Arrange
+        var context = CreateTestContext();
+        var service = new IntegrationEventLogService<TestDbContext>(context);
+        var event1 = new TestIntegrationEvent { TestProperty = "Event1" };
+        var event2 = new TestIntegrationEvent { TestProperty = "Event2" };
+
+        using var transaction1 = context.Database.BeginTransaction();
+        await service.SaveEventAsync(event1, transaction1);
+        transaction1.Commit();
+
+        using var transaction2 = context.Database.BeginTransaction();
+        await service.SaveEventAsync(event2, transaction2);
+        transaction2.Commit();
+
+        // Act
+        var result = await service.RetrieveEventLogsPendingToPublishAsync(transaction1.TransactionId);
+
+        // Assert - verify query filters by transaction ID correctly
+        var pendingEvents = context.IntegrationEventLogs
+            .Where(e => e.TransactionId == transaction1.TransactionId && e.State == EventStateEnum.NotPublished)
+            .ToList();
+        Assert.Single(pendingEvents);
+        Assert.Equal(event1.Id, pendingEvents[0].EventId);
+    }
+
+    [Fact]
+    public async Task RetrieveEventLogsPendingToPublishAsync_WithInProgressEvents_ExcludesInProgressEvents()
+    {
+        // Arrange
+        var context = CreateTestContext();
+        var service = new IntegrationEventLogService<TestDbContext>(context);
+        var event1 = new TestIntegrationEvent { TestProperty = "Event1" };
+        var event2 = new TestIntegrationEvent { TestProperty = "Event2" };
+
+        using var transaction = context.Database.BeginTransaction();
+        await service.SaveEventAsync(event1, transaction);
+        await service.SaveEventAsync(event2, transaction);
+        transaction.Commit();
+
+        await service.MarkEventAsInProgressAsync(event1.Id);
+
+        // Act
+        var result = await service.RetrieveEventLogsPendingToPublishAsync(transaction.TransactionId);
+
+        // Assert - verify InProgress events are excluded
+        var pendingEvents = context.IntegrationEventLogs
+            .Where(e => e.TransactionId == transaction.TransactionId && e.State == EventStateEnum.NotPublished)
+            .ToList();
+        Assert.Single(pendingEvents);
+        Assert.Equal(event2.Id, pendingEvents[0].EventId);
+    }
+
+    [Fact]
+    public async Task RetrieveEventLogsPendingToPublishAsync_WithFailedEvents_ExcludesFailedEvents()
+    {
+        // Arrange
+        var context = CreateTestContext();
+        var service = new IntegrationEventLogService<TestDbContext>(context);
+        var event1 = new TestIntegrationEvent { TestProperty = "Event1" };
+        var event2 = new TestIntegrationEvent { TestProperty = "Event2" };
+
+        using var transaction = context.Database.BeginTransaction();
+        await service.SaveEventAsync(event1, transaction);
+        await service.SaveEventAsync(event2, transaction);
+        transaction.Commit();
+
+        await service.MarkEventAsFailedAsync(event1.Id);
+
+        // Act
+        var result = await service.RetrieveEventLogsPendingToPublishAsync(transaction.TransactionId);
+
+        // Assert - verify Failed events are excluded
+        var pendingEvents = context.IntegrationEventLogs
+            .Where(e => e.TransactionId == transaction.TransactionId && e.State == EventStateEnum.NotPublished)
+            .ToList();
+        Assert.Single(pendingEvents);
+        Assert.Equal(event2.Id, pendingEvents[0].EventId);
+    }
+
+    [Fact]
+    public async Task RetrieveEventLogsPendingToPublishAsync_ReturnsEventsWithCorrectContent()
+    {
+        // Arrange
+        var context = CreateTestContext();
+        var service = new IntegrationEventLogService<TestDbContext>(context);
+        var @event = new TestIntegrationEvent { TestProperty = "SpecialValue" };
+
+        using var transaction = context.Database.BeginTransaction();
+        await service.SaveEventAsync(@event, transaction);
+        transaction.Commit();
+
+        // Act & Assert - verify events are retrieved with correct content
+        var pendingEvents = context.IntegrationEventLogs
+            .Where(e => e.TransactionId == transaction.TransactionId && e.State == EventStateEnum.NotPublished)
+            .ToList();
+        Assert.Single(pendingEvents);
+        Assert.Equal(@event.Id, pendingEvents[0].EventId);
+        Assert.Contains("SpecialValue", pendingEvents[0].Content);
+    }
+
+    [Fact]
+    public async Task MarkEventAsPublishedAsync_DoesNotIncrementTimesSent()
+    {
+        // Arrange
+        var context = CreateTestContext();
+        var service = new IntegrationEventLogService<TestDbContext>(context);
+        var @event = new TestIntegrationEvent();
+
+        using var transaction = context.Database.BeginTransaction();
+        await service.SaveEventAsync(@event, transaction);
+        transaction.Commit();
+
+        // Act
+        await service.MarkEventAsPublishedAsync(@event.Id);
+
+        // Assert
+        var eventLog = context.IntegrationEventLogs.First(e => e.EventId == @event.Id);
+        Assert.Equal(0, eventLog.TimesSent);
+    }
 }

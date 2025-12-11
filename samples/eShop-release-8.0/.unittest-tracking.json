@@ -1,27 +1,19 @@
 {
-  "src\\eShop.ServiceDefaults\\ConfigurationExtensions.cs": {
+  "src/eShop.ServiceDefaults/OpenApiDefaultValues.cs": {
     "testedMethods": [
-      "GetRequiredValue"
-    ],
-    "lastUpdated": "2025-12-09T17:44:40.840Z",
-    "testFilePath": "tests\\WebhookClient.Tests\\ConfigurationExtensionsTests.cs"
-  },
-  "src\\eShop.ServiceDefaults\\AuthenticationExtensions.cs": {
-    "testedMethods": [
-      "AddDefaultAuthentication"
-    ],
-    "lastUpdated": "2025-12-09T17:46:05.345Z",
-    "testFilePath": "tests\\eShop.ServiceDefaults.Tests\\AuthenticationExtensionsTests.cs"
-  },
-  "src\\eShop.ServiceDefaults\\ConfigureSwaggerOptions.cs": {
-    "testedMethods": [
-      "Configure",
       "Apply"
     ],
-    "lastUpdated": "2025-12-09T17:49:59.251Z",
-    "testFilePath": "tests\\eShop.ServiceDefaults.Tests\\ConfigureSwaggerOptionsTests.cs"
+    "lastUpdated": "2025-12-11T18:29:16.261Z",
+    "testFilePath": "tests/eShop.ServiceDefaults.Tests/OpenApiDefaultValuesTests.cs"
   },
-  "src\\eShop.ServiceDefaults\\Extensions.cs": {
+  "src/eShop.ServiceDefaults/HttpClientExtensions.cs": {
+    "testedMethods": [
+      "AddAuthToken"
+    ],
+    "lastUpdated": "2025-12-11T18:29:16.261Z",
+    "testFilePath": "tests/eShop.ServiceDefaults.Tests/HttpClientExtensionsTests.cs"
+  },
+  "src/eShop.ServiceDefaults/Extensions.cs": {
     "testedMethods": [
       "AddServiceDefaults",
       "AddBasicServiceDefaults",
@@ -29,92 +21,59 @@
       "AddDefaultHealthChecks",
       "MapDefaultEndpoints"
     ],
-    "lastUpdated": "2025-12-09T17:52:02.837Z",
-    "testFilePath": "tests\\eShop.ServiceDefaults.Tests\\ConfigurationExtensionsTests.cs"
+    "lastUpdated": "2025-12-11T18:29:16.262Z",
+    "testFilePath": "tests/eShop.ServiceDefaults.Tests/ExtensionsTests.cs"
   },
-  "src\\eShop.ServiceDefaults\\OpenApi.Extensions.cs": {
+  "src/eShop.ServiceDefaults/ConfigureSwaggerOptions.cs": {
     "testedMethods": [
-      "UseDefaultOpenApi",
-      "AddDefaultOpenApi"
+      "Configure"
     ],
-    "lastUpdated": "2025-12-09T17:55:43.548Z",
-    "testFilePath": "tests\\eShop.ServiceDefaults.Tests\\OpenApi.ExtensionsTests.cs"
+    "lastUpdated": "2025-12-11T18:29:16.263Z",
+    "testFilePath": "tests/eShop.ServiceDefaults.Tests/ConfigureSwaggerOptionsTests.cs"
   },
-  "src\\eShop.ServiceDefaults\\HttpClientExtensions.cs": {
+  "src/eShop.ServiceDefaults/ConfigurationExtensions.cs": {
     "testedMethods": [
-      "AddAuthToken"
+      "GetRequiredValue"
     ],
-    "lastUpdated": "2025-12-09T17:58:18.485Z",
-    "testFilePath": "tests\\eShop.ServiceDefaults.Tests\\HttpClientExtensionsTests.cs"
+    "lastUpdated": "2025-12-11T18:29:16.264Z",
+    "testFilePath": "tests/eShop.ServiceDefaults.Tests/ConfigurationExtensionsTests.cs"
   },
-  "src\\eShop.ServiceDefaults\\OpenApiDefaultValues.cs": {
+  "src/eShop.ServiceDefaults/AuthenticationExtensions.cs": {
     "testedMethods": [
-      "Apply"
+      "AddDefaultAuthentication"
     ],
-    "lastUpdated": "2025-12-09T18:06:49.499Z",
-    "testFilePath": "tests\\eShop.ServiceDefaults.Tests\\OpenApiDefaultValuesTests.cs"
+    "lastUpdated": "2025-12-11T18:29:16.265Z",
+    "testFilePath": "tests/eShop.ServiceDefaults.Tests/AuthenticationExtensionsTests.cs"
   },
-  "src\\EventBus\\Extensions\\EventBusBuilderExtensions.cs": {
+  "src/Webhooks.API/Model/WebhookSubscriptionRequest.cs": {
     "testedMethods": [
-      "ConfigureJsonOptions"
+      "Validate"
     ],
-    "lastUpdated": "2025-12-09T18:07:28.099Z",
-    "testFilePath": "tests\\WebhookClient.Tests\\EventBusBuilderExtensionsTests.cs"
+    "lastUpdated": "2025-12-11T18:29:16.267Z",
+    "testFilePath": "tests/Webhooks.API.Tests/WebhookSubscriptionRequestTests.cs"
   },
-  "src\\EventBus\\Extensions\\GenericTypeExtensions.cs": {
-    "testedMethods": [
-      "GetGenericTypeName",
-      "GetGenericTypeName"
-    ],
-    "lastUpdated": "2025-12-09T18:07:39.987Z",
-    "testFilePath": "tests\\WebhookClient.Tests\\GenericTypeExtensionsTests.cs"
-  },
-  "src\\Shared\\ActivityExtensions.cs": {
+  "src/Shared/ActivityExtensions.cs": {
     "testedMethods": [
       "SetExceptionTags"
     ],
-    "lastUpdated": "2025-12-09T18:14:58.038Z",
-    "testFilePath": "tests\\WebhookClient.Tests\\ActivityExtensionsTests.cs"
+    "lastUpdated": "2025-12-11T18:29:16.268Z",
+    "testFilePath": "tests/Shared.Tests/ActivityExtensionsTests.cs"
   },
-  "src\\EventBusRabbitMQ\\RabbitMqDependencyInjectionExtensions.cs": {
-    "testedMethods": [
-      "AddRabbitMqEventBus"
-    ],
-    "lastUpdated": "2025-12-09T18:19:50.559Z",
-    "testFilePath": "tests\\WebhookClient.Tests\\RabbitMqDependencyInjectionExtensionsTests.cs"
-  },
-  "src\\EventBusRabbitMQ\\RabbitMQEventBus.cs": {
-    "testedMethods": [
-      "PublishAsync",
-      "Dispose",
-      "StartAsync",
-      "StopAsync"
-    ],
-    "lastUpdated": "2025-12-09T18:25:07.345Z",
-    "testFilePath": "tests\\EventBus.Tests\\RabbitMQEventBusTests.cs"
-  },
-  "src\\IntegrationEventLogEF\\IntegrationEventLogEntry.cs": {
-    "testedMethods": [
-      "DeserializeJsonContent"
-    ],
-    "lastUpdated": "2025-12-09T18:28:37.040Z",
-    "testFilePath": "tests\\IntegrationEventLogEF.Tests\\IntegrationEventLogEntryTests.cs"
-  },
-  "src\\IntegrationEventLogEF\\IntegrationLogExtensions.cs": {
-    "testedMethods": [
-      "UseIntegrationEventLogs"
-    ],
-    "lastUpdated": "2025-12-09T18:31:04.387Z",
-    "testFilePath": "tests\\IntegrationEventLogEF.Tests\\IntegrationLogExtensionsTests.cs"
-  },
-  "src\\IntegrationEventLogEF\\Utilities\\ResilientTransaction.cs": {
+  "src/IntegrationEventLogEF/Utilities/ResilientTransaction.cs": {
     "testedMethods": [
       "New"
     ],
-    "lastUpdated": "2025-12-09T18:42:45.687Z",
-    "testFilePath": "tests\\IntegrationEventLogEF.Tests\\ResilientTransactionTests.cs"
+    "lastUpdated": "2025-12-11T18:29:16.270Z",
+    "testFilePath": "tests/IntegrationEventLogEF.Tests/ResilientTransactionTests.cs"
   },
-  "src\\IntegrationEventLogEF\\Services\\IntegrationEventLogService.cs": {
+  "src/IntegrationEventLogEF/IntegrationLogExtensions.cs": {
+    "testedMethods": [
+      "UseIntegrationEventLogs"
+    ],
+    "lastUpdated": "2025-12-11T18:29:16.270Z",
+    "testFilePath": "tests/IntegrationEventLogEF.Tests/IntegrationLogExtensionsTests.cs"
+  },
+  "src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs": {
     "testedMethods": [
       "SaveEventAsync",
       "MarkEventAsPublishedAsync",
@@ -122,21 +81,39 @@
       "MarkEventAsFailedAsync",
       "Dispose"
     ],
-    "lastUpdated": "2025-12-09T18:49:52.381Z",
-    "testFilePath": "tests\\IntegrationEventLogEF.Tests\\IntegrationEventLogServiceTests.cs"
+    "lastUpdated": "2025-12-11T18:29:16.271Z",
+    "testFilePath": "tests/IntegrationEventLogEF.Tests/IntegrationEventLogServiceTests.cs"
   },
-  "src\\Webhooks.API\\Extensions\\Extensions.cs": {
+  "src/IntegrationEventLogEF/IntegrationEventLogEntry.cs": {
     "testedMethods": [
-      "AddApplicationServices"
+      "DeserializeJsonContent"
     ],
-    "lastUpdated": "2025-12-09T18:53:12.082Z",
-    "testFilePath": "tests\\eShop.ServiceDefaults.Tests\\ExtensionsTests.cs"
+    "lastUpdated": "2025-12-11T18:29:16.271Z",
+    "testFilePath": "tests/IntegrationEventLogEF.Tests/IntegrationEventLogEntryTests.cs"
   },
-  "src\\Webhooks.API\\Model\\WebhookSubscriptionRequest.cs": {
+  "src/EventBusRabbitMQ/RabbitMqDependencyInjectionExtensions.cs": {
     "testedMethods": [
-      "Validate"
+      "AddRabbitMqEventBus"
     ],
-    "lastUpdated": "2025-12-09T19:16:53.833Z",
-    "testFilePath": "tests\\Webhooks.API.Tests\\WebhookSubscriptionRequestTests.cs"
+    "lastUpdated": "2025-12-11T18:29:16.273Z",
+    "testFilePath": "tests/EventBus.Tests/RabbitMqDependencyInjectionExtensionsTests.cs"
+  },
+  "src/EventBusRabbitMQ/RabbitMQEventBus.cs": {
+    "testedMethods": [
+      "PublishAsync",
+      "Dispose",
+      "StartAsync",
+      "StopAsync"
+    ],
+    "lastUpdated": "2025-12-11T18:29:16.274Z",
+    "testFilePath": "tests/EventBus.Tests/RabbitMQEventBusTests.cs"
+  },
+  "src/Ordering.Infrastructure/OrderingContext.cs": {
+    "testedMethods": [
+      "GetCurrentTransaction",
+      "RollbackTransaction"
+    ],
+    "lastUpdated": "2025-12-11T18:29:16.269Z",
+    "testFilePath": "tests/Ordering.Infrastructure.Tests/OrderingContextTests.cs"
   }
 }
