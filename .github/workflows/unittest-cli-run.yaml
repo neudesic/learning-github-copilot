@@ -97,7 +97,7 @@ jobs:
       - name: Run command generate
         working-directory: samples/eShop-release-8.0
         run: |
-          unittest-cli generate --copilot -f src/Ordering.Infrastructure/OrderingContext.cs -f src/Identity.API/HomeController.cs -f src/OrderProcessor/GracePeriodManagerService.cs -f src/Ordering.API/Behaviors/TransactionBehavior.cs -f src/IntegrationEventLogEF/IntegrationEventLogService.cs
+          unittest-cli generate --copilot -f src/Ordering.Infrastructure/OrderingContext.cs -f src/Identity.API/Data/Migrations/ApplicationDbContextModelSnapshot.cs -f src/OrderProcessor/Services/GracePeriodManagerService.cs -f src/Ordering.API/Application/Behaviors/TransactionBehavior.cs -f src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
@@ -133,3 +133,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: add generated unit tests from unittest-cli"
+          git push origin transition
