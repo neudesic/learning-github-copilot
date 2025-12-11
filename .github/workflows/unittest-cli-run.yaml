@@ -97,7 +97,7 @@ jobs:
       - name: Run command generate
         working-directory: samples/eShop-release-8.0
         run: |
-          unittest-cli generate --copilot
+          unittest-cli generate --copilot -f src/Ordering.Infrastructure/OrderingContext.cs -f src/Identity.API/HomeController.cs -f src/OrderProcessor/GracePeriodManagerService.cs -f src/Ordering.API/Behaviors/TransactionBehavior.cs -f src/IntegrationEventLogEF/IntegrationEventLogService.cs
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
